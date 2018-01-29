@@ -1,0 +1,106 @@
+time	load-type	length	cpu	mem	type	configServer
+
+##### 1 day - monday
+0	tomcat1dMon	86400	100	128	trans	tomcat01
+0	tomcat1dMon	86400	100	128	trans	tomcat01
+0	tomcat1dMon	86400	100	128	trans	tomcat01
+0	tomcat1dMon	86400	100	128	trans	tomcat01
+0	tomcat1dMon	86400	100	128	trans	tomcat01
+0	tomcat1dMon	86400	100	128	trans	tomcat01
+0	tomcat1dMon	86400	100	128	trans	tomcat01
+0	tomcat1dMon	86400	100	128	trans	tomcat01
+0	tomcat1dMon	86400	100	128	trans	tomcat01
+0	tomcat1dMon	86400	100	128	trans	tomcat01
+
+##### 5 day - monday to friday
+#0	tomcat5dMon-fri	432000	100	128	trans	tomcat01
+
+##### 1 week
+0	tomcat1week	604800	100	128	trans	tomcat01
+0	tomcat1week	604800	100	128	trans	tomcat01
+0	tomcat1week	604800	100	128	trans	tomcat01
+0	tomcat1week	604800	100	128	trans	tomcat01
+0	tomcat1week	604800	100	128	trans	tomcat01
+0	tomcat1week	604800	100	128	trans	tomcat01
+0	tomcat1week	604800	100	128	trans	tomcat01
+0	tomcat1week	604800	100	128	trans	tomcat01
+0	tomcat1week	604800	100	128	trans	tomcat01
+0	tomcat1week	604800	100	128	trans	tomcat01
+0	tomcat1week	604800	100	128	trans	tomcat01
+0	tomcat1week	604800	100	128	trans	tomcat01
+0	tomcat1week	604800	100	128	trans	tomcat01
+0	tomcat1week	604800	100	128	trans	tomcat01
+0	tomcat1week	604800	100	128	trans	tomcat01
+0	tomcat1week	604800	100	128	trans	tomcat01
+0	tomcat1week	604800	100	128	trans	tomcat01
+0	tomcat1week	604800	100	128	trans	tomcat01
+0	tomcat1week	604800	100	128	trans	tomcat01
+0	tomcat1week	604800	100	128	trans	tomcat01
+
+##### 1 day - tuesday
+86400	tomcat1dTue	86400	100	128	trans	tomcat01
+86400	tomcat1dTue	86400	100	128	trans	tomcat01
+86400	tomcat1dTue	86400	100	128	trans	tomcat01
+86400	tomcat1dTue	86400	100	128	trans	tomcat01
+86400	tomcat1dTue	86400	100	128	trans	tomcat01
+86400	tomcat1dTue	86400	100	128	trans	tomcat01
+86400	tomcat1dTue	86400	100	128	trans	tomcat01
+86400	tomcat1dTue	86400	100	128	trans	tomcat01
+86400	tomcat1dTue	86400	100	128	trans	tomcat01
+86400	tomcat1dTue	86400	100	128	trans	tomcat01
+
+##### 1 day - wednesday
+172800	tomcat1dWed	86400	100	128	trans	tomcat01
+172800	tomcat1dWed	86400	100	128	trans	tomcat01
+172800	tomcat1dWed	86400	100	128	trans	tomcat01
+172800	tomcat1dWed	86400	100	128	trans	tomcat01
+172800	tomcat1dWed	86400	100	128	trans	tomcat01
+172800	tomcat1dWed	86400	100	128	trans	tomcat01
+172800	tomcat1dWed	86400	100	128	trans	tomcat01
+172800	tomcat1dWed	86400	100	128	trans	tomcat01
+172800	tomcat1dWed	86400	100	128	trans	tomcat01
+172800	tomcat1dWed	86400	100	128	trans	tomcat01
+
+##### 1 day - thursday
+259200	tomcat1dThu	86400	100	128	trans	tomcat01
+259200	tomcat1dThu	86400	100	128	trans	tomcat01
+259200	tomcat1dThu	86400	100	128	trans	tomcat01
+259200	tomcat1dThu	86400	100	128	trans	tomcat01
+259200	tomcat1dThu	86400	100	128	trans	tomcat01
+259200	tomcat1dThu	86400	100	128	trans	tomcat01
+259200	tomcat1dThu	86400	100	128	trans	tomcat01
+259200	tomcat1dThu	86400	100	128	trans	tomcat01
+259200	tomcat1dThu	86400	100	128	trans	tomcat01
+259200	tomcat1dThu	86400	100	128	trans	tomcat01
+
+##### 1 day - friday
+345600	tomcat1dFri	86400	100	128	trans	tomcat01
+345600	tomcat1dFri	86400	100	128	trans	tomcat01
+345600	tomcat1dFri	86400	100	128	trans	tomcat01
+345600	tomcat1dFri	86400	100	128	trans	tomcat01
+345600	tomcat1dFri	86400	100	128	trans	tomcat01
+
+##### 1 weekend
+#432000	tomcat1weekend	172800	100	128	trans	tomcat01
+
+##### 1 day - saturday
+432000	tomcat1dSat	86400	100	128	trans	tomcat01
+432000	tomcat1dSat	86400	100	128	trans	tomcat01
+432000	tomcat1dSat	86400	100	128	trans	tomcat01
+432000	tomcat1dSat	86400	100	128	trans	tomcat01
+432000	tomcat1dSat	86400	100	128	trans	tomcat01
+
+##### 1 day - sunday
+518400	tomcat1dSun	86400	100	128	trans	tomcat01
+518400	tomcat1dSun	86400	100	128	trans	tomcat01
+518400	tomcat1dSun	86400	100	128	trans	tomcat01
+518400	tomcat1dSun	86400	100	128	trans	tomcat01
+518400	tomcat1dSun	86400	100	128	trans	tomcat01
+518400	tomcat1dSun	86400	100	128	trans	tomcat01
+518400	tomcat1dSun	86400	100	128	trans	tomcat01
+518400	tomcat1dSun	86400	100	128	trans	tomcat01
+518400	tomcat1dSun	86400	100	128	trans	tomcat01
+518400	tomcat1dSun	86400	100	128	trans	tomcat01
+
+##### 1 day - next monday
+#604800	tomcat1dMon	86400	100	128	trans	tomcat01

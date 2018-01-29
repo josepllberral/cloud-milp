@@ -1,0 +1,11 @@
+name numCPUs frequency totalmemory(GB) boot migrationIn migrationOut checkpoint IdleBattage bootPower hostBootTime 
+Host1 4 3000 4 41 60 30 30 230 275 60
+Host2 4 3000 4 41 60 30 30 230 275 60
+Host3 4 3000 4 41 60 30 30 230 275 60
+Host4 4 3000 4 41 60 30 30 230 275 60
+Host5 4 3000 4 41 60 30 30 230 275 60
+Host6 4 3000 4 41 60 30 30 230 275 60
+Host7 4 3000 4 41 60 30 30 230 275 60
+Host8 4 3000 4 41 60 30 30 230 275 60
+Host9 4 3000 4 41 60 30 30 230 275 60
+Host10 4 3000 4 41 60 30 30 230 275 60

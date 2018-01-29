@@ -1,0 +1,71 @@
+time	load-type	length	cpu	mem	type	configServer
+
+##### 1 day - monday
+0	imageboard.logs-2010-11-EST		86400	100	128	trans	tomcat01
+0	ecommerce.logs-2010-11-EST	86400	100	128	trans	tomcat01
+0	filesupport.logs-2010-11-EST	86400	100	128	trans	tomcat01
+0	infosite.logs-2010-11-EST	86400	100	128	trans	tomcat01
+0	weblog3.logs-2010-11-EST	86400	100	128	trans	tomcat01
+0	weblog4.logs-2010-11-EST	86400	100	128	trans	tomcat01
+0	weblog2.logs-2010-11-EST	86400	100	128	trans	tomcat01
+0	weblog1.logs-2010-11-EST	86400	100	128	trans	tomcat01
+
+##### 1 day - tuesday 
+86400	imageboard.logs-2010-11-EST		86400	100	128	trans	tomcat01
+86400	ecommerce.logs-2010-11-EST	86400	100	128	trans	tomcat01
+86400	filesupport.logs-2010-11-EST	86400	100	128	trans	tomcat01
+86400	infosite.logs-2010-11-EST	86400	100	128	trans	tomcat01
+86400	weblog3.logs-2010-11-EST	86400	100	128	trans	tomcat01
+86400	weblog4.logs-2010-11-EST	86400	100	128	trans	tomcat01
+86400	weblog2.logs-2010-11-EST	86400	100	128	trans	tomcat01
+86400	weblog1.logs-2010-11-EST	86400	100	128	trans	tomcat01
+
+##### 1 day - wednesday
+172800	imageboard.logs-2010-11-EST		86400	100	128	trans	tomcat01
+172800	ecommerce.logs-2010-11-EST	86400	100	128	trans	tomcat01
+172800	filesupport.logs-2010-11-EST	86400	100	128	trans	tomcat01
+172800	infosite.logs-2010-11-EST	86400	100	128	trans	tomcat01
+172800	weblog3.logs-2010-11-EST	86400	100	128	trans	tomcat01
+172800	weblog4.logs-2010-11-EST	86400	100	128	trans	tomcat01
+172800	weblog2.logs-2010-11-EST	86400	100	128	trans	tomcat01
+172800	weblog1.logs-2010-11-EST	86400	100	128	trans	tomcat01
+
+##### 1 day - thursday
+259200	imageboard.logs-2010-11-EST		86400	100	128	trans	tomcat01
+259200	ecommerce.logs-2010-11-EST	86400	100	128	trans	tomcat01
+259200	filesupport.logs-2010-11-EST	86400	100	128	trans	tomcat01
+259200	infosite.logs-2010-11-EST	86400	100	128	trans	tomcat01
+259200	weblog3.logs-2010-11-EST	86400	100	128	trans	tomcat01
+259200	weblog4.logs-2010-11-EST	86400	100	128	trans	tomcat01
+259200	weblog2.logs-2010-11-EST	86400	100	128	trans	tomcat01
+259200	weblog1.logs-2010-11-EST	86400	100	128	trans	tomcat01
+
+##### 1 day - friday
+345600	imageboard.logs-2010-11-EST		86400	100	128	trans	tomcat01
+345600	ecommerce.logs-2010-11-EST	86400	100	128	trans	tomcat01
+345600	filesupport.logs-2010-11-EST	86400	100	128	trans	tomcat01
+345600	infosite.logs-2010-11-EST	86400	100	128	trans	tomcat01
+345600	weblog3.logs-2010-11-EST	86400	100	128	trans	tomcat01
+345600	weblog4.logs-2010-11-EST	86400	100	128	trans	tomcat01
+345600	weblog2.logs-2010-11-EST	86400	100	128	trans	tomcat01
+345600	weblog1.logs-2010-11-EST	86400	100	128	trans	tomcat01
+
+##### 1 day - saturday
+432000	imageboard.logs-2010-11-EST		86400	100	128	trans	tomcat01
+432000	ecommerce.logs-2010-11-EST	86400	100	128	trans	tomcat01
+432000	filesupport.logs-2010-11-EST	86400	100	128	trans	tomcat01
+432000	infosite.logs-2010-11-EST	86400	100	128	trans	tomcat01
+432000	weblog3.logs-2010-11-EST	86400	100	128	trans	tomcat01
+432000	weblog4.logs-2010-11-EST	86400	100	128	trans	tomcat01
+432000	weblog2.logs-2010-11-EST	86400	100	128	trans	tomcat01
+432000	weblog1.logs-2010-11-EST	86400	100	128	trans	tomcat01
+
+##### 1 day - sunday
+518400	imageboard.logs-2010-11-EST		86400	100	128	trans	tomcat01
+518400	ecommerce.logs-2010-11-EST	86400	100	128	trans	tomcat01
+518400	filesupport.logs-2010-11-EST	86400	100	128	trans	tomcat01
+518400	infosite.logs-2010-11-EST	86400	100	128	trans	tomcat01
+518400	weblog3.logs-2010-11-EST	86400	100	128	trans	tomcat01
+518400	weblog4.logs-2010-11-EST	86400	100	128	trans	tomcat01
+518400	weblog2.logs-2010-11-EST	86400	100	128	trans	tomcat01
+518400	weblog1.logs-2010-11-EST	86400	100	128	trans	tomcat01
