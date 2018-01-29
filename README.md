@@ -7,11 +7,28 @@ This models a datacenter scheduling optimizer, where jobs are web-services (mode
 * Li-BCN: http://www.lsi.upc.edu/dept/techreps/llistat_detallat.php?id=1099
 
 ## Files
+
+### MILP Model Examples
 * **temp125.mod**: Model in MathProg of the given Cloud
 * **temp125.dat**: A scheduling scenario (10 machines x 24 jobs)
 * **wrapper_gurobi.c**: A wrapper created by Matteo Salani, modified by me to not trigger GLPK in case of sub-optimals
 
-## Usage
+### Experiment Files
+These files are uploaded only to be contemplated by posterity. They are mostly hardcoded for the experiments and files. Do not attempt to run them at home...
+
+* **script.\*.r**: Experiment scripts. 0->ILP (no SLA), g1-> Round Robin, g3-> FirstFit, g4-> BestFit, new->ILP (with SLA)
+* **functions.r**: Functions for experiment scripts
+* **work-reader-xeon2.r**: Functions to parse monitoring data
+
+### Workloads
+These files contain traces about the used machines, services and jobs, reproducing their behavior
+
+* **power.data**: Measured power data for Xeon servers
+* **datacenter\*.data**: Inventory of machines for experimentation
+* **workload.\*.data**: List of files with workload for experimentation
+* **workload\/\*.load**: Files with load data
+
+## MILP Usage
 ### GLPK
 Execute the Solver
 ```
