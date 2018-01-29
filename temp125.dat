@@ -1,0 +1,484 @@
+
+/* Informacio */
+
+data;
+set hosts :=  Host1 Host2 Host3 Host4 Host5 Host6 Host7 Host8 Host9 Host10;
+set jobs  :=  Job73 Job74 Job75 Job76 Job77 Job78 Job79 Job80 Job81 Job82 Job83 Job84 Job85 Job86 Job87 Job88 Job89 Job90 Job91 Job92 Job93 Job94 Job95 Job96;
+param mcpu :=
+Host1 4
+Host2 4
+Host3 4
+Host4 4
+Host5 4
+Host6 4
+Host7 4
+Host8 4
+Host9 4
+Host10 4
+;
+param mmem :=
+Host1 4
+Host2 4
+Host3 4
+Host4 4
+Host5 4
+Host6 4
+Host7 4
+Host8 4
+Host9 4
+Host10 4
+;
+param jcpu :=
+Job73 100
+Job74 1
+Job75 15
+Job76 53
+Job77 17
+Job78 8
+Job79 7
+Job80 6
+Job81 81
+Job82 1
+Job83 34
+Job84 61
+Job85 17
+Job86 2
+Job87 7
+Job88 1
+Job89 78
+Job90 3
+Job91 33
+Job92 64
+Job93 17
+Job94 12
+Job95 4
+Job96 9
+;
+param jcpumax :=
+Job73 400
+Job74 1
+Job75 15
+Job76 228
+Job77 17
+Job78 42
+Job79 126
+Job80 137
+Job81 400
+Job82 9
+Job83 73
+Job84 231
+Job85 129
+Job86 2
+Job87 74
+Job88 190
+Job89 400
+Job90 113
+Job91 33
+Job92 338
+Job93 17
+Job94 202
+Job95 20
+Job96 32
+;
+param jmem :=
+Job73 128
+Job74 128
+Job75 128
+Job76 128
+Job77 128
+Job78 128
+Job79 128
+Job80 128
+Job81 128
+Job82 128
+Job83 128
+Job84 128
+Job85 128
+Job86 128
+Job87 128
+Job88 128
+Job89 128
+Job90 128
+Job91 128
+Job92 128
+Job93 128
+Job94 128
+Job95 128
+Job96 128
+;
+param rto :=
+Job73 0.004
+Job74 0.004
+Job75 0.008
+Job76 0.004
+Job77 0.008
+Job78 0.004
+Job79 0.004
+Job80 0.004
+Job81 0.004
+Job82 0.004
+Job83 0.008
+Job84 0.004
+Job85 0.008
+Job86 0.004
+Job87 0.004
+Job88 0.004
+Job89 0.004
+Job90 0.004
+Job91 0.008
+Job92 0.004
+Job93 0.008
+Job94 0.004
+Job95 0.004
+Job96 0.004
+;
+param req :=
+Job73 1000
+Job74 28
+Job75 412
+Job76 623
+Job77 256
+Job78 139
+Job79 123
+Job80 84
+Job81 1000
+Job82 28
+Job83 412
+Job84 623
+Job85 256
+Job86 139
+Job87 123
+Job88 84
+Job89 1000
+Job90 28
+Job91 412
+Job92 623
+Job93 256
+Job94 139
+Job95 123
+Job96 84
+;
+param byt :=
+Job73 29559
+Job74 8416
+Job75 51228
+Job76 23050
+Job77 6064
+Job78 7656
+Job79 22287
+Job80 3036
+Job81 29559
+Job82 8416
+Job83 51228
+Job84 23050
+Job85 6064
+Job86 7656
+Job87 22287
+Job88 3036
+Job89 29559
+Job90 8416
+Job91 51228
+Job92 23050
+Job93 6064
+Job94 7656
+Job95 22287
+Job96 3036
+;
+param mbps :=
+Job73 30
+Job74 80
+Job75 60
+Job76 50
+Job77 60
+Job78 60
+Job79 40
+Job80 40
+Job81 20
+Job82 60
+Job83 40
+Job84 50
+Job85 30
+Job86 80
+Job87 50
+Job88 30
+Job89 30
+Job90 40
+Job91 50
+Job92 30
+Job93 80
+Job94 30
+Job95 60
+Job96 60
+;
+param tpq :=
+Job73 9000
+Job74 9000
+Job75 7000
+Job76 2000
+Job77 3000
+Job78 2000
+Job79 2000
+Job80 2000
+Job81 2000
+Job82 6000
+Job83 2000
+Job84 5000
+Job85 3000
+Job86 200
+Job87 2000
+Job88 4000
+Job89 1000
+Job90 2000
+Job91 3000
+Job92 6000
+Job93 3000
+Job94 3000
+Job95 1000
+Job96 3000
+;
+param jold :=
+Host1 Job73 1
+Host2 Job73 0
+Host3 Job73 0
+Host4 Job73 0
+Host5 Job73 0
+Host6 Job73 0
+Host7 Job73 0
+Host8 Job73 0
+Host9 Job73 0
+Host10 Job73 0
+Host1 Job74 1
+Host2 Job74 0
+Host3 Job74 0
+Host4 Job74 0
+Host5 Job74 0
+Host6 Job74 0
+Host7 Job74 0
+Host8 Job74 0
+Host9 Job74 0
+Host10 Job74 0
+Host1 Job75 0
+Host2 Job75 0
+Host3 Job75 0
+Host4 Job75 0
+Host5 Job75 1
+Host6 Job75 0
+Host7 Job75 0
+Host8 Job75 0
+Host9 Job75 0
+Host10 Job75 0
+Host1 Job76 0
+Host2 Job76 0
+Host3 Job76 0
+Host4 Job76 0
+Host5 Job76 0
+Host6 Job76 0
+Host7 Job76 1
+Host8 Job76 0
+Host9 Job76 0
+Host10 Job76 0
+Host1 Job77 0
+Host2 Job77 0
+Host3 Job77 0
+Host4 Job77 0
+Host5 Job77 0
+Host6 Job77 1
+Host7 Job77 0
+Host8 Job77 0
+Host9 Job77 0
+Host10 Job77 0
+Host1 Job78 0
+Host2 Job78 0
+Host3 Job78 0
+Host4 Job78 0
+Host5 Job78 0
+Host6 Job78 0
+Host7 Job78 1
+Host8 Job78 0
+Host9 Job78 0
+Host10 Job78 0
+Host1 Job79 1
+Host2 Job79 0
+Host3 Job79 0
+Host4 Job79 0
+Host5 Job79 0
+Host6 Job79 0
+Host7 Job79 0
+Host8 Job79 0
+Host9 Job79 0
+Host10 Job79 0
+Host1 Job80 0
+Host2 Job80 0
+Host3 Job80 0
+Host4 Job80 0
+Host5 Job80 0
+Host6 Job80 0
+Host7 Job80 1
+Host8 Job80 0
+Host9 Job80 0
+Host10 Job80 0
+Host1 Job81 0
+Host2 Job81 0
+Host3 Job81 0
+Host4 Job81 0
+Host5 Job81 1
+Host6 Job81 0
+Host7 Job81 0
+Host8 Job81 0
+Host9 Job81 0
+Host10 Job81 0
+Host1 Job82 0
+Host2 Job82 0
+Host3 Job82 0
+Host4 Job82 0
+Host5 Job82 0
+Host6 Job82 0
+Host7 Job82 1
+Host8 Job82 0
+Host9 Job82 0
+Host10 Job82 0
+Host1 Job83 1
+Host2 Job83 0
+Host3 Job83 0
+Host4 Job83 0
+Host5 Job83 0
+Host6 Job83 0
+Host7 Job83 0
+Host8 Job83 0
+Host9 Job83 0
+Host10 Job83 0
+Host1 Job84 1
+Host2 Job84 0
+Host3 Job84 0
+Host4 Job84 0
+Host5 Job84 0
+Host6 Job84 0
+Host7 Job84 0
+Host8 Job84 0
+Host9 Job84 0
+Host10 Job84 0
+Host1 Job85 0
+Host2 Job85 0
+Host3 Job85 0
+Host4 Job85 0
+Host5 Job85 0
+Host6 Job85 0
+Host7 Job85 1
+Host8 Job85 0
+Host9 Job85 0
+Host10 Job85 0
+Host1 Job86 0
+Host2 Job86 0
+Host3 Job86 0
+Host4 Job86 0
+Host5 Job86 0
+Host6 Job86 0
+Host7 Job86 1
+Host8 Job86 0
+Host9 Job86 0
+Host10 Job86 0
+Host1 Job87 0
+Host2 Job87 0
+Host3 Job87 0
+Host4 Job87 0
+Host5 Job87 0
+Host6 Job87 0
+Host7 Job87 1
+Host8 Job87 0
+Host9 Job87 0
+Host10 Job87 0
+Host1 Job88 0
+Host2 Job88 1
+Host3 Job88 0
+Host4 Job88 0
+Host5 Job88 0
+Host6 Job88 0
+Host7 Job88 0
+Host8 Job88 0
+Host9 Job88 0
+Host10 Job88 0
+Host1 Job89 1
+Host2 Job89 0
+Host3 Job89 0
+Host4 Job89 0
+Host5 Job89 0
+Host6 Job89 0
+Host7 Job89 0
+Host8 Job89 0
+Host9 Job89 0
+Host10 Job89 0
+Host1 Job90 0
+Host2 Job90 0
+Host3 Job90 0
+Host4 Job90 0
+Host5 Job90 0
+Host6 Job90 1
+Host7 Job90 0
+Host8 Job90 0
+Host9 Job90 0
+Host10 Job90 0
+Host1 Job91 0
+Host2 Job91 0
+Host3 Job91 0
+Host4 Job91 0
+Host5 Job91 1
+Host6 Job91 0
+Host7 Job91 0
+Host8 Job91 0
+Host9 Job91 0
+Host10 Job91 0
+Host1 Job92 1
+Host2 Job92 0
+Host3 Job92 0
+Host4 Job92 0
+Host5 Job92 0
+Host6 Job92 0
+Host7 Job92 0
+Host8 Job92 0
+Host9 Job92 0
+Host10 Job92 0
+Host1 Job93 0
+Host2 Job93 0
+Host3 Job93 0
+Host4 Job93 0
+Host5 Job93 1
+Host6 Job93 0
+Host7 Job93 0
+Host8 Job93 0
+Host9 Job93 0
+Host10 Job93 0
+Host1 Job94 0
+Host2 Job94 0
+Host3 Job94 0
+Host4 Job94 0
+Host5 Job94 1
+Host6 Job94 0
+Host7 Job94 0
+Host8 Job94 0
+Host9 Job94 0
+Host10 Job94 0
+Host1 Job95 0
+Host2 Job95 0
+Host3 Job95 0
+Host4 Job95 0
+Host5 Job95 1
+Host6 Job95 0
+Host7 Job95 0
+Host8 Job95 0
+Host9 Job95 0
+Host10 Job95 0
+Host1 Job96 0
+Host2 Job96 0
+Host3 Job96 0
+Host4 Job96 0
+Host5 Job96 0
+Host6 Job96 1
+Host7 Job96 0
+Host8 Job96 0
+Host9 Job96 0
+Host10 Job96 0
+;
+param news := 0;
+
+end;
+
