@@ -14,7 +14,7 @@ This models a datacenter scheduling optimizer, where jobs are web-services (mode
 * **wrapper_gurobi.c**: A wrapper created by Matteo Salani, modified by me to not trigger GLPK in case of sub-optimals
 
 ### Experiment Files
-These files are uploaded only to be contemplated by posterity. They are mostly hardcoded for the experiments and files. Do not attempt to run them at home...
+These files are uploaded only to be contemplated by posterity. They are mostly hardcoded for the experiments and files (e.g. workload paths and experiment parameters). Do not attempt to run them at home...
 
 * **script.\*.r**: Experiment scripts. 0->ILP (no SLA), g1-> Round Robin, g3-> FirstFit, g4-> BestFit, new->ILP (with SLA)
 * **functions.r**: Functions for experiment scripts
@@ -23,10 +23,10 @@ These files are uploaded only to be contemplated by posterity. They are mostly h
 ### Workloads
 These files contain traces about the used machines, services and jobs, reproducing their behavior
 
-* **power.data**: Measured power data for Xeon servers
-* **datacenter\*.data**: Inventory of machines for experimentation
-* **workload.\*.data**: List of files with workload for experimentation
-* **workload\/\*.load**: Files with load data
+* **workload\/power.data**: Measured power data for Xeon servers
+* **workload\/datacenter-\*.data**: Inventory of machines for experimentation
+* **workload\/workload-\*.data**: List of files with workload for experimentation
+* **workload\/http-\*.load**: Files with load data
 
 ## MILP Usage
 ### GLPK
