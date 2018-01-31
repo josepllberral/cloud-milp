@@ -29,6 +29,9 @@ These files contain traces about the used machines, services and jobs, reproduci
 * **workload\/workload-\*.data**: List of files with workload for experimentation
 * **workload\/http-\*.load**: Files with load data
 
+### QuickScheduler
+The included files are the implementation of the schedulers in a real Cloud environment (OpenNebula), after MILP experiments were done. They include QuickScheduler and GreenNebula experiments.
+
 ## MILP Usage
 ### GLPK
 Execute the Solver
