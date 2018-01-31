@@ -1,0 +1,49 @@
+VIRTUAL MACHINE 108 INFORMATION                                                  
+ID                  : 108                  
+NAME                : vbox-VM9            
+USER                : oneadmin            
+GROUP               : oneadmin            
+STATE               : STOPPED             
+LCM_STATE           : STOPPED          
+HOSTNAME            : NOHOST  
+START TIME          : 06/18 01:07:57      
+END TIME            : 07/10 19:39:56      
+DEPLOY ID           : one-108:/var/lib/one//108/images/deployment.200
+
+VIRTUAL MACHINE MONITORING                                                      
+NET_TX              : 0                   
+NET_RX              : 0                   
+USED MEMORY         : 524288              
+USED CPU            : 0                   
+
+PERMISSIONS                                                                     
+OWNER               : um-                 
+GROUP               : ---                 
+OTHER               : ---                 
+
+VIRTUAL MACHINE TEMPLATE                                                        
+DISK=[
+  BUS=sata,
+  DISK_ID=0,
+  READONLY=no,
+  SOURCE=/home/jlberral/share/Linux-rdy.vdi,
+  TARGET=hda,
+  TYPE=disk ]
+FEATURES=[
+  ACPI=yes,
+  PAE=yes ]
+GRAPHICS=[
+  PORT=5987,
+  TYPE=headless ]
+MEMORY=512
+NAME=vbox-VM9
+RAW=[
+  DATA="--nic1 bridged --bridgeadapter1 eth0 --macaddress1 080027535C9F ",
+  TYPE=vbox ]
+VCPU=1
+VMID=108
+
+VIRTUAL MACHINE HISTORY                                                         
+ SEQ        HOSTNAME REASON           START        TIME       PTIME
+   0         crypt05   stop  06/18 01:08:24 00 00:16:58 00 00:01:54
+

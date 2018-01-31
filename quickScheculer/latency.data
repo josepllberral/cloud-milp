@@ -1,0 +1,19 @@
+atom00-atom00 0
+atom00-atom01 265
+atom00-atom02 390
+atom00-atom03 255
+
+atom01-atom00 265
+atom01-atom01 0
+atom01-atom02 250
+atom01-atom03 380
+
+atom02-atom00 390
+atom02-atom01 250
+atom02-atom02 0
+atom02-atom03 90
+
+atom03-atom00 255
+atom03-atom01 380
+atom03-atom02 90
+atom03-atom03 0

@@ -1,0 +1,38 @@
+HOST 9 INFORMATION                                                              
+ID                    : 9                   
+NAME                  : crypt04             
+STATE                 : RUNNING               
+IM_MAD                : im_vbox             
+VM_MAD                : vmm_vbox            
+VN_MAD                : fw                  
+TM_MAD                : tm_shared           
+LAST MONITORING TIME  : 1354104553          
+
+HOST SHARES                                                                     
+MAX MEM               : 8185060             
+USED MEM (REAL)       : 305676              
+USED MEM (ALLOCATED)  : 0                   
+MAX CPU               : 800                 
+USED CPU (REAL)       : 0                   
+USED CPU (ALLOCATED)  : 0                   
+MAX DISK              : 0                   
+USED DISK (REAL)      : 0                   
+USED DISK (ALLOCATED) : 0                   
+RUNNING VMS           : 0                   
+
+MONITORING INFORMATION                                                          
+ARCH=x86_64
+CPUSPEED=2400
+ERROR=[]
+FREECPU=800.0
+FREEMEMORY=7879384
+HOSTNAME=crypt04
+HYPERVISOR=vbox
+MODELNAME="Intel(R) Xeon(R) CPU E5620 @ 2.40GHz"
+NETRX=0
+NETTX=0
+TOTALCPU=800
+TOTALMEMORY=8185060
+USEDCPU=0.0
+USEDMEMORY=305676
+
