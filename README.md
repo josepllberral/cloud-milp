@@ -19,6 +19,7 @@ These files are uploaded only to be contemplated by posterity. They are mostly h
 * **script.\*.r**: Experiment scripts. 0->ILP (no SLA), g1-> Round Robin, g3-> FirstFit, g4-> BestFit, new->ILP (with SLA)
 * **functions.r**: Functions for experiment scripts
 * **work-reader-xeon2.r**: Functions to parse monitoring data
+* **lagrange.r**: Experiment optimizing MILP using Lagrange approach
 
 ### Workloads
 These files contain traces about the used machines, services and jobs, reproducing their behavior
