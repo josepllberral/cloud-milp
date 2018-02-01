@@ -1,0 +1,79 @@
+ 
+
+start scheduler:
+java -cp quickSchedule.jar:/home/jlberral/weka.jar SchedulerBestFit -vbox USR PWD -step 600000 -dirhost atom01 -latency 200 &> scheduler.log &
+tail -f scheduler.log
+
+
+check results:
+tail -f results.out
+tail -f proxy.out
+
+compilar:
+javac -cp /home/jlberral/gurobi461/linux64/lib/gurobi.jar:/home/jlberral/weka.jar:. *.java
+jar -cf quickSchedule.jar *.class
+scp quickSchedule.jar oneadmin@crypt05:/var/lib/one/
+
+-----------------------------------------
+sudo apt-get install ruby rubygems libxmlrpc-c3 libxml2-dev sqlite3
+
+export GUROBI_HOME=/home/jlberral/gurobi501/linux64
+export GRB_LICENSE_FILE=~/gurobi.lic.one
+export LD_LIBRARY_PATH=$GUROBI_HOME/lib
+
+java -cp quickSchedule.jar:/home/jlberral/gurobi501/linux64/lib/gurobi.jar greenNebula -step 120000 -vbox USR PWD &> gn-scheduler.log &
+
+
+http://www.research.rutgers.edu/~goiri/results/experiment-133911001001011100000001.html
+
+
+
+------------------------------------------------
+------------------------------------------------
+
+VBoxManage 4.2.4:
+-----------------
+
+VBoxManage createvm --name Genload03 --register
+VBoxManage modifyvm Genload03 --memory 512 --acpi on --boot1 dvd --nic1 bridged --bridgeadapter1 eth0 --vram 128
+VBoxManage clonevdi Linux-rdy.vdi VirtualBox\ VMs/Genload03/Genload03.vdi
+VBoxManage storagectl Genload03 --name "IDE Controller" --add ide
+VBoxManage storageattach Genload03 --storagectl "IDE Controller" --port 0 --device 0 --type hdd --medium VirtualBox\ VMs/Genload03/Genload03.vdi 
+
+VBoxManage --startvm Genload03 --type headless
+VBoxManage guestcontrol Genload02 execute "/sbin/ifconfig" "eth0" --username USR --password PWD --verbose --wait-stdout
+
+Check IP/Status:
+----------------
+
+ssh atom02 'VBoxManage guestcontrol one-111 execute "/sbin/ifconfig" "eth0" --username USR --password PWD --verbose --wait-stdout | grep "inet addr" | grep -v 127'
+
+GenLoad:
+--------
+
+./genload ./workloads/imageboard-test-27-11-2010-24h.log http://172.20.0.111:8080 10 0 &
+
+Rebuild VMs:
+------------
+
+tgvm=111
+VBoxManage discardstate one-$tgvm
+VBoxManage storageattach one-$tgvm --storagectl "ONE-sata" --port 0 --device 0 --medium none
+#VBoxManage closemedium disk `VBoxManage list hdds | grep one/$tgvm/ -B 3 | head -1 | awk '{print $2}'`
+VBoxManage closemedium disk `VBoxManage list hdds | grep one/$tgvm/ | awk '{print $2}'`
+VBoxManage unregistervm one-$tgvm
+rm -rf .VirtualBox/Machines/one-$tgvm
+
+Check Gateway and VMs:
+----------------------
+
+wget http://atom01:8111 ; wget http://atom01:8112 ; wget http://atom01:8113 ; wget http://atom01:8114 ; wget http://atom01:8115 ; rm index*
+
+Run Scheduler:
+--------------
+
+java -cp quickSchedule.jar SchedulerBestFit -vbox USR PWD -step 3600000 -dirhost atom01 -latency 200 &>scheduler.log &
+java -cp quickSchedule.jar:weka.jar SchedulerWeka -vbox USR PWD -step 120000 -dirhost atom01 -latency 200 -test &> scheduler.log &
+
+tail -f scheduler.log
+
