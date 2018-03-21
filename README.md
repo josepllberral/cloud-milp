@@ -50,3 +50,8 @@ Execute the Solver
 ```
 ./wrapper_GLPK_GUROBI -m temp125.mod -d temp125.dat --glpk_out --grb_out -v --tmlim 100 > temp125.sol
 ```
+
+## Datasets eEnergy'10
+These files contain datasets belonging to the eEnergy'10 paper, with data for modeling Intel Xeon power consumption, and modeling SLAs on the Grid5000 benchmark using the EEFSIM.
+
+The published data are a sample of the measured power outputs and SLAs on HPC tasks. You can use them under your own responsibility. In case of using them, cite our paper "Towards energy-aware scheduling in data centers using machine learning" 1st ACM/SIGCOM Intl. Conf. on Energy-Efficient Computing and Networking (eEnergy 2010). http://dx.doi.org/10.1145/1791314.1791349
