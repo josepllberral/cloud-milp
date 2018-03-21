@@ -27,7 +27,9 @@ These files contain traces about the used machines, services and jobs, reproduci
 * **workload\/power.data**: Measured power data for Xeon servers
 * **workload\/datacenter-\*.data**: Inventory of machines for experimentation
 * **workload\/workload-\*.data**: List of files with workload for experimentation
-* **workload\/http-\*.load**: Files with load data
+* **workload\/http-\*.load**: Files with load data from Li-BCN web-service traces
+
+The Li-BCN web-service traces had been modeled in the Technical Report "'Living In Barcelona' Li-BCN Workload 2010" http://www.lsi.upc.edu/dept/techreps/llistat_detallat.php?id=1099
 
 ### QuickScheduler
 The included files are the implementation of the schedulers in a real Cloud environment (OpenNebula), after MILP experiments were done. They include QuickScheduler and GreenNebula experiments.
