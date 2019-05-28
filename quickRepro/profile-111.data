@@ -1,0 +1,130 @@
+Time 0
+Attempting VM 111 in atom02 (ISP: 10.1.0.3; load from it: 161.0 vs ext load: 2028.0)
+Attempting VM 111 in atom00 (ISP: 10.1.0.1; load from it: 760.0 vs ext load: 1429.0)
+Attempting VM 111 in atom01 (ISP: 10.1.0.2; load from it: 827.0 vs ext load: 1362.0)
+Attempting VM 111 in atom03 (ISP: 10.1.0.9; load from it: 441.0 vs ext load: 1748.0)
+Time 1
+Attempting VM 111 in atom02 (ISP: 10.1.0.3; load from it: 179.0 vs ext load: 1871.0)
+Attempting VM 111 in atom00 (ISP: 10.1.0.1; load from it: 816.0 vs ext load: 1234.0)
+Attempting VM 111 in atom01 (ISP: 10.1.0.2; load from it: 522.0 vs ext load: 1528.0)
+Attempting VM 111 in atom03 (ISP: 10.1.0.9; load from it: 533.0 vs ext load: 1517.0)
+Time 2
+Attempting VM 111 in atom02 (ISP: 10.1.0.3; load from it: 141.0 vs ext load: 1706.0)
+Attempting VM 111 in atom00 (ISP: 10.1.0.1; load from it: 665.0 vs ext load: 1182.0)
+Attempting VM 111 in atom01 (ISP: 10.1.0.2; load from it: 673.0 vs ext load: 1174.0)
+Attempting VM 111 in atom03 (ISP: 10.1.0.9; load from it: 368.0 vs ext load: 1479.0)
+Time 3
+Attempting VM 111 in atom02 (ISP: 10.1.0.3; load from it: 1492.0 vs ext load: 2124.0)
+Attempting VM 111 in atom00 (ISP: 10.1.0.1; load from it: 889.0 vs ext load: 2727.0)
+Attempting VM 111 in atom01 (ISP: 10.1.0.2; load from it: 665.0 vs ext load: 2951.0)
+Attempting VM 111 in atom03 (ISP: 10.1.0.9; load from it: 570.0 vs ext load: 3046.0)
+Time 4
+Attempting VM 111 in atom02 (ISP: 10.1.0.3; load from it: 206.0 vs ext load: 1676.0)
+Attempting VM 111 in atom00 (ISP: 10.1.0.1; load from it: 981.0 vs ext load: 901.0)
+Attempting VM 111 in atom01 (ISP: 10.1.0.2; load from it: 535.0 vs ext load: 1347.0)
+Attempting VM 111 in atom03 (ISP: 10.1.0.9; load from it: 160.0 vs ext load: 1722.0)
+Time 5
+Attempting VM 111 in atom02 (ISP: 10.1.0.3; load from it: 768.0 vs ext load: 1692.0)
+Attempting VM 111 in atom00 (ISP: 10.1.0.1; load from it: 626.0 vs ext load: 1834.0)
+Attempting VM 111 in atom01 (ISP: 10.1.0.2; load from it: 877.0 vs ext load: 1583.0)
+Attempting VM 111 in atom03 (ISP: 10.1.0.9; load from it: 189.0 vs ext load: 2271.0)
+Time 6
+Attempting VM 111 in atom02 (ISP: 10.1.0.3; load from it: 667.0 vs ext load: 1813.0)
+Attempting VM 111 in atom00 (ISP: 10.1.0.1; load from it: 813.0 vs ext load: 1667.0)
+Attempting VM 111 in atom01 (ISP: 10.1.0.2; load from it: 890.0 vs ext load: 1590.0)
+Attempting VM 111 in atom03 (ISP: 10.1.0.9; load from it: 110.0 vs ext load: 2370.0)
+Time 7
+Attempting VM 111 in atom02 (ISP: 10.1.0.3; load from it: 593.0 vs ext load: 1831.0)
+Attempting VM 111 in atom00 (ISP: 10.1.0.1; load from it: 999.0 vs ext load: 1425.0)
+Attempting VM 111 in atom01 (ISP: 10.1.0.2; load from it: 724.0 vs ext load: 1700.0)
+Attempting VM 111 in atom03 (ISP: 10.1.0.9; load from it: 108.0 vs ext load: 2316.0)
+Time 8
+Attempting VM 111 in atom02 (ISP: 10.1.0.3; load from it: 868.0 vs ext load: 1407.0)
+Attempting VM 111 in atom00 (ISP: 10.1.0.1; load from it: 664.0 vs ext load: 1611.0)
+Attempting VM 111 in atom01 (ISP: 10.1.0.2; load from it: 608.0 vs ext load: 1667.0)
+Attempting VM 111 in atom03 (ISP: 10.1.0.9; load from it: 135.0 vs ext load: 2140.0)
+Time 9
+Attempting VM 111 in atom02 (ISP: 10.1.0.3; load from it: 693.0 vs ext load: 2058.0)
+Attempting VM 111 in atom00 (ISP: 10.1.0.1; load from it: 450.0 vs ext load: 2301.0)
+Attempting VM 111 in atom01 (ISP: 10.1.0.2; load from it: 858.0 vs ext load: 1893.0)
+Attempting VM 111 in atom03 (ISP: 10.1.0.9; load from it: 750.0 vs ext load: 2001.0)
+Time 10
+Attempting VM 111 in atom02 (ISP: 10.1.0.3; load from it: 705.0 vs ext load: 2327.0)
+Attempting VM 111 in atom00 (ISP: 10.1.0.1; load from it: 417.0 vs ext load: 2615.0)
+Attempting VM 111 in atom01 (ISP: 10.1.0.2; load from it: 980.0 vs ext load: 2052.0)
+Attempting VM 111 in atom03 (ISP: 10.1.0.9; load from it: 930.0 vs ext load: 2102.0)
+Time 11
+Attempting VM 111 in atom02 (ISP: 10.1.0.3; load from it: 750.0 vs ext load: 1763.0)
+Attempting VM 111 in atom00 (ISP: 10.1.0.1; load from it: 563.0 vs ext load: 1950.0)
+Attempting VM 111 in atom01 (ISP: 10.1.0.2; load from it: 662.0 vs ext load: 1851.0)
+Attempting VM 111 in atom03 (ISP: 10.1.0.9; load from it: 538.0 vs ext load: 1975.0)
+Time 12
+Attempting VM 111 in atom02 (ISP: 10.1.0.3; load from it: 609.0 vs ext load: 1675.0)
+Attempting VM 111 in atom00 (ISP: 10.1.0.1; load from it: 222.0 vs ext load: 2062.0)
+Attempting VM 111 in atom01 (ISP: 10.1.0.2; load from it: 825.0 vs ext load: 1459.0)
+Attempting VM 111 in atom03 (ISP: 10.1.0.9; load from it: 628.0 vs ext load: 1656.0)
+Time 13
+Attempting VM 111 in atom02 (ISP: 10.1.0.3; load from it: 1071.0 vs ext load: 1592.0)
+Attempting VM 111 in atom00 (ISP: 10.1.0.1; load from it: 227.0 vs ext load: 2436.0)
+Attempting VM 111 in atom01 (ISP: 10.1.0.2; load from it: 708.0 vs ext load: 1955.0)
+Attempting VM 111 in atom03 (ISP: 10.1.0.9; load from it: 657.0 vs ext load: 2006.0)
+Time 14
+Attempting VM 111 in atom02 (ISP: 10.1.0.3; load from it: 845.0 vs ext load: 1484.0)
+Attempting VM 111 in atom00 (ISP: 10.1.0.1; load from it: 93.0 vs ext load: 2236.0)
+Attempting VM 111 in atom01 (ISP: 10.1.0.2; load from it: 858.0 vs ext load: 1471.0)
+Attempting VM 111 in atom03 (ISP: 10.1.0.9; load from it: 533.0 vs ext load: 1796.0)
+Time 15
+Attempting VM 111 in atom02 (ISP: 10.1.0.3; load from it: 845.0 vs ext load: 1622.0)
+Attempting VM 111 in atom00 (ISP: 10.1.0.1; load from it: 161.0 vs ext load: 2306.0)
+Attempting VM 111 in atom01 (ISP: 10.1.0.2; load from it: 598.0 vs ext load: 1869.0)
+Attempting VM 111 in atom03 (ISP: 10.1.0.9; load from it: 863.0 vs ext load: 1604.0)
+Time 16
+Attempting VM 111 in atom02 (ISP: 10.1.0.3; load from it: 507.0 vs ext load: 1371.0)
+Attempting VM 111 in atom00 (ISP: 10.1.0.1; load from it: 180.0 vs ext load: 1698.0)
+Attempting VM 111 in atom01 (ISP: 10.1.0.2; load from it: 332.0 vs ext load: 1546.0)
+Attempting VM 111 in atom03 (ISP: 10.1.0.9; load from it: 859.0 vs ext load: 1019.0)
+Time 17
+Attempting VM 111 in atom02 (ISP: 10.1.0.3; load from it: 1109.0 vs ext load: 1410.0)
+Attempting VM 111 in atom00 (ISP: 10.1.0.1; load from it: 138.0 vs ext load: 2381.0)
+Attempting VM 111 in atom01 (ISP: 10.1.0.2; load from it: 550.0 vs ext load: 1969.0)
+Attempting VM 111 in atom03 (ISP: 10.1.0.9; load from it: 722.0 vs ext load: 1797.0)
+Time 18
+Attempting VM 111 in atom02 (ISP: 10.1.0.3; load from it: 453.0 vs ext load: 2453.0)
+Attempting VM 111 in atom00 (ISP: 10.1.0.1; load from it: 1491.0 vs ext load: 1415.0)
+Attempting VM 111 in atom01 (ISP: 10.1.0.2; load from it: 313.0 vs ext load: 2593.0)
+Attempting VM 111 in atom03 (ISP: 10.1.0.9; load from it: 649.0 vs ext load: 2257.0)
+Time 19
+Attempting VM 111 in atom02 (ISP: 10.1.0.3; load from it: 531.0 vs ext load: 1316.0)
+Attempting VM 111 in atom00 (ISP: 10.1.0.1; load from it: 207.0 vs ext load: 1640.0)
+Attempting VM 111 in atom01 (ISP: 10.1.0.2; load from it: 205.0 vs ext load: 1642.0)
+Attempting VM 111 in atom03 (ISP: 10.1.0.9; load from it: 904.0 vs ext load: 943.0)
+Time 20
+Attempting VM 111 in atom02 (ISP: 10.1.0.3; load from it: 405.0 vs ext load: 1921.0)
+Attempting VM 111 in atom00 (ISP: 10.1.0.1; load from it: 769.0 vs ext load: 1557.0)
+Attempting VM 111 in atom01 (ISP: 10.1.0.2; load from it: 129.0 vs ext load: 2197.0)
+Attempting VM 111 in atom03 (ISP: 10.1.0.9; load from it: 1023.0 vs ext load: 1303.0)
+Time 21
+Attempting VM 111 in atom02 (ISP: 10.1.0.3; load from it: 545.0 vs ext load: 1479.0)
+Attempting VM 111 in atom00 (ISP: 10.1.0.1; load from it: 629.0 vs ext load: 1395.0)
+Attempting VM 111 in atom01 (ISP: 10.1.0.2; load from it: 155.0 vs ext load: 1869.0)
+Attempting VM 111 in atom03 (ISP: 10.1.0.9; load from it: 695.0 vs ext load: 1329.0)
+Time 22
+Attempting VM 111 in atom02 (ISP: 10.1.0.3; load from it: 188.0 vs ext load: 1507.0)
+Attempting VM 111 in atom00 (ISP: 10.1.0.1; load from it: 608.0 vs ext load: 1087.0)
+Attempting VM 111 in atom01 (ISP: 10.1.0.2; load from it: 71.0 vs ext load: 1624.0)
+Attempting VM 111 in atom03 (ISP: 10.1.0.9; load from it: 828.0 vs ext load: 867.0)
+Time 23
+Attempting VM 111 in atom02 (ISP: 10.1.0.3; load from it: 231.0 vs ext load: 1673.0)
+Attempting VM 111 in atom00 (ISP: 10.1.0.1; load from it: 850.0 vs ext load: 1054.0)
+Attempting VM 111 in atom01 (ISP: 10.1.0.2; load from it: 130.0 vs ext load: 1774.0)
+Attempting VM 111 in atom03 (ISP: 10.1.0.9; load from it: 693.0 vs ext load: 1211.0)
+Time 24
+Attempting VM 111 in atom02 (ISP: 10.1.0.3; load from it: 12.0 vs ext load: 1984.0)
+Attempting VM 111 in atom00 (ISP: 10.1.0.1; load from it: 406.0 vs ext load: 1590.0)
+Attempting VM 111 in atom01 (ISP: 10.1.0.2; load from it: 815.0 vs ext load: 1181.0)
+Attempting VM 111 in atom03 (ISP: 10.1.0.9; load from it: 763.0 vs ext load: 1233.0)
+Time 25
+Attempting VM 111 in atom02 (ISP: 10.1.0.3; load from it: 0.0 vs ext load: 0.0)
+Attempting VM 111 in atom00 (ISP: 10.1.0.1; load from it: 0.0 vs ext load: 0.0)
+Attempting VM 111 in atom01 (ISP: 10.1.0.2; load from it: 0.0 vs ext load: 0.0)
+Attempting VM 111 in atom03 (ISP: 10.1.0.9; load from it: 0.0 vs ext load: 0.0)

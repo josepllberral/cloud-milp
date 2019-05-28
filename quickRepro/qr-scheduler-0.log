@@ -1,0 +1,410 @@
+scheduler> Found ISP for atom00 with IP 10.1.0.1
+scheduler> Found ISP for atom01 with IP 10.1.0.2
+scheduler> Found ISP for atom02 with IP 10.1.0.3
+scheduler> Found ISP for atom03 with IP 10.1.0.9
+scheduler> Getting IP for machine one-111 : 172.20.200.154
+scheduler> Built proxy for 111 with IP 172.20.200.154:80 at atom01:8111 (Local ISP: 10.1.0.1 - atom00)
+scheduler> Rescuing IP for machine one-111 : 172.20.200.154
+scheduler-BestFit> Iteration: 1 2013/01/04 11:57:40
+scheduler-BestFit> A VM 111 in ACTIVE status found at atom00 -> (per 15s): [ RTPR: 0.15937234042553192 (Local: 0.02855809309100607 Remote:0.13081424733452585); Req: 11.643617021276595 (Local: 4.042553191489362 Remote: 7.601063829787234); Queue: 0.0851063829787234; Served: 11.643617021276595; BPR: 44558.80319148936]
+Trying 0 (111) [11.643617021276595 44558.80319148936 60.0] 21.836170212765957 (21.836170212765957) 541.0 (512)
+Attempting VM 111 in atom02 (ISP: 10.1.0.3; load from it: 161.0 vs ext load: 2028.0)
+Attempting VM 111 in atom02 (RTF: 0.06732735996867747 SLA: 0.36302933368136137 PWR: 29.1 MIG:3.2465277777777785E-5 BNF:0.05906352144805366)
+Attempting VM 111 in atom00 (ISP: 10.1.0.1; load from it: 760.0 vs ext load: 1429.0)
+Attempting VM 111 in atom00 (RTF: 0.04744122159528605 SLA: 0.583986426719044 PWR: 29.1 MIG:0.0 BNF:0.0966586925422375)
+Attempting VM 111 in atom01 (ISP: 10.1.0.2; load from it: 827.0 vs ext load: 1362.0)
+Attempting VM 111 in atom01 (RTF: 0.045216895600265636 SLA: 0.6087011599970484 PWR: 29.1 MIG:3.2465277777777785E-5 BNF:0.10082773192172047)
+Attempting VM 111 in atom03 (ISP: 10.1.0.9; load from it: 441.0 vs ext load: 1748.0)
+Attempting VM 111 in atom03 (RTF: 0.05803166924321904 SLA: 0.46631478618645505 PWR: 29.1 MIG:3.2465277777777785E-5 BNF:0.07662204837391959)
+For VM 111: selected 14 (atom01) 21.836170212765957 541.0
+scheduler-BestFit> A VM 111 in ACTIVE status found...
+scheduler-BestFit> The VM 111 is migrated from atom00 to atom01
+CNNNNNNNNNNNNNNNNNNNNNNNNNNNNNscheduler> Getting IP for machine one-111 : 172.20.200.154
+scheduler-BestFit> Iteration: 2 2013/01/04 12:59:25
+scheduler-BestFit> A VM 111 in ACTIVE status found at atom01 -> (per 15s): [ RTPR: 0.13586666666666666 (Local: 0.015342975111001703 Remote:0.12052369155566496); Req: 8.541666666666666 (Local: 3.4 Remote: 5.141666666666667); Queue: 28.558333333333334; Served: 8.416666666666666; BPR: 34835.0875]
+Trying 0 (111) [8.541666666666666 34835.0875 113.33333333333333] 0.9216666666666667 (0.9216666666666667) 20.0 (512)
+Attempting VM 111 in atom02 (ISP: 10.1.0.3; load from it: 179.0 vs ext load: 1871.0)
+Attempting VM 111 in atom02 (RTF: 0.04856023841537536 SLA: 0.5715529064958293 PWR: 29.1 MIG:3.2465277777777785E-5 BNF:0.09451252882651322)
+Attempting VM 111 in atom00 (ISP: 10.1.0.1; load from it: 816.0 vs ext load: 1234.0)
+Attempting VM 111 in atom00 (RTF: 0.032027436774224045 SLA: 0.7552507025086217 PWR: 29.1 MIG:3.2465277777777785E-5 BNF:0.12574115414868792)
+Attempting VM 111 in atom01 (ISP: 10.1.0.2; load from it: 522.0 vs ext load: 1528.0)
+Attempting VM 111 in atom01 (RTF: 0.03965796060860157 SLA: 0.6704671043488715 PWR: 29.1 MIG:0.0 BNF:0.11136040773930816)
+Attempting VM 111 in atom03 (ISP: 10.1.0.9; load from it: 533.0 vs ext load: 1517.0)
+Attempting VM 111 in atom03 (RTF: 0.03937246481887997 SLA: 0.6736392797902226 PWR: 29.1 MIG:3.2465277777777785E-5 BNF:0.11186721228656007)
+For VM 111: selected 16 (atom00) 0.9216666666666667 20.0
+scheduler-BestFit> A VM 111 in ACTIVE status found...
+scheduler-BestFit> The VM 111 is migrated from atom01 to atom00
+NNNNNNNNNNNNscheduler> Rescuing IP for machine one-111 : 172.20.200.154
+scheduler> Getting IP for machine one-111 : 172.20.200.154
+scheduler-BestFit> Iteration: 3 2013/01/04 14:01:24
+scheduler-BestFit> A VM 111 in ACTIVE status found at atom00 -> (per 15s): [ RTPR: 0.1384375 (Local: 0.01030270562293395 Remote:0.12813479437706604); Req: 7.695833333333334 (Local: 2.7708333333333335 Remote: 4.925); Queue: 41.416666666666664; Served: 7.645833333333333; BPR: 39095.395833333336]
+Trying 0 (111) [7.695833333333334 39095.395833333336 0.0] 27.983333333333253 (27.983333333333253) 500.0 (512)
+Attempting VM 111 in atom02 (ISP: 10.1.0.3; load from it: 141.0 vs ext load: 1706.0)
+Attempting VM 111 in atom02 (RTF: 0.04969294763480624 SLA: 0.558967248502153 PWR: 29.1 MIG:3.2465277777777785E-5 BNF:0.09237296696758823)
+Attempting VM 111 in atom00 (ISP: 10.1.0.1; load from it: 665.0 vs ext load: 1182.0)
+Attempting VM 111 in atom00 (RTF: 0.034429697599261996 SLA: 0.7285589155637556 PWR: 29.1 MIG:0.0 BNF:0.12123601564583847)
+Attempting VM 111 in atom01 (ISP: 10.1.0.2; load from it: 673.0 vs ext load: 1174.0)
+Attempting VM 111 in atom01 (RTF: 0.034196670881162086 SLA: 0.7311481013204213 PWR: 29.1 MIG:3.2465277777777785E-5 BNF:0.12164371194669385)
+Attempting VM 111 in atom03 (ISP: 10.1.0.9; load from it: 368.0 vs ext load: 1479.0)
+Attempting VM 111 in atom03 (RTF: 0.043080814508721234 SLA: 0.6324353943475418 PWR: 29.1 MIG:3.2465277777777785E-5 BNF:0.10486255176130434)
+For VM 111: selected 14 (atom01) 27.983333333333253 500.0
+scheduler-BestFit> A VM 111 in ACTIVE status found...
+scheduler-BestFit> The VM 111 is migrated from atom00 to atom01
+CNNNNNNNNNNNNNNNNNNNNNNNNNNNNNscheduler> Getting IP for machine one-111 : 172.20.200.154
+scheduler-BestFit> Iteration: 4 2013/01/04 15:03:10
+scheduler-BestFit> A VM 111 in ACTIVE status found at atom01 -> (per 15s): [ RTPR: 0.39794999999999997 (Local: 0.24674089932521467 Remote:0.1512091006747853); Req: 15.066666666666666 (Local: 3.7041666666666666 Remote: 11.3625); Queue: 70.8625; Served: 14.941666666666666; BPR: 44822.479166666664]
+Trying 0 (111) [15.066666666666666 44822.479166666664 0.0] 1.215 (1.215) 26.0 (512)
+Attempting VM 111 in atom02 (ISP: 10.1.0.3; load from it: 1492.0 vs ext load: 2124.0)
+Attempting VM 111 in atom02 (RTF: 0.07093172203749418 SLA: 0.3229808662500647 PWR: 29.1 MIG:3.2465277777777785E-5 BNF:0.052255281984733226)
+Attempting VM 111 in atom00 (ISP: 10.1.0.1; load from it: 889.0 vs ext load: 2727.0)
+Attempting VM 111 in atom00 (RTF: 0.09106911770068109 SLA: 0.09923202554798782 PWR: 29.1 MIG:3.2465277777777785E-5 BNF:0.014217979065380153)
+Attempting VM 111 in atom01 (ISP: 10.1.0.2; load from it: 665.0 vs ext load: 2951.0)
+Attempting VM 111 in atom01 (RTF: 0.09854967595698932 SLA: 0.016114711589007458 PWR: 29.1 MIG:0.0 BNF:1.205009701312678E-4)
+Attempting VM 111 in atom03 (ISP: 10.1.0.9; load from it: 570.0 vs ext load: 3046.0)
+Attempting VM 111 in atom03 (RTF: 0.10172223414604861 SLA: 0.0 PWR: 29.1 MIG:3.2465277777777785E-5 BNF:-0.002651465277777778)
+For VM 111: selected 17 (atom02) 1.215 26.0
+scheduler-BestFit> A VM 111 in ACTIVE status found...
+scheduler-BestFit> The VM 111 is migrated from atom01 to atom02
+NNNNNNNNNNNNscheduler> Getting IP for machine one-111 : 172.20.200.154
+scheduler> Getting IP for machine one-111 : 172.20.200.154
+scheduler-BestFit> Iteration: 5 2013/01/04 16:05:02
+scheduler-BestFit> A VM 111 in ACTIVE status found at atom02 -> (per 15s): [ RTPR: 0.17964166666666667 (Local: 0.001752347657218517 Remote:0.17788931900944815); Req: 7.841666666666667 (Local: 0.875 Remote: 6.966666666666667); Queue: 83.95416666666667; Served: 7.791666666666667; BPR: 39688.0]
+Trying 0 (111) [7.841666666666667 39688.0 0.0] 0.0 (0.0) 0.0 (512)
+Attempting VM 111 in atom02 (ISP: 10.1.0.3; load from it: 206.0 vs ext load: 1676.0)
+Attempting VM 111 in atom02 (RTF: 0.04955909252166748 SLA: 0.5604545275370281 PWR: 0.0 MIG:0.0 BNF:0.09527726968129478)
+Attempting VM 111 in atom00 (ISP: 10.1.0.1; load from it: 981.0 vs ext load: 901.0)
+Attempting VM 111 in atom00 (RTF: 0.02664244771003723 SLA: 0.8150839143329197 PWR: 0.0 MIG:3.2465277777777785E-5 BNF:0.13853180015881858)
+Attempting VM 111 in atom01 (ISP: 10.1.0.2; load from it: 535.0 vs ext load: 1347.0)
+Attempting VM 111 in atom01 (RTF: 0.039830607175827024 SLA: 0.6685488091574776 PWR: 0.0 MIG:3.2465277777777785E-5 BNF:0.11362083227899342)
+Attempting VM 111 in atom03 (ISP: 10.1.0.9; load from it: 160.0 vs ext load: 1722.0)
+Attempting VM 111 in atom03 (RTF: 0.05091930627822876 SLA: 0.5453410413530138 PWR: 0.0 MIG:3.2465277777777785E-5 BNF:0.09267551175223457)
+For VM 111: selected 16 (atom00) 0.0 0.0
+scheduler-BestFit> A VM 111 in ACTIVE status found...
+scheduler-BestFit> The VM 111 is migrated from atom02 to atom00
+NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNscheduler> Getting IP for machine one-111 : 172.20.200.154
+scheduler-BestFit> Iteration: 6 2013/01/04 17:06:48
+scheduler-BestFit> A VM 111 in ACTIVE status found at atom00 -> (per 15s): [ RTPR: 0.15800416666666667 (Local: 0.02025060335344417 Remote:0.1377535633132225); Req: 10.25 (Local: 3.2 Remote: 7.05); Queue: 127.37083333333334; Served: 10.058333333333334; BPR: 36664.8]
+Trying 0 (111) [10.25 36664.8 0.0] 31.633333333333265 (31.633333333333265) 486.0 (512)
+Attempting VM 111 in atom02 (ISP: 10.1.0.3; load from it: 768.0 vs ext load: 1692.0)
+Attempting VM 111 in atom02 (RTF: 0.0462210488319397 SLA: 0.5975439018673367 PWR: 29.1 MIG:3.2465277777777785E-5 BNF:0.09893099803966948)
+Attempting VM 111 in atom00 (ISP: 10.1.0.1; load from it: 626.0 vs ext load: 1834.0)
+Attempting VM 111 in atom00 (RTF: 0.05010012030601502 SLA: 0.5544431077109442 PWR: 29.1 MIG:0.0 BNF:0.09163632831086052)
+Attempting VM 111 in atom01 (ISP: 10.1.0.2; load from it: 877.0 vs ext load: 1583.0)
+Attempting VM 111 in atom01 (RTF: 0.04324345171451569 SLA: 0.630628314283159 PWR: 29.1 MIG:3.2465277777777785E-5 BNF:0.10455534815035926)
+Attempting VM 111 in atom03 (ISP: 10.1.0.9; load from it: 189.0 vs ext load: 2271.0)
+Attempting VM 111 in atom03 (RTF: 0.062037826180458076 SLA: 0.4218019313282436 PWR: 29.1 MIG:3.2465277777777785E-5 BNF:0.06905486304802363)
+For VM 111: selected 14 (atom01) 31.633333333333265 486.0
+scheduler-BestFit> A VM 111 in ACTIVE status found...
+scheduler-BestFit> The VM 111 is migrated from atom00 to atom01
+CNNNNNNNNNNNNNNNNNNNNNNNNNscheduler> Rescuing IP for machine one-111 : 172.20.200.154
+scheduler-BestFit> Iteration: 7 2013/01/04 18:08:36
+scheduler-BestFit> A VM 111 in ACTIVE status found at atom01 -> (per 15s): [ RTPR: 0.16240833333333332 (Local: 0.01592156790918947 Remote:0.14648676542414385); Req: 10.345833333333333 (Local: 2.779166666666667 Remote: 7.566666666666666); Queue: 154.78333333333333; Served: 10.2375; BPR: 37621.941666666666]
+Trying 0 (111) [10.345833333333333 37621.941666666666 0.0] 1.0766666666666667 (1.0766666666666667) 22.0 (512)
+Attempting VM 111 in atom02 (ISP: 10.1.0.3; load from it: 667.0 vs ext load: 1813.0)
+Attempting VM 111 in atom02 (RTF: 0.05081935244922836 SLA: 0.5464516394530182 PWR: 29.1 MIG:3.2465277777777785E-5 BNF:0.09024531342923532)
+Attempting VM 111 in atom00 (ISP: 10.1.0.1; load from it: 813.0 vs ext load: 1667.0)
+Attempting VM 111 in atom00 (RTF: 0.04672689494366447 SLA: 0.5919233895148392 PWR: 29.1 MIG:3.2465277777777785E-5 BNF:0.0979755109397449)
+Attempting VM 111 in atom01 (ISP: 10.1.0.2; load from it: 890.0 vs ext load: 1590.0)
+Attempting VM 111 in atom01 (RTF: 0.044568544067442414 SLA: 0.6159050659173065 PWR: 29.1 MIG:0.0 BNF:0.10208486120594212)
+Attempting VM 111 in atom03 (ISP: 10.1.0.9; load from it: 110.0 vs ext load: 2370.0)
+Attempting VM 111 in atom03 (RTF: 0.06643235813826323 SLA: 0.3729737984637419 PWR: 29.1 MIG:3.2465277777777785E-5 BNF:0.060754080461058346)
+For VM 111: selected 14 (atom01) 1.0766666666666667 22.0
+scheduler-BestFit> A VM 111 in ACTIVE status found...
+scheduler-BestFit> The VM 111 stays at atom01 (atom01)
+scheduler> Rescuing IP for machine one-111 : 172.20.200.154
+scheduler> Rescuing IP for machine one-111 : 172.20.200.154
+scheduler-BestFit> Iteration: 8 2013/01/04 19:09:03
+scheduler-BestFit> A VM 111 in ACTIVE status found at atom01 -> (per 15s): [ RTPR: 0.15365833333333334 (Local: 0.01930154791429975 Remote:0.1343567854190336); Req: 10.1 (Local: 3.325 Remote: 6.775); Queue: 156.1875; Served: 10.1; BPR: 39298.47083333333]
+Trying 0 (111) [10.1 39298.47083333333 0.0] 0.0 (0.0) 0.0 (512)
+Attempting VM 111 in atom02 (ISP: 10.1.0.3; load from it: 593.0 vs ext load: 1831.0)
+Attempting VM 111 in atom02 (RTF: 0.05361102528559665 SLA: 0.5154330523822594 PWR: 0.0 MIG:3.2465277777777785E-5 BNF:0.08759115362720633)
+Attempting VM 111 in atom00 (ISP: 10.1.0.1; load from it: 999.0 vs ext load: 1425.0)
+Attempting VM 111 in atom00 (RTF: 0.04172349045984447 SLA: 0.6475167726683948 PWR: 0.0 MIG:3.2465277777777785E-5 BNF:0.11004538607584934)
+Attempting VM 111 in atom01 (ISP: 10.1.0.2; load from it: 724.0 vs ext load: 1700.0)
+Attempting VM 111 in atom01 (RTF: 0.04977539212753375 SLA: 0.5580511985829584 PWR: 0.0 MIG:0.0 BNF:0.09486870375910293)
+Attempting VM 111 in atom03 (ISP: 10.1.0.9; load from it: 108.0 vs ext load: 2316.0)
+Attempting VM 111 in atom03 (RTF: 0.06781165186315775 SLA: 0.3576483126315805 PWR: 0.0 MIG:3.2465277777777785E-5 BNF:0.06076774786959091)
+For VM 111: selected 16 (atom00) 0.0 0.0
+scheduler-BestFit> A VM 111 in ACTIVE status found...
+scheduler-BestFit> The VM 111 is migrated from atom01 to atom00
+NNNNNNNNNNNNNNNNNNNNscheduler> Rescuing IP for machine one-111 : 172.20.200.154
+scheduler> Getting IP for machine one-111 : 172.20.200.154
+scheduler-BestFit> Iteration: 9 2013/01/04 20:10:57
+scheduler-BestFit> A VM 111 in ACTIVE status found at atom00 -> (per 15s): [ RTPR: 0.16459166666666666 (Local: 0.01750695128980903 Remote:0.14708471537685763); Req: 9.475 (Local: 2.5166666666666666 Remote: 6.958333333333333); Queue: 175.12916666666666; Served: 9.391666666666667; BPR: 39921.38333333333]
+Trying 0 (111) [9.475 39921.38333333333 0.0] 27.87500000000005 (27.87500000000005) 499.0 (512)
+Attempting VM 111 in atom02 (ISP: 10.1.0.3; load from it: 868.0 vs ext load: 1407.0)
+Attempting VM 111 in atom02 (RTF: 0.04184945400804281 SLA: 0.6461171776884131 PWR: 29.1 MIG:3.2465277777777785E-5 BNF:0.10718845492925247)
+Attempting VM 111 in atom00 (ISP: 10.1.0.1; load from it: 664.0 vs ext load: 1611.0)
+Attempting VM 111 in atom00 (RTF: 0.04791717868298292 SLA: 0.5786980146335232 PWR: 29.1 MIG:0.0 BNF:0.09575966248769896)
+Attempting VM 111 in atom01 (ISP: 10.1.0.2; load from it: 608.0 vs ext load: 1667.0)
+Attempting VM 111 in atom01 (RTF: 0.049582828593750794 SLA: 0.560190793402769 PWR: 29.1 MIG:3.2465277777777785E-5 BNF:0.09258096960069295)
+Attempting VM 111 in atom03 (ISP: 10.1.0.9; load from it: 135.0 vs ext load: 2140.0)
+Attempting VM 111 in atom03 (RTF: 0.06365162159005801 SLA: 0.4038708712215777 PWR: 29.1 MIG:3.2465277777777785E-5 BNF:0.06600658282989044)
+For VM 111: selected 17 (atom02) 27.87500000000005 499.0
+scheduler-BestFit> A VM 111 in ACTIVE status found...
+scheduler-BestFit> The VM 111 is migrated from atom00 to atom02
+CNNNNNNNNNNNNNNNNNNNNNNNscheduler> Rescuing IP for machine one-111 : 172.20.200.154
+scheduler-BestFit> Iteration: 10 2013/01/04 21:12:45
+scheduler-BestFit> A VM 111 in ACTIVE status found at atom02 -> (per 15s): [ RTPR: 0.1782416666666667 (Local: 0.010590110841344452 Remote:0.16765155582532223); Req: 11.4625 (Local: 1.875 Remote: 9.5875); Queue: 199.3125; Served: 11.3625; BPR: 51367.70416666667]
+Trying 0 (111) [11.4625 51367.70416666667 0.0] 0.6283333333333334 (0.6283333333333334) 13.0 (512)
+Attempting VM 111 in atom02 (ISP: 10.1.0.3; load from it: 693.0 vs ext load: 2058.0)
+Attempting VM 111 in atom02 (RTF: 0.0787636154703796 SLA: 0.2359598281068932 PWR: 29.1 MIG:0.0 BNF:0.03749417077817185)
+Attempting VM 111 in atom00 (ISP: 10.1.0.1; load from it: 450.0 vs ext load: 2301.0)
+Attempting VM 111 in atom00 (RTF: 0.08806369251571597 SLA: 0.1326256387142669 PWR: 29.1 MIG:3.2465277777777785E-5 BNF:0.019894893303647597)
+Attempting VM 111 in atom01 (ISP: 10.1.0.2; load from it: 858.0 vs ext load: 1893.0)
+Attempting VM 111 in atom01 (RTF: 0.07244874834083022 SLA: 0.3061250184352198 PWR: 29.1 MIG:3.2465277777777785E-5 BNF:0.04938978785620959)
+Attempting VM 111 in atom03 (ISP: 10.1.0.9; load from it: 750.0 vs ext load: 2001.0)
+Attempting VM 111 in atom03 (RTF: 0.07658211591653527 SLA: 0.26019871203849687 PWR: 29.1 MIG:3.2465277777777785E-5 BNF:0.04158231576876669)
+For VM 111: selected 14 (atom01) 0.6283333333333334 13.0
+scheduler-BestFit> A VM 111 in ACTIVE status found...
+scheduler-BestFit> The VM 111 is migrated from atom02 to atom01
+CNNNNNNNNNNNNNNNNNNNNNNNNNscheduler> Getting IP for machine one-111 : 172.20.200.154
+scheduler-BestFit> Iteration: 11 2013/01/04 22:14:33
+scheduler-BestFit> A VM 111 in ACTIVE status found at atom01 -> (per 15s): [ RTPR: 0.20387916666666667 (Local: 0.031070447754881908 Remote:0.17280871891178476); Req: 12.633333333333333 (Local: 1.7375 Remote: 10.895833333333334); Queue: 224.94166666666666; Served: 12.525; BPR: 38841.354166666664]
+Trying 0 (111) [12.633333333333333 38841.354166666664 0.0] 0.0 (0.0) 0.0 (512)
+Attempting VM 111 in atom02 (ISP: 10.1.0.3; load from it: 705.0 vs ext load: 2327.0)
+Attempting VM 111 in atom02 (RTF: 0.06734120186107853 SLA: 0.36287553487690516 PWR: 0.0 MIG:3.2465277777777785E-5 BNF:0.06165637565129611)
+Attempting VM 111 in atom00 (ISP: 10.1.0.1; load from it: 417.0 vs ext load: 2615.0)
+Attempting VM 111 in atom00 (RTF: 0.07567565228479603 SLA: 0.2702705301689329 PWR: 0.0 MIG:3.2465277777777785E-5 BNF:0.045913524850940815)
+Attempting VM 111 in atom01 (ISP: 10.1.0.2; load from it: 980.0 vs ext load: 2052.0)
+Attempting VM 111 in atom01 (RTF: 0.05938295926898718 SLA: 0.4513004525668092 PWR: 0.0 MIG:0.0 BNF:0.07672107693635756)
+Attempting VM 111 in atom03 (ISP: 10.1.0.9; load from it: 930.0 vs ext load: 2102.0)
+Attempting VM 111 in atom03 (RTF: 0.06082991246754924 SLA: 0.4352231948050084 PWR: 0.0 MIG:3.2465277777777785E-5 BNF:0.07395547783907365)
+For VM 111: selected 14 (atom01) 0.0 0.0
+scheduler-BestFit> A VM 111 in ACTIVE status found...
+scheduler-BestFit> The VM 111 stays at atom01 (atom01)
+scheduler> Rescuing IP for machine one-111 : 172.20.200.154
+scheduler> Getting IP for machine one-111 : 172.20.200.154
+scheduler-BestFit> Iteration: 12 2013/01/04 23:14:59
+scheduler-BestFit> A VM 111 in ACTIVE status found at atom01 -> (per 15s): [ RTPR: 0.17317083333333333 (Local: 0.030608064638035587 Remote:0.14256276869529774); Req: 10.408333333333333 (Local: 3.0 Remote: 7.408333333333333); Queue: 226.15; Served: 10.408333333333333; BPR: 37844.07083333333]
+Trying 0 (111) [10.408333333333333 37844.07083333333 0.0] 0.0 (0.0) 0.0 (512)
+Attempting VM 111 in atom02 (ISP: 10.1.0.3; load from it: 750.0 vs ext load: 1763.0)
+Attempting VM 111 in atom02 (RTF: 0.04970960086522003 SLA: 0.5587822126086663 PWR: 0.0 MIG:3.2465277777777785E-5 BNF:0.0949605108656955)
+Attempting VM 111 in atom00 (ISP: 10.1.0.1; load from it: 563.0 vs ext load: 1950.0)
+Attempting VM 111 in atom00 (RTF: 0.05498225847259164 SLA: 0.5001971280823152 PWR: 0.0 MIG:3.2465277777777785E-5 BNF:0.0850010464962158)
+Attempting VM 111 in atom01 (ISP: 10.1.0.2; load from it: 662.0 vs ext load: 1851.0)
+Attempting VM 111 in atom01 (RTF: 0.052190851503983136 SLA: 0.531212761066854 PWR: 0.0 MIG:0.0 BNF:0.09030616938136518)
+Attempting VM 111 in atom03 (ISP: 10.1.0.9; load from it: 538.0 vs ext load: 1975.0)
+Attempting VM 111 in atom03 (RTF: 0.05568715922224025 SLA: 0.4923648975306639 PWR: 0.0 MIG:3.2465277777777785E-5 BNF:0.08366956730243509)
+For VM 111: selected 17 (atom02) 0.0 0.0
+scheduler-BestFit> A VM 111 in ACTIVE status found...
+scheduler-BestFit> The VM 111 is migrated from atom01 to atom02
+CNNNNNNscheduler> Rescuing IP for machine one-111 : 172.20.200.154
+scheduler> Getting IP for machine one-111 : 172.20.200.154
+scheduler-BestFit> Iteration: 13 2013/01/05 00:16:53
+scheduler-BestFit> A VM 111 in ACTIVE status found at atom02 -> (per 15s): [ RTPR: 0.16855416666666667 (Local: 0.021310789039125616 Remote:0.14724337762754106); Req: 9.516666666666667 (Local: 2.5208333333333335 Remote: 6.995833333333334); Queue: 232.88333333333333; Served: 9.4875; BPR: 42324.975]
+Trying 0 (111) [9.516666666666667 42324.975 0.0] 0.0 (0.0) 0.0 (512)
+Attempting VM 111 in atom02 (ISP: 10.1.0.3; load from it: 609.0 vs ext load: 1675.0)
+Attempting VM 111 in atom02 (RTF: 0.05282039428129792 SLA: 0.524217841318912 PWR: 0.0 MIG:0.0 BNF:0.08911703302421504)
+Attempting VM 111 in atom00 (ISP: 10.1.0.1; load from it: 222.0 vs ext load: 2062.0)
+Attempting VM 111 in atom00 (RTF: 0.065024270452559 SLA: 0.3886192171937889 PWR: 0.0 MIG:3.2465277777777785E-5 BNF:0.06603280164516634)
+Attempting VM 111 in atom01 (ISP: 10.1.0.2; load from it: 825.0 vs ext load: 1459.0)
+Attempting VM 111 in atom01 (RTF: 0.04600892851129174 SLA: 0.5999007943189807 PWR: 0.0 MIG:3.2465277777777785E-5 BNF:0.10195066975644894)
+Attempting VM 111 in atom03 (ISP: 10.1.0.9; load from it: 628.0 vs ext load: 1656.0)
+Attempting VM 111 in atom03 (RTF: 0.052221237570047374 SLA: 0.5308751381105847 PWR: 0.0 MIG:3.2465277777777785E-5 BNF:0.09021630820102162)
+For VM 111: selected 14 (atom01) 0.0 0.0
+scheduler-BestFit> A VM 111 in ACTIVE status found...
+scheduler-BestFit> The VM 111 is migrated from atom02 to atom01
+CNNNNNNNNNNNNNNNNNNNNNNscheduler> Getting IP for machine one-111 : 172.20.200.154
+scheduler-BestFit> Iteration: 14 2013/01/05 01:18:40
+scheduler-BestFit> A VM 111 in ACTIVE status found at atom01 -> (per 15s): [ RTPR: 0.15514583333333334 (Local: 0.03539283288032005 Remote:0.11975300045301329); Req: 11.095833333333333 (Local: 4.4625 Remote: 6.633333333333334); Queue: 254.84166666666667; Served: 11.004166666666666; BPR: 38160.879166666666]
+Trying 0 (111) [11.095833333333333 38160.879166666666 0.0] 0.0 (0.0) 0.0 (512)
+Attempting VM 111 in atom02 (ISP: 10.1.0.3; load from it: 1071.0 vs ext load: 1592.0)
+Attempting VM 111 in atom02 (RTF: 0.045263856376210845 SLA: 0.6081793735976573 PWR: 0.0 MIG:3.2465277777777785E-5 BNF:0.10335802823382396)
+Attempting VM 111 in atom00 (ISP: 10.1.0.1; load from it: 227.0 vs ext load: 2436.0)
+Attempting VM 111 in atom00 (RTF: 0.06926052395254373 SLA: 0.34154973386062526 PWR: 0.0 MIG:3.2465277777777785E-5 BNF:0.05803098947852852)
+Attempting VM 111 in atom01 (ISP: 10.1.0.2; load from it: 708.0 vs ext load: 1955.0)
+Attempting VM 111 in atom01 (RTF: 0.055584697999681035 SLA: 0.49350335555909963 PWR: 0.0 MIG:0.0 BNF:0.08389557044504695)
+Attempting VM 111 in atom03 (ISP: 10.1.0.9; load from it: 657.0 vs ext load: 2006.0)
+Attempting VM 111 in atom03 (RTF: 0.05703473359967272 SLA: 0.4773918488925254 PWR: 0.0 MIG:3.2465277777777785E-5 BNF:0.08112414903395154)
+For VM 111: selected 17 (atom02) 0.0 0.0
+scheduler-BestFit> A VM 111 in ACTIVE status found...
+scheduler-BestFit> The VM 111 is migrated from atom01 to atom02
+NNNNNNNNNNNNNscheduler> Getting IP for machine one-111 : 172.20.200.154
+scheduler> Rescuing IP for machine one-111 : 172.20.200.154
+scheduler-BestFit> Iteration: 15 2013/01/05 02:20:35
+scheduler-BestFit> A VM 111 in ACTIVE status found at atom02 -> (per 15s): [ RTPR: 0.16094583333333332 (Local: 0.03331300403022952 Remote:0.1276328293031038); Req: 9.704166666666667 (Local: 3.5208333333333335 Remote: 6.183333333333334); Queue: 268.825; Served: 9.65; BPR: 42579.479166666664]
+Trying 0 (111) [9.704166666666667 42579.479166666664 0.0] 0.0 (0.0) 0.0 (512)
+Attempting VM 111 in atom02 (ISP: 10.1.0.3; load from it: 845.0 vs ext load: 1484.0)
+Attempting VM 111 in atom02 (RTF: 0.04707868924985329 SLA: 0.588014563890519 PWR: 0.0 MIG:0.0 BNF:0.09996247586138823)
+Attempting VM 111 in atom00 (ISP: 10.1.0.1; load from it: 93.0 vs ext load: 2236.0)
+Attempting VM 111 in atom00 (RTF: 0.07093527571608622 SLA: 0.32294138093237523 PWR: 0.0 MIG:3.2465277777777785E-5 BNF:0.05486756948072602)
+Attempting VM 111 in atom01 (ISP: 10.1.0.2; load from it: 858.0 vs ext load: 1471.0)
+Attempting VM 111 in atom01 (RTF: 0.04666627485615511 SLA: 0.592596946042721 PWR: 0.0 MIG:3.2465277777777785E-5 BNF:0.10070901554948479)
+Attempting VM 111 in atom03 (ISP: 10.1.0.9; load from it: 533.0 vs ext load: 1796.0)
+Attempting VM 111 in atom03 (RTF: 0.05697663469860951 SLA: 0.47803739223767217 PWR: 0.0 MIG:3.2465277777777785E-5 BNF:0.08123389140262649)
+For VM 111: selected 14 (atom01) 0.0 0.0
+scheduler-BestFit> A VM 111 in ACTIVE status found...
+scheduler-BestFit> The VM 111 is migrated from atom02 to atom01
+NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNscheduler> Getting IP for machine one-111 : 172.20.200.154
+scheduler-BestFit> Iteration: 16 2013/01/05 03:22:22
+scheduler-BestFit> A VM 111 in ACTIVE status found at atom01 -> (per 15s): [ RTPR: 0.16322916666666665 (Local: 0.03152328723534234 Remote:0.1317058794313243); Req: 10.279166666666667 (Local: 3.5208333333333335 Remote: 6.758333333333334); Queue: 299.3958333333333; Served: 10.145833333333334; BPR: 41732.07083333333]
+Trying 0 (111) [10.279166666666667 41732.07083333333 0.0] 0.0 (0.0) 0.0 (512)
+Attempting VM 111 in atom02 (ISP: 10.1.0.3; load from it: 845.0 vs ext load: 1622.0)
+Attempting VM 111 in atom02 (RTF: 0.050432547101130085 SLA: 0.5507494766541101 PWR: 0.0 MIG:3.2465277777777785E-5 BNF:0.09359494575342095)
+Attempting VM 111 in atom00 (ISP: 10.1.0.1; load from it: 161.0 vs ext load: 2306.0)
+Attempting VM 111 in atom00 (RTF: 0.07170003305499753 SLA: 0.3144440771666941 PWR: 0.0 MIG:3.2465277777777785E-5 BNF:0.053423027840560224)
+Attempting VM 111 in atom01 (ISP: 10.1.0.2; load from it: 598.0 vs ext load: 1869.0)
+Attempting VM 111 in atom01 (RTF: 0.05811247258447111 SLA: 0.46541697128365433 PWR: 0.0 MIG:0.0 BNF:0.07912088511822124)
+Attempting VM 111 in atom03 (ISP: 10.1.0.9; load from it: 863.0 vs ext load: 1604.0)
+Attempting VM 111 in atom03 (RTF: 0.04987287641813358 SLA: 0.5569680397985157 PWR: 0.0 MIG:3.2465277777777785E-5 BNF:0.0946521014879699)
+For VM 111: selected 15 (atom03) 0.0 0.0
+scheduler-BestFit> A VM 111 in ACTIVE status found...
+scheduler-BestFit> The VM 111 is migrated from atom01 to atom03
+CNNscheduler> Getting IP for machine one-111 : 172.20.200.154
+scheduler> Rescuing IP for machine one-111 : 172.20.200.154
+scheduler-BestFit> Iteration: 17 2013/01/05 04:24:20
+scheduler-BestFit> A VM 111 in ACTIVE status found at atom03 -> (per 15s): [ RTPR: 0.15611666666666668 (Local: 0.04512815179519997 Remote:0.11098851487146671); Req: 7.825 (Local: 3.4875 Remote: 4.3375); Queue: 303.95416666666665; Served: 7.8125; BPR: 38956.425]
+Trying 0 (111) [7.825 38956.425 0.0] 0.0 (0.0) 0.0 (512)
+Attempting VM 111 in atom02 (ISP: 10.1.0.3; load from it: 507.0 vs ext load: 1371.0)
+Attempting VM 111 in atom02 (RTF: 0.03979299863800407 SLA: 0.6689666817999548 PWR: 0.0 MIG:3.2465277777777785E-5 BNF:0.11369187062821454)
+Attempting VM 111 in atom00 (ISP: 10.1.0.1; load from it: 180.0 vs ext load: 1698.0)
+Attempting VM 111 in atom00 (RTF: 0.04928410772234202 SLA: 0.5635099141961998 PWR: 0.0 MIG:3.2465277777777785E-5 BNF:0.09576422013557619)
+Attempting VM 111 in atom01 (ISP: 10.1.0.2; load from it: 332.0 vs ext load: 1546.0)
+Attempting VM 111 in atom01 (RTF: 0.04487233836203814 SLA: 0.6125295737551317 PWR: 0.0 MIG:3.2465277777777785E-5 BNF:0.10409756226059462)
+Attempting VM 111 in atom03 (ISP: 10.1.0.9; load from it: 859.0 vs ext load: 1019.0)
+Attempting VM 111 in atom03 (RTF: 0.029576269593089823 SLA: 0.7824858934101131 PWR: 0.0 MIG:0.0 BNF:0.13302260187971923)
+For VM 111: selected 15 (atom03) 0.0 0.0
+scheduler-BestFit> A VM 111 in ACTIVE status found...
+scheduler-BestFit> The VM 111 stays at atom03 (atom03)
+scheduler> Getting IP for machine one-111 : 172.20.200.154
+scheduler> Getting IP for machine one-111 : 172.20.200.154
+scheduler-BestFit> Iteration: 18 2013/01/05 05:24:45
+scheduler-BestFit> A VM 111 in ACTIVE status found at atom03 -> (per 15s): [ RTPR: 0.1727041666666667 (Local: 0.0298130803176265 Remote:0.1428910863490402); Req: 10.495833333333334 (Local: 3.0083333333333333 Remote: 7.4875); Queue: 304.2125; Served: 10.495833333333334; BPR: 38615.520833333336]
+Trying 0 (111) [10.495833333333334 38615.520833333336 0.0] 0.0 (0.0) 0.0 (512)
+Attempting VM 111 in atom02 (ISP: 10.1.0.3; load from it: 1109.0 vs ext load: 1410.0)
+Attempting VM 111 in atom02 (RTF: 0.04056683508679271 SLA: 0.6603684990356367 PWR: 0.0 MIG:3.2465277777777785E-5 BNF:0.11223017955828046)
+Attempting VM 111 in atom00 (ISP: 10.1.0.1; load from it: 138.0 vs ext load: 2381.0)
+Attempting VM 111 in atom00 (RTF: 0.0685032867671301 SLA: 0.34996348036522107 PWR: 0.0 MIG:3.2465277777777785E-5 BNF:0.05946132638430981)
+Attempting VM 111 in atom01 (ISP: 10.1.0.2; load from it: 550.0 vs ext load: 1969.0)
+Attempting VM 111 in atom01 (RTF: 0.056649715096379324 SLA: 0.48166983226245197 PWR: 0.0 MIG:3.2465277777777785E-5 BNF:0.08185140620683906)
+Attempting VM 111 in atom03 (ISP: 10.1.0.9; load from it: 722.0 vs ext load: 1797.0)
+Attempting VM 111 in atom03 (RTF: 0.05170113663189113 SLA: 0.5366540374234319 PWR: 0.0 MIG:0.0 BNF:0.09123118636198342)
+For VM 111: selected 17 (atom02) 0.0 0.0
+scheduler-BestFit> A VM 111 in ACTIVE status found...
+scheduler-BestFit> The VM 111 is migrated from atom03 to atom02
+NNNNNNNNNNNNNNNNNNNNscheduler> Rescuing IP for machine one-111 : 172.20.200.154
+scheduler-BestFit> Iteration: 19 2013/01/05 06:26:34
+scheduler-BestFit> A VM 111 in ACTIVE status found at atom02 -> (per 15s): [ RTPR: 0.16422083333333334 (Local: 0.00915709213389665 Remote:0.1550637411994367); Req: 12.1625 (Local: 2.754166666666667 Remote: 9.408333333333333); Queue: 323.22083333333336; Served: 12.079166666666667; BPR: 50390.3375]
+Trying 0 (111) [12.1625 50390.3375 0.0] 0.0 (0.0) 0.0 (512)
+Attempting VM 111 in atom02 (ISP: 10.1.0.3; load from it: 453.0 vs ext load: 2453.0)
+Attempting VM 111 in atom02 (RTF: 0.09209476253949106 SLA: 0.08783597178343261 PWR: 0.0 MIG:0.0 BNF:0.014932115203183544)
+Attempting VM 111 in atom00 (ISP: 10.1.0.1; load from it: 1491.0 vs ext load: 1415.0)
+Attempting VM 111 in atom00 (RTF: 0.053124373825266955 SLA: 0.5208402908303672 PWR: 0.0 MIG:3.2465277777777785E-5 BNF:0.08851038416338465)
+Attempting VM 111 in atom01 (ISP: 10.1.0.2; load from it: 313.0 vs ext load: 2593.0)
+Attempting VM 111 in atom01 (RTF: 0.09735088433139026 SLA: 0.029434618540108093 PWR: 0.0 MIG:3.2465277777777785E-5 BNF:0.004971419874040598)
+Attempting VM 111 in atom03 (ISP: 10.1.0.9; load from it: 649.0 vs ext load: 2257.0)
+Attempting VM 111 in atom03 (RTF: 0.08473619203083217 SLA: 0.1695978663240869 PWR: 0.0 MIG:3.2465277777777785E-5 BNF:0.028799171997316998)
+For VM 111: selected 16 (atom00) 0.0 0.0
+scheduler-BestFit> A VM 111 in ACTIVE status found...
+scheduler-BestFit> The VM 111 is migrated from atom02 to atom00
+NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNscheduler> Rescuing IP for machine one-111 : 172.20.200.154
+scheduler-BestFit> Iteration: 20 2013/01/05 07:28:23
+scheduler-BestFit> A VM 111 in ACTIVE status found at atom00 -> (per 15s): [ RTPR: 0.13833333333333334 (Local: 0.03599461819274151 Remote:0.10233871514059183); Req: 7.704166666666667 (Local: 3.7666666666666666 Remote: 3.9375); Queue: 366.225; Served: 7.516666666666667; BPR: 41347.691666666666]
+Trying 0 (111) [7.704166666666667 41347.691666666666 0.0] 26.339999999999918 (26.339999999999918) 482.0 (512)
+Attempting VM 111 in atom02 (ISP: 10.1.0.3; load from it: 531.0 vs ext load: 1316.0)
+Attempting VM 111 in atom02 (RTF: 0.040541263098518056 SLA: 0.6606526322386883 PWR: 29.1 MIG:3.2465277777777785E-5 BNF:0.10965948220279924)
+Attempting VM 111 in atom00 (ISP: 10.1.0.1; load from it: 207.0 vs ext load: 1640.0)
+Attempting VM 111 in atom00 (RTF: 0.050522546718517934 SLA: 0.5497494809053562 PWR: 29.1 MIG:0.0 BNF:0.09083841175391057)
+Attempting VM 111 in atom01 (ISP: 10.1.0.2; load from it: 205.0 vs ext load: 1642.0)
+Attempting VM 111 in atom01 (RTF: 0.05058415958036979 SLA: 0.5490648935514468 PWR: 29.1 MIG:3.2465277777777785E-5 BNF:0.0906895666259682)
+Attempting VM 111 in atom03 (ISP: 10.1.0.9; load from it: 904.0 vs ext load: 943.0)
+Attempting VM 111 in atom03 (RTF: 0.029050464363147815 SLA: 0.7883281737428021 PWR: 29.1 MIG:3.2465277777777785E-5 BNF:0.13136432425849856)
+For VM 111: selected 15 (atom03) 26.339999999999918 482.0
+scheduler-BestFit> A VM 111 in ACTIVE status found...
+scheduler-BestFit> The VM 111 is migrated from atom00 to atom03
+NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNscheduler> Getting IP for machine one-111 : 172.20.200.154
+scheduler-BestFit> Iteration: 21 2013/01/05 08:30:13
+scheduler-BestFit> A VM 111 in ACTIVE status found at atom03 -> (per 15s): [ RTPR: 0.17722083333333333 (Local: 0.06390309378206331 Remote:0.11331773955127002); Req: 9.75 (Local: 4.233333333333333 Remote: 5.516666666666667); Queue: 406.0; Served: 9.5875; BPR: 37794.995833333334]
+Trying 0 (111) [9.75 37794.995833333334 0.0] 1.3300000000000003 (1.3300000000000003) 28.0 (512)
+Attempting VM 111 in atom02 (ISP: 10.1.0.3; load from it: 405.0 vs ext load: 1921.0)
+Attempting VM 111 in atom02 (RTF: 0.05409433468865852 SLA: 0.5100629479037943 PWR: 29.1 MIG:3.2465277777777785E-5 BNF:0.08405923586586725)
+Attempting VM 111 in atom00 (ISP: 10.1.0.1; load from it: 769.0 vs ext load: 1557.0)
+Attempting VM 111 in atom00 (RTF: 0.04384428896941245 SLA: 0.6239523447843061 PWR: 29.1 MIG:3.2465277777777785E-5 BNF:0.10342043333555426)
+Attempting VM 111 in atom01 (ISP: 10.1.0.2; load from it: 129.0 vs ext load: 2197.0)
+Attempting VM 111 in atom01 (RTF: 0.06186634737687806 SLA: 0.42370725136802156 PWR: 29.1 MIG:3.2465277777777785E-5 BNF:0.0693787674547859)
+Attempting VM 111 in atom03 (ISP: 10.1.0.9; load from it: 1023.0 vs ext load: 1303.0)
+Attempting VM 111 in atom03 (RTF: 0.03669178453894953 SLA: 0.7034246162338942 PWR: 29.1 MIG:0.0 BNF:0.11696318475976203)
+For VM 111: selected 15 (atom03) 1.3300000000000003 28.0
+scheduler-BestFit> A VM 111 in ACTIVE status found...
+scheduler-BestFit> The VM 111 stays at atom03 (atom03)
+scheduler> Getting IP for machine one-111 : 172.20.200.154
+scheduler> Rescuing IP for machine one-111 : 172.20.200.154
+scheduler-BestFit> Iteration: 22 2013/01/05 09:30:41
+scheduler-BestFit> A VM 111 in ACTIVE status found at atom03 -> (per 15s): [ RTPR: 0.16090833333333332 (Local: 0.029425000888515962 Remote:0.13148333244481736); Req: 8.433333333333334 (Local: 2.8958333333333335 Remote: 5.5375); Queue: 408.09166666666664; Served: 8.433333333333334; BPR: 38592.11666666667]
+Trying 0 (111) [8.433333333333334 38592.11666666667 0.0] 0.0 (0.0) 0.0 (512)
+Attempting VM 111 in atom02 (ISP: 10.1.0.3; load from it: 545.0 vs ext load: 1479.0)
+Attempting VM 111 in atom02 (RTF: 0.042526230625808244 SLA: 0.6385974374910195 PWR: 0.0 MIG:3.2465277777777785E-5 BNF:0.10852909909569554)
+Attempting VM 111 in atom00 (ISP: 10.1.0.1; load from it: 629.0 vs ext load: 1395.0)
+Attempting VM 111 in atom00 (RTF: 0.04011094775050879 SLA: 0.6654339138832357 PWR: 0.0 MIG:3.2465277777777785E-5 BNF:0.1130913000823723)
+Attempting VM 111 in atom01 (ISP: 10.1.0.2; load from it: 155.0 vs ext load: 1869.0)
+Attempting VM 111 in atom01 (RTF: 0.05374004397541284 SLA: 0.5139995113843018 PWR: 0.0 MIG:3.2465277777777785E-5 BNF:0.08734745165755353)
+Attempting VM 111 in atom03 (ISP: 10.1.0.9; load from it: 695.0 vs ext load: 1329.0)
+Attempting VM 111 in atom03 (RTF: 0.03821322549134493 SLA: 0.6865197167628341 PWR: 0.0 MIG:0.0 BNF:0.1167083518496818)
+For VM 111: selected 15 (atom03) 0.0 0.0
+scheduler-BestFit> A VM 111 in ACTIVE status found...
+scheduler-BestFit> The VM 111 stays at atom03 (atom03)
+scheduler> Getting IP for machine one-111 : 172.20.200.154
+scheduler> Getting IP for machine one-111 : 172.20.200.154
+scheduler-BestFit> Iteration: 23 2013/01/05 10:31:07
+scheduler-BestFit> A VM 111 in ACTIVE status found at atom03 -> (per 15s): [ RTPR: 0.14312083333333334 (Local: 0.0424842849890715 Remote:0.10063654834426183); Req: 7.1875 (Local: 3.575 Remote: 3.6125); Queue: 408.0875; Served: 7.1875; BPR: 42655.86666666667]
+Trying 0 (111) [7.1875 42655.86666666667 0.0] 0.0 (0.0) 0.0 (512)
+Attempting VM 111 in atom02 (ISP: 10.1.0.3; load from it: 188.0 vs ext load: 1507.0)
+Attempting VM 111 in atom02 (RTF: 0.047894113560517634 SLA: 0.5789542937720262 PWR: 0.0 MIG:3.2465277777777785E-5 BNF:0.09838976466346669)
+Attempting VM 111 in atom00 (ISP: 10.1.0.1; load from it: 608.0 vs ext load: 1087.0)
+Attempting VM 111 in atom00 (RTF: 0.034546052714188896 SLA: 0.7272660809534568 PWR: 0.0 MIG:3.2465277777777785E-5 BNF:0.12360276848430989)
+Attempting VM 111 in atom01 (ISP: 10.1.0.2; load from it: 71.0 vs ext load: 1624.0)
+Attempting VM 111 in atom01 (RTF: 0.05161250193913778 SLA: 0.5376388673429136 PWR: 0.0 MIG:3.2465277777777785E-5 BNF:0.09136614217051753)
+Attempting VM 111 in atom03 (ISP: 10.1.0.9; load from it: 828.0 vs ext load: 867.0)
+Attempting VM 111 in atom03 (RTF: 0.027554211318492887 SLA: 0.8049532075723013 PWR: 0.0 MIG:0.0 BNF:0.13684204528729121)
+For VM 111: selected 15 (atom03) 0.0 0.0
+scheduler-BestFit> A VM 111 in ACTIVE status found...
+scheduler-BestFit> The VM 111 stays at atom03 (atom03)
+scheduler> Getting IP for machine one-111 : 172.20.200.154
+scheduler> Rescuing IP for machine one-111 : 172.20.200.154
+scheduler-BestFit> Iteration: 24 2013/01/05 11:31:36
+scheduler-BestFit> A VM 111 in ACTIVE status found at atom03 -> (per 15s): [ RTPR: 0.16334583333333333 (Local: 0.03588806354959265 Remote:0.12745776978374068); Req: 7.933333333333334 (Local: 2.8833333333333333 Remote: 5.05); Queue: 408.1875; Served: 7.933333333333334; BPR: 39028.23333333333]
+Trying 0 (111) [7.933333333333334 39028.23333333333 0.0] 0.0 (0.0) 0.0 (512)
+Attempting VM 111 in atom02 (ISP: 10.1.0.3; load from it: 231.0 vs ext load: 1673.0)
+Attempting VM 111 in atom02 (RTF: 0.04864799556632836 SLA: 0.570577827040796 PWR: 0.0 MIG:3.2465277777777785E-5 BNF:0.09696576531915754)
+Attempting VM 111 in atom00 (ISP: 10.1.0.1; load from it: 850.0 vs ext load: 1054.0)
+Attempting VM 111 in atom00 (RTF: 0.030648527989784874 SLA: 0.7705719112246125 PWR: 0.0 MIG:3.2465277777777785E-5 BNF:0.13096475963040635)
+Attempting VM 111 in atom01 (ISP: 10.1.0.2; load from it: 130.0 vs ext load: 1774.0)
+Attempting VM 111 in atom01 (RTF: 0.0515849038461844 SLA: 0.5379455128201733 PWR: 0.0 MIG:3.2465277777777785E-5 BNF:0.0914182719016517)
+Attempting VM 111 in atom03 (ISP: 10.1.0.9; load from it: 693.0 vs ext load: 1211.0)
+Attempting VM 111 in atom03 (RTF: 0.035213821058472 SLA: 0.7198464326836445 PWR: 0.0 MIG:0.0 BNF:0.12237389355621957)
+For VM 111: selected 16 (atom00) 0.0 0.0
+scheduler-BestFit> A VM 111 in ACTIVE status found...
+scheduler-BestFit> The VM 111 is migrated from atom03 to atom00
+NNNNNNNNNNNNNNNNscheduler> Rescuing IP for machine one-111 : 172.20.200.154
+scheduler-BestFit> Iteration: 25 2013/01/05 12:33:25
+scheduler-BestFit> A VM 111 in ACTIVE status found at atom00 -> (per 15s): [ RTPR: 0.11117916666666666 (Local: -0.012684159267268319 Remote:0.12386332593393498); Req: 8.329166666666667 (Local: 3.1791666666666667 Remote: 5.15); Queue: 423.1958333333333; Served: 8.2625; BPR: 52513.01666666667]
+Trying 0 (111) [8.329166666666667 52513.01666666667 0.0] 26.538333333333295 (26.538333333333295) 491.0 (512)
+Attempting VM 111 in atom02 (ISP: 10.1.0.3; load from it: 12.0 vs ext load: 1984.0)
+Attempting VM 111 in atom02 (RTF: 0.0776244886716207 SLA: 0.24861679253754776 PWR: 29.1 MIG:3.2465277777777785E-5 BNF:0.03961338945360535)
+Attempting VM 111 in atom00 (ISP: 10.1.0.1; load from it: 406.0 vs ext load: 1590.0)
+Attempting VM 111 in atom00 (RTF: 0.06220914162695408 SLA: 0.4198984263671769 PWR: 29.1 MIG:0.0 BNF:0.06876373248242008)
+Attempting VM 111 in atom01 (ISP: 10.1.0.2; load from it: 815.0 vs ext load: 1181.0)
+Attempting VM 111 in atom01 (RTF: 0.046206915887693566 SLA: 0.5977009345811826 PWR: 29.1 MIG:3.2465277777777785E-5 BNF:0.09895769360102326)
+Attempting VM 111 in atom03 (ISP: 10.1.0.9; load from it: 763.0 vs ext load: 1233.0)
+Attempting VM 111 in atom03 (RTF: 0.04824142869561911 SLA: 0.5750952367153432 PWR: 29.1 MIG:3.2465277777777785E-5 BNF:0.09511472496383058)
+For VM 111: selected 14 (atom01) 26.538333333333295 491.0
+scheduler-BestFit> A VM 111 in ACTIVE status found...
+scheduler-BestFit> The VM 111 is migrated from atom00 to atom01
+scheduler> Getting IP for machine one-111 : 172.20.200.154
+scheduler-BestFit> Iteration: 26 2013/01/05 13:35:12
+scheduler-BestFit> A VM 111 in ACTIVE status found at atom01 -> (per 15s): [ RTPR: 0.0 (Local: 0.0 Remote:0.0); Req: 0.0 (Local: 0.0 Remote: 0.0); Queue: 424.0; Served: 0.0; BPR: 0.0]
+Trying 0 (111) [0.0 0.0 0.0] 1.4233333333333333 (1.4233333333333333) 31.0 (512)
+Attempting VM 111 in atom02 (ISP: 10.1.0.3; load from it: 0.0 vs ext load: 0.0)
+Attempting VM 111 in atom02 (RTF: 0.0 SLA: 1.0 PWR: 29.1 MIG:3.2465277777777785E-5 BNF:0.16734853472222222)
+Attempting VM 111 in atom00 (ISP: 10.1.0.1; load from it: 0.0 vs ext load: 0.0)
+Attempting VM 111 in atom00 (RTF: 0.0 SLA: 1.0 PWR: 29.1 MIG:3.2465277777777785E-5 BNF:0.16734853472222222)
+Attempting VM 111 in atom01 (ISP: 10.1.0.2; load from it: 0.0 vs ext load: 0.0)
+Attempting VM 111 in atom01 (RTF: 0.0 SLA: 1.0 PWR: 29.1 MIG:0.0 BNF:0.167381)
+Attempting VM 111 in atom03 (ISP: 10.1.0.9; load from it: 0.0 vs ext load: 0.0)
+Attempting VM 111 in atom03 (RTF: 0.0 SLA: 1.0 PWR: 29.1 MIG:3.2465277777777785E-5 BNF:0.16734853472222222)
+For VM 111: selected 14 (atom01) 1.4233333333333333 31.0
+scheduler-BestFit> A VM 111 in ACTIVE status found...
+scheduler-BestFit> The VM 111 stays at atom01 (atom01)
+scheduler> Getting IP for machine one-111 : 172.20.200.154
+scheduler> Rescuing IP for machine one-111 : 172.20.200.154

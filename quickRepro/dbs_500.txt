@@ -1,0 +1,938 @@
+* MODE FIXED POLICY
+Location: atom00 with IP 10.1.0.1
+Location: atom01 with IP 10.1.0.2
+Location: atom02 with IP 10.1.0.3
+Location: atom03 with IP 10.1.0.9
+Execute Iteration: 0 at 0 (3600)
+Info Iter> 
+Iteration: 0
+Execute Iteration: 1 at 0 (3600)
+Prepare Next Iter: for VM 111 place atom00 [760] 67729380 bytes per VM 
+Prepare Next Iter: for VM 111 place atom01 [150] 13367640 bytes per VM 
+Prepare Next Iter: for VM 111 place atom02 [222] 19784108 bytes per VM 
+Prepare Next Iter: for VM 111 place atom03 [1000] 89117606 bytes per VM 
+Info Iter>  VM-kind: 111 DC: atom00 Load: 11942 VMs: 0.0 VM-kind: 111 DC: atom01 Load: 2357 VMs: 0.0 VM-kind: 111 DC: atom02 Load: 3488 VMs: 8750.0 VM-kind: 111 DC: atom03 Load: 15714 VMs: 26250.0
+Iteration: 1
+Migrate VMs VM from atom03 to atom00
+* Num VMs: 700 ( 40000000000 bits per VM ) 
+Migrate VMs VM from atom02 to atom03
+* Num VMs: 1750 ( 40000000000 bits per VM ) 
+CTRL VM-S> Transmission start at 0 0 for atom03 -> atom00 BWD: 500.0 ID: 0
+CTRL VM-S> Transmission start at 0 0 for atom02 -> atom03 BWD: 500.0 ID: 1
+Info VM-S> Transmission Info at 0 for atom03 -> atom00 Moved_VMs: 0.0 [700.0 / 700.0] BWD: 500.0 ID: 0
+CTRL VM-S> Transmission Finished at 0 0 for atom03 -> atom00 ID: 0
+Info VM-S> Transmission Info at 0 for atom02 -> atom03 Moved_VMs: 750.0 [750.0 / 1750.0] BWD: 500.0 ID: 1
+Info VM-S> Transmission Info at 60 for atom02 -> atom03 Moved_VMs: 750.0 [1500.0 / 1750.0] BWD: 500.0 ID: 1
+Info VM-S> Transmission Info at 120 for atom02 -> atom03 Moved_VMs: 0.0 [1750.0 / 1750.0] BWD: 500.0 ID: 1
+CTRL VM-S> Transmission Finished at 120 0 for atom02 -> atom03 ID: 1
+REPO VM-S> 3600 VM-kind: 111 Path: atom00-atom01 VMs_To_Move: 0 VMs_Moved: 0
+REPO VM-S> 3600 VM-kind: 111 Path: atom03-atom00 VMs_To_Move: 700 VMs_Moved: 700
+REPO VM-S> 3600 VM-kind: 111 Path: atom02-atom03 VMs_To_Move: 1750 VMs_Moved: 1750
+REPO VM-S> 3600 VM-kind: 111 Path: atom01-atom02 VMs_To_Move: 0 VMs_Moved: 0
+REPO VM-C> 3600 VM-kind: --- Path: atom01-atom00 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 3600 VM-kind: --- Path: atom00-atom02 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 3600 VM-kind: --- Path: atom01-atom02 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 3600 VM-kind: --- Path: atom00-atom01 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 3600 VM-kind: --- Path: atom01-atom03 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 3600 VM-kind: --- Path: atom03-atom02 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 3600 VM-kind: --- Path: atom03-atom01 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 3600 VM-kind: --- Path: atom03-atom00 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 3600 VM-kind: --- Path: atom02-atom03 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 3600 VM-kind: --- Path: atom02-atom01 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 3600 VM-kind: --- Path: atom00-atom03 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 3600 VM-kind: --- Path: atom02-atom00 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+Info Schd> Iteration: 1 Finished: 3600 Negotiations: 2
+Info Ener> 1391.0648999999999 kWh  atom00: 0.0 atom01: 0.0 atom02: 347.76719999999995 atom03: 1043.2976999999998 (all in kWh)
+Execute Iteration: 2 at 3600 (7200)
+Prepare Next Iter: for VM 111 place atom00 [816] 56850862 bytes per VM 
+Prepare Next Iter: for VM 111 place atom01 [207] 14421726 bytes per VM 
+Prepare Next Iter: for VM 111 place atom02 [210] 14630736 bytes per VM 
+Prepare Next Iter: for VM 111 place atom03 [999] 69600504 bytes per VM 
+Info Iter>  VM-kind: 111 DC: atom00 Load: 12822 VMs: 700.0 VM-kind: 111 DC: atom01 Load: 3252 VMs: 0.0 VM-kind: 111 DC: atom02 Load: 3300 VMs: 7000.0 VM-kind: 111 DC: atom03 Load: 15698 VMs: 27300.0
+Iteration: 2
+Migrate VMs VM from atom03 to atom00
+* Num VMs: 4550 ( 40000000000 bits per VM ) 
+Migrate VMs VM from atom02 to atom03
+* Num VMs: 7000 ( 40000000000 bits per VM ) 
+CTRL VM-S> Transmission start at 3600 3600 for atom03 -> atom00 BWD: 500.0 ID: 2
+CTRL VM-S> Transmission start at 3600 3600 for atom02 -> atom03 BWD: 500.0 ID: 3
+Info VM-S> Transmission Info at 3600 for atom03 -> atom00 Moved_VMs: 750.0 [750.0 / 4550.0] BWD: 500.0 ID: 2
+Info VM-S> Transmission Info at 3600 for atom02 -> atom03 Moved_VMs: 750.0 [750.0 / 7000.0] BWD: 500.0 ID: 3
+Info VM-S> Transmission Info at 3660 for atom03 -> atom00 Moved_VMs: 750.0 [1500.0 / 4550.0] BWD: 500.0 ID: 2
+Info VM-S> Transmission Info at 3660 for atom02 -> atom03 Moved_VMs: 750.0 [1500.0 / 7000.0] BWD: 500.0 ID: 3
+Info VM-S> Transmission Info at 3720 for atom03 -> atom00 Moved_VMs: 750.0 [2250.0 / 4550.0] BWD: 500.0 ID: 2
+Info VM-S> Transmission Info at 3720 for atom02 -> atom03 Moved_VMs: 750.0 [2250.0 / 7000.0] BWD: 500.0 ID: 3
+Info VM-S> Transmission Info at 3780 for atom03 -> atom00 Moved_VMs: 750.0 [3000.0 / 4550.0] BWD: 500.0 ID: 2
+Info VM-S> Transmission Info at 3780 for atom02 -> atom03 Moved_VMs: 750.0 [3000.0 / 7000.0] BWD: 500.0 ID: 3
+Info VM-S> Transmission Info at 3840 for atom03 -> atom00 Moved_VMs: 750.0 [3750.0 / 4550.0] BWD: 500.0 ID: 2
+Info VM-S> Transmission Info at 3840 for atom02 -> atom03 Moved_VMs: 750.0 [3750.0 / 7000.0] BWD: 500.0 ID: 3
+Info VM-S> Transmission Info at 3900 for atom03 -> atom00 Moved_VMs: 750.0 [4500.0 / 4550.0] BWD: 500.0 ID: 2
+Info VM-S> Transmission Info at 3900 for atom02 -> atom03 Moved_VMs: 750.0 [4500.0 / 7000.0] BWD: 500.0 ID: 3
+Info VM-S> Transmission Info at 3960 for atom03 -> atom00 Moved_VMs: 0.0 [4550.0 / 4550.0] BWD: 500.0 ID: 2
+CTRL VM-S> Transmission Finished at 3960 3600 for atom03 -> atom00 ID: 2
+Info VM-S> Transmission Info at 3960 for atom02 -> atom03 Moved_VMs: 750.0 [5250.0 / 7000.0] BWD: 500.0 ID: 3
+Info VM-S> Transmission Info at 4020 for atom02 -> atom03 Moved_VMs: 750.0 [6000.0 / 7000.0] BWD: 500.0 ID: 3
+Info VM-S> Transmission Info at 4080 for atom02 -> atom03 Moved_VMs: 750.0 [6750.0 / 7000.0] BWD: 500.0 ID: 3
+Info VM-S> Transmission Info at 4140 for atom02 -> atom03 Moved_VMs: 0.0 [7000.0 / 7000.0] BWD: 500.0 ID: 3
+CTRL VM-S> Transmission Finished at 4140 3600 for atom02 -> atom03 ID: 3
+REPO VM-S> 7200 VM-kind: 111 Path: atom00-atom01 VMs_To_Move: 0 VMs_Moved: 0
+REPO VM-S> 7200 VM-kind: 111 Path: atom03-atom00 VMs_To_Move: 4550 VMs_Moved: 4550
+REPO VM-S> 7200 VM-kind: 111 Path: atom02-atom03 VMs_To_Move: 7000 VMs_Moved: 7000
+REPO VM-S> 7200 VM-kind: 111 Path: atom01-atom02 VMs_To_Move: 0 VMs_Moved: 0
+REPO VM-C> 7200 VM-kind: --- Path: atom01-atom00 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 7200 VM-kind: --- Path: atom00-atom02 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 7200 VM-kind: --- Path: atom01-atom02 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 7200 VM-kind: --- Path: atom00-atom01 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 7200 VM-kind: --- Path: atom01-atom03 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 7200 VM-kind: --- Path: atom03-atom02 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 7200 VM-kind: --- Path: atom03-atom01 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 7200 VM-kind: --- Path: atom03-atom00 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 7200 VM-kind: --- Path: atom02-atom03 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 7200 VM-kind: --- Path: atom02-atom01 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 7200 VM-kind: --- Path: atom00-atom03 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 7200 VM-kind: --- Path: atom02-atom00 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+Info Schd> Iteration: 2 Finished: 7200 Negotiations: 2
+Info Ener> 1391.0655999999997 kWh  atom00: 27.9428 atom01: 0.0 atom02: 278.1625 atom03: 1084.9602999999997 (all in kWh)
+Execute Iteration: 3 at 7200 (10800)
+Prepare Next Iter: for VM 111 place atom00 [849] 66383982 bytes per VM 
+Prepare Next Iter: for VM 111 place atom01 [500] 39095395 bytes per VM 
+Prepare Next Iter: for VM 111 place atom02 [93] 7271743 bytes per VM 
+Prepare Next Iter: for VM 111 place atom03 [664] 51918685 bytes per VM 
+Info Iter>  VM-kind: 111 DC: atom00 Load: 13341 VMs: 5250.0 VM-kind: 111 DC: atom01 Load: 7857 VMs: 0.0 VM-kind: 111 DC: atom02 Load: 1461 VMs: 0.0 VM-kind: 111 DC: atom03 Load: 10434 VMs: 29750.0
+Iteration: 3
+Migrate VMs VM from atom03 to atom00
+* Num VMs: 7700 ( 40000000000 bits per VM ) 
+CTRL VM-S> Transmission start at 7200 7200 for atom03 -> atom00 BWD: 500.0 ID: 4
+Info VM-S> Transmission Info at 7200 for atom03 -> atom00 Moved_VMs: 750.0 [750.0 / 7700.0] BWD: 500.0 ID: 4
+Info VM-S> Transmission Info at 7260 for atom03 -> atom00 Moved_VMs: 750.0 [1500.0 / 7700.0] BWD: 500.0 ID: 4
+Info VM-S> Transmission Info at 7320 for atom03 -> atom00 Moved_VMs: 750.0 [2250.0 / 7700.0] BWD: 500.0 ID: 4
+Info VM-S> Transmission Info at 7380 for atom03 -> atom00 Moved_VMs: 750.0 [3000.0 / 7700.0] BWD: 500.0 ID: 4
+Info VM-S> Transmission Info at 7440 for atom03 -> atom00 Moved_VMs: 750.0 [3750.0 / 7700.0] BWD: 500.0 ID: 4
+Info VM-S> Transmission Info at 7500 for atom03 -> atom00 Moved_VMs: 750.0 [4500.0 / 7700.0] BWD: 500.0 ID: 4
+Info VM-S> Transmission Info at 7560 for atom03 -> atom00 Moved_VMs: 750.0 [5250.0 / 7700.0] BWD: 500.0 ID: 4
+Info VM-S> Transmission Info at 7620 for atom03 -> atom00 Moved_VMs: 750.0 [6000.0 / 7700.0] BWD: 500.0 ID: 4
+Info VM-S> Transmission Info at 7680 for atom03 -> atom00 Moved_VMs: 750.0 [6750.0 / 7700.0] BWD: 500.0 ID: 4
+Info VM-S> Transmission Info at 7740 for atom03 -> atom00 Moved_VMs: 750.0 [7500.0 / 7700.0] BWD: 500.0 ID: 4
+Info VM-S> Transmission Info at 7800 for atom03 -> atom00 Moved_VMs: 0.0 [7700.0 / 7700.0] BWD: 500.0 ID: 4
+CTRL VM-S> Transmission Finished at 7800 7200 for atom03 -> atom00 ID: 4
+REPO VM-S> 10800 VM-kind: 111 Path: atom00-atom01 VMs_To_Move: 0 VMs_Moved: 0
+REPO VM-S> 10800 VM-kind: 111 Path: atom03-atom00 VMs_To_Move: 7700 VMs_Moved: 7700
+REPO VM-S> 10800 VM-kind: 111 Path: atom02-atom03 VMs_To_Move: 0 VMs_Moved: 0
+REPO VM-S> 10800 VM-kind: 111 Path: atom01-atom02 VMs_To_Move: 0 VMs_Moved: 0
+REPO VM-C> 10800 VM-kind: --- Path: atom01-atom00 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 10800 VM-kind: --- Path: atom00-atom02 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 10800 VM-kind: --- Path: atom01-atom02 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 10800 VM-kind: --- Path: atom00-atom01 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 10800 VM-kind: --- Path: atom01-atom03 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 10800 VM-kind: --- Path: atom03-atom02 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 10800 VM-kind: --- Path: atom03-atom01 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 10800 VM-kind: --- Path: atom03-atom00 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 10800 VM-kind: --- Path: atom02-atom03 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 10800 VM-kind: --- Path: atom02-atom01 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 10800 VM-kind: --- Path: atom00-atom03 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 10800 VM-kind: --- Path: atom02-atom00 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+Info Schd> Iteration: 3 Finished: 10800 Negotiations: 1
+Info Ener> 1391.0648999999999 kWh  atom00: 208.81019999999998 atom01: 0.0 atom02: 0.0 atom03: 1182.2547 (all in kWh)
+Execute Iteration: 4 at 10800 (14400)
+Prepare Next Iter: for VM 111 place atom00 [889] 79694367 bytes per VM 
+Prepare Next Iter: for VM 111 place atom01 [629] 56386678 bytes per VM 
+Prepare Next Iter: for VM 111 place atom02 [161] 14432838 bytes per VM 
+Prepare Next Iter: for VM 111 place atom03 [450] 40340231 bytes per VM 
+Info Iter>  VM-kind: 111 DC: atom00 Load: 13970 VMs: 12950.0 VM-kind: 111 DC: atom01 Load: 9884 VMs: 0.0 VM-kind: 111 DC: atom02 Load: 2530 VMs: 0.0 VM-kind: 111 DC: atom03 Load: 7071 VMs: 22050.0
+Iteration: 4
+Migrate VMs VM from atom03 to atom00
+* Num VMs: 8750 ( 40000000000 bits per VM ) 
+CTRL VM-S> Transmission start at 10800 10800 for atom03 -> atom00 BWD: 500.0 ID: 5
+Info VM-S> Transmission Info at 10800 for atom03 -> atom00 Moved_VMs: 750.0 [750.0 / 8750.0] BWD: 500.0 ID: 5
+Info VM-S> Transmission Info at 10860 for atom03 -> atom00 Moved_VMs: 750.0 [1500.0 / 8750.0] BWD: 500.0 ID: 5
+Info VM-S> Transmission Info at 10920 for atom03 -> atom00 Moved_VMs: 750.0 [2250.0 / 8750.0] BWD: 500.0 ID: 5
+Info VM-S> Transmission Info at 10980 for atom03 -> atom00 Moved_VMs: 750.0 [3000.0 / 8750.0] BWD: 500.0 ID: 5
+Info VM-S> Transmission Info at 11040 for atom03 -> atom00 Moved_VMs: 750.0 [3750.0 / 8750.0] BWD: 500.0 ID: 5
+Info VM-S> Transmission Info at 11100 for atom03 -> atom00 Moved_VMs: 750.0 [4500.0 / 8750.0] BWD: 500.0 ID: 5
+Info VM-S> Transmission Info at 11160 for atom03 -> atom00 Moved_VMs: 750.0 [5250.0 / 8750.0] BWD: 500.0 ID: 5
+Info VM-S> Transmission Info at 11220 for atom03 -> atom00 Moved_VMs: 750.0 [6000.0 / 8750.0] BWD: 500.0 ID: 5
+Info VM-S> Transmission Info at 11280 for atom03 -> atom00 Moved_VMs: 750.0 [6750.0 / 8750.0] BWD: 500.0 ID: 5
+Info VM-S> Transmission Info at 11340 for atom03 -> atom00 Moved_VMs: 750.0 [7500.0 / 8750.0] BWD: 500.0 ID: 5
+Info VM-S> Transmission Info at 11400 for atom03 -> atom00 Moved_VMs: 750.0 [8250.0 / 8750.0] BWD: 500.0 ID: 5
+Info VM-S> Transmission Info at 11460 for atom03 -> atom00 Moved_VMs: 0.0 [8750.0 / 8750.0] BWD: 500.0 ID: 5
+CTRL VM-S> Transmission Finished at 11460 10800 for atom03 -> atom00 ID: 5
+REPO VM-S> 14400 VM-kind: 111 Path: atom00-atom01 VMs_To_Move: 0 VMs_Moved: 0
+REPO VM-S> 14400 VM-kind: 111 Path: atom03-atom00 VMs_To_Move: 8750 VMs_Moved: 8750
+REPO VM-S> 14400 VM-kind: 111 Path: atom02-atom03 VMs_To_Move: 0 VMs_Moved: 0
+REPO VM-S> 14400 VM-kind: 111 Path: atom01-atom02 VMs_To_Move: 0 VMs_Moved: 0
+REPO VM-C> 14400 VM-kind: --- Path: atom01-atom00 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 14400 VM-kind: --- Path: atom00-atom02 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 14400 VM-kind: --- Path: atom01-atom02 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 14400 VM-kind: --- Path: atom00-atom01 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 14400 VM-kind: --- Path: atom01-atom03 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 14400 VM-kind: --- Path: atom03-atom02 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 14400 VM-kind: --- Path: atom03-atom01 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 14400 VM-kind: --- Path: atom03-atom00 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 14400 VM-kind: --- Path: atom02-atom03 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 14400 VM-kind: --- Path: atom02-atom01 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 14400 VM-kind: --- Path: atom00-atom03 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 14400 VM-kind: --- Path: atom02-atom00 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+Info Schd> Iteration: 4 Finished: 14400 Negotiations: 1
+Info Ener> 1391.0648999999999 kWh  atom00: 514.6646999999999 atom01: 0.0 atom02: 0.0 atom03: 876.4001999999999 (all in kWh)
+Execute Iteration: 5 at 14400 (18000)
+Prepare Next Iter: for VM 111 place atom00 [981] 77867856 bytes per VM 
+Prepare Next Iter: for VM 111 place atom01 [640] 50800640 bytes per VM 
+Prepare Next Iter: for VM 111 place atom02 [180] 14287680 bytes per VM 
+Prepare Next Iter: for VM 111 place atom03 [417] 33099792 bytes per VM 
+Info Iter>  VM-kind: 111 DC: atom00 Load: 15415 VMs: 21700.0 VM-kind: 111 DC: atom01 Load: 10057 VMs: 0.0 VM-kind: 111 DC: atom02 Load: 2828 VMs: 0.0 VM-kind: 111 DC: atom03 Load: 6552 VMs: 13300.0
+Iteration: 5
+Migrate VMs VM from atom03 to atom00
+* Num VMs: 7000 ( 40000000000 bits per VM ) 
+CTRL VM-S> Transmission start at 14400 14400 for atom03 -> atom00 BWD: 500.0 ID: 6
+Info VM-S> Transmission Info at 14400 for atom03 -> atom00 Moved_VMs: 750.0 [750.0 / 7000.0] BWD: 500.0 ID: 6
+Info VM-S> Transmission Info at 14460 for atom03 -> atom00 Moved_VMs: 750.0 [1500.0 / 7000.0] BWD: 500.0 ID: 6
+Info VM-S> Transmission Info at 14520 for atom03 -> atom00 Moved_VMs: 750.0 [2250.0 / 7000.0] BWD: 500.0 ID: 6
+Info VM-S> Transmission Info at 14580 for atom03 -> atom00 Moved_VMs: 750.0 [3000.0 / 7000.0] BWD: 500.0 ID: 6
+Info VM-S> Transmission Info at 14640 for atom03 -> atom00 Moved_VMs: 750.0 [3750.0 / 7000.0] BWD: 500.0 ID: 6
+Info VM-S> Transmission Info at 14700 for atom03 -> atom00 Moved_VMs: 750.0 [4500.0 / 7000.0] BWD: 500.0 ID: 6
+Info VM-S> Transmission Info at 14760 for atom03 -> atom00 Moved_VMs: 750.0 [5250.0 / 7000.0] BWD: 500.0 ID: 6
+Info VM-S> Transmission Info at 14820 for atom03 -> atom00 Moved_VMs: 750.0 [6000.0 / 7000.0] BWD: 500.0 ID: 6
+Info VM-S> Transmission Info at 14880 for atom03 -> atom00 Moved_VMs: 750.0 [6750.0 / 7000.0] BWD: 500.0 ID: 6
+Info VM-S> Transmission Info at 14940 for atom03 -> atom00 Moved_VMs: 0.0 [7000.0 / 7000.0] BWD: 500.0 ID: 6
+CTRL VM-S> Transmission Finished at 14940 14400 for atom03 -> atom00 ID: 6
+REPO VM-S> 18000 VM-kind: 111 Path: atom00-atom01 VMs_To_Move: 0 VMs_Moved: 0
+REPO VM-S> 18000 VM-kind: 111 Path: atom03-atom00 VMs_To_Move: 7000 VMs_Moved: 7000
+REPO VM-S> 18000 VM-kind: 111 Path: atom02-atom03 VMs_To_Move: 0 VMs_Moved: 0
+REPO VM-S> 18000 VM-kind: 111 Path: atom01-atom02 VMs_To_Move: 0 VMs_Moved: 0
+REPO VM-C> 18000 VM-kind: --- Path: atom01-atom00 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 18000 VM-kind: --- Path: atom00-atom02 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 18000 VM-kind: --- Path: atom01-atom02 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 18000 VM-kind: --- Path: atom00-atom01 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 18000 VM-kind: --- Path: atom01-atom03 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 18000 VM-kind: --- Path: atom03-atom02 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 18000 VM-kind: --- Path: atom03-atom01 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 18000 VM-kind: --- Path: atom03-atom00 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 18000 VM-kind: --- Path: atom02-atom03 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 18000 VM-kind: --- Path: atom02-atom01 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 18000 VM-kind: --- Path: atom00-atom03 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 18000 VM-kind: --- Path: atom02-atom00 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+Info Schd> Iteration: 5 Finished: 18000 Negotiations: 1
+Info Ener> 1391.0656 kWh  atom00: 862.4302999999999 atom01: 0.0 atom02: 0.0 atom03: 528.6352999999999 (all in kWh)
+Execute Iteration: 6 at 18000 (21600)
+Prepare Next Iter: for VM 111 place atom00 [1000] 73329600 bytes per VM 
+Prepare Next Iter: for VM 111 place atom01 [700] 51330720 bytes per VM 
+Prepare Next Iter: for VM 111 place atom02 [138] 10119484 bytes per VM 
+Prepare Next Iter: for VM 111 place atom03 [350] 25665360 bytes per VM 
+Info Iter>  VM-kind: 111 DC: atom00 Load: 15714 VMs: 28700.0 VM-kind: 111 DC: atom01 Load: 11000 VMs: 0.0 VM-kind: 111 DC: atom02 Load: 2168 VMs: 0.0 VM-kind: 111 DC: atom03 Load: 5500 VMs: 6300.0
+Iteration: 6
+Migrate VMs VM from atom03 to atom00
+* Num VMs: 4550 ( 40000000000 bits per VM ) 
+CTRL VM-S> Transmission start at 18000 18000 for atom03 -> atom00 BWD: 500.0 ID: 7
+Info VM-S> Transmission Info at 18000 for atom03 -> atom00 Moved_VMs: 750.0 [750.0 / 4550.0] BWD: 500.0 ID: 7
+Info VM-S> Transmission Info at 18060 for atom03 -> atom00 Moved_VMs: 750.0 [1500.0 / 4550.0] BWD: 500.0 ID: 7
+Info VM-S> Transmission Info at 18120 for atom03 -> atom00 Moved_VMs: 750.0 [2250.0 / 4550.0] BWD: 500.0 ID: 7
+Info VM-S> Transmission Info at 18180 for atom03 -> atom00 Moved_VMs: 750.0 [3000.0 / 4550.0] BWD: 500.0 ID: 7
+Info VM-S> Transmission Info at 18240 for atom03 -> atom00 Moved_VMs: 750.0 [3750.0 / 4550.0] BWD: 500.0 ID: 7
+Info VM-S> Transmission Info at 18300 for atom03 -> atom00 Moved_VMs: 750.0 [4500.0 / 4550.0] BWD: 500.0 ID: 7
+Info VM-S> Transmission Info at 18360 for atom03 -> atom00 Moved_VMs: 0.0 [4550.0 / 4550.0] BWD: 500.0 ID: 7
+CTRL VM-S> Transmission Finished at 18360 18000 for atom03 -> atom00 ID: 7
+REPO VM-S> 21600 VM-kind: 111 Path: atom00-atom01 VMs_To_Move: 0 VMs_Moved: 0
+REPO VM-S> 21600 VM-kind: 111 Path: atom03-atom00 VMs_To_Move: 4550 VMs_Moved: 4550
+REPO VM-S> 21600 VM-kind: 111 Path: atom02-atom03 VMs_To_Move: 0 VMs_Moved: 0
+REPO VM-S> 21600 VM-kind: 111 Path: atom01-atom02 VMs_To_Move: 0 VMs_Moved: 0
+REPO VM-C> 21600 VM-kind: --- Path: atom01-atom00 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 21600 VM-kind: --- Path: atom00-atom02 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 21600 VM-kind: --- Path: atom01-atom02 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 21600 VM-kind: --- Path: atom00-atom01 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 21600 VM-kind: --- Path: atom01-atom03 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 21600 VM-kind: --- Path: atom03-atom02 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 21600 VM-kind: --- Path: atom03-atom01 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 21600 VM-kind: --- Path: atom03-atom00 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 21600 VM-kind: --- Path: atom02-atom03 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 21600 VM-kind: --- Path: atom02-atom01 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 21600 VM-kind: --- Path: atom00-atom03 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 21600 VM-kind: --- Path: atom02-atom00 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+Info Schd> Iteration: 6 Finished: 21600 Negotiations: 1
+Info Ener> 1391.0656 kWh  atom00: 1140.5928 atom01: 0.0 atom02: 0.0 atom03: 250.47279999999998 (all in kWh)
+Execute Iteration: 7 at 21600 (25200)
+Prepare Next Iter: for VM 111 place atom00 [1000] 75243883 bytes per VM 
+Prepare Next Iter: for VM 111 place atom01 [760] 57185351 bytes per VM 
+Prepare Next Iter: for VM 111 place atom02 [150] 11286582 bytes per VM 
+Prepare Next Iter: for VM 111 place atom03 [222] 16704142 bytes per VM 
+Info Iter>  VM-kind: 111 DC: atom00 Load: 15714 VMs: 33250.0 VM-kind: 111 DC: atom01 Load: 11942 VMs: 0.0 VM-kind: 111 DC: atom02 Load: 2357 VMs: 0.0 VM-kind: 111 DC: atom03 Load: 3488 VMs: 1750.0
+Iteration: 7
+Migrate VMs VM from atom00 to atom01
+* Num VMs: 700 ( 40000000000 bits per VM ) 
+Migrate VMs VM from atom03 to atom00
+* Num VMs: 1750 ( 40000000000 bits per VM ) 
+CTRL VM-S> Transmission start at 21600 21600 for atom00 -> atom01 BWD: 500.0 ID: 8
+CTRL VM-S> Transmission start at 21600 21600 for atom03 -> atom00 BWD: 500.0 ID: 9
+Info VM-S> Transmission Info at 21600 for atom00 -> atom01 Moved_VMs: 0.0 [700.0 / 700.0] BWD: 500.0 ID: 8
+CTRL VM-S> Transmission Finished at 21600 21600 for atom00 -> atom01 ID: 8
+Info VM-S> Transmission Info at 21600 for atom03 -> atom00 Moved_VMs: 750.0 [750.0 / 1750.0] BWD: 500.0 ID: 9
+Info VM-S> Transmission Info at 21660 for atom03 -> atom00 Moved_VMs: 750.0 [1500.0 / 1750.0] BWD: 500.0 ID: 9
+Info VM-S> Transmission Info at 21720 for atom03 -> atom00 Moved_VMs: 0.0 [1750.0 / 1750.0] BWD: 500.0 ID: 9
+CTRL VM-S> Transmission Finished at 21720 21600 for atom03 -> atom00 ID: 9
+REPO VM-S> 25200 VM-kind: 111 Path: atom00-atom01 VMs_To_Move: 700 VMs_Moved: 700
+REPO VM-S> 25200 VM-kind: 111 Path: atom03-atom00 VMs_To_Move: 1750 VMs_Moved: 1750
+REPO VM-S> 25200 VM-kind: 111 Path: atom02-atom03 VMs_To_Move: 0 VMs_Moved: 0
+REPO VM-S> 25200 VM-kind: 111 Path: atom01-atom02 VMs_To_Move: 0 VMs_Moved: 0
+REPO VM-C> 25200 VM-kind: --- Path: atom01-atom00 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 25200 VM-kind: --- Path: atom00-atom02 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 25200 VM-kind: --- Path: atom01-atom02 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 25200 VM-kind: --- Path: atom00-atom01 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 25200 VM-kind: --- Path: atom01-atom03 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 25200 VM-kind: --- Path: atom03-atom02 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 25200 VM-kind: --- Path: atom03-atom01 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 25200 VM-kind: --- Path: atom03-atom00 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 25200 VM-kind: --- Path: atom02-atom03 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 25200 VM-kind: --- Path: atom02-atom01 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 25200 VM-kind: --- Path: atom00-atom03 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 25200 VM-kind: --- Path: atom02-atom00 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+Info Schd> Iteration: 7 Finished: 25200 Negotiations: 2
+Info Ener> 1391.0649 kWh  atom00: 1321.4602 atom01: 0.0 atom02: 0.0 atom03: 69.6047 (all in kWh)
+Execute Iteration: 8 at 25200 (28800)
+Prepare Next Iter: for VM 111 place atom00 [999] 78518344 bytes per VM 
+Prepare Next Iter: for VM 111 place atom01 [816] 64135104 bytes per VM 
+Prepare Next Iter: for VM 111 place atom02 [207] 16269566 bytes per VM 
+Prepare Next Iter: for VM 111 place atom03 [210] 16505357 bytes per VM 
+Info Iter>  VM-kind: 111 DC: atom00 Load: 15698 VMs: 34300.0 VM-kind: 111 DC: atom01 Load: 12822 VMs: 700.0 VM-kind: 111 DC: atom02 Load: 3252 VMs: 0.0 VM-kind: 111 DC: atom03 Load: 3300 VMs: 0.0
+Iteration: 8
+Migrate VMs VM from atom00 to atom01
+* Num VMs: 4550 ( 40000000000 bits per VM ) 
+CTRL VM-S> Transmission start at 25200 25200 for atom00 -> atom01 BWD: 500.0 ID: 10
+Info VM-S> Transmission Info at 25200 for atom00 -> atom01 Moved_VMs: 750.0 [750.0 / 4550.0] BWD: 500.0 ID: 10
+Info VM-S> Transmission Info at 25260 for atom00 -> atom01 Moved_VMs: 750.0 [1500.0 / 4550.0] BWD: 500.0 ID: 10
+Info VM-S> Transmission Info at 25320 for atom00 -> atom01 Moved_VMs: 750.0 [2250.0 / 4550.0] BWD: 500.0 ID: 10
+Info VM-S> Transmission Info at 25380 for atom00 -> atom01 Moved_VMs: 750.0 [3000.0 / 4550.0] BWD: 500.0 ID: 10
+Info VM-S> Transmission Info at 25440 for atom00 -> atom01 Moved_VMs: 750.0 [3750.0 / 4550.0] BWD: 500.0 ID: 10
+Info VM-S> Transmission Info at 25500 for atom00 -> atom01 Moved_VMs: 750.0 [4500.0 / 4550.0] BWD: 500.0 ID: 10
+Info VM-S> Transmission Info at 25560 for atom00 -> atom01 Moved_VMs: 0.0 [4550.0 / 4550.0] BWD: 500.0 ID: 10
+CTRL VM-S> Transmission Finished at 25560 25200 for atom00 -> atom01 ID: 10
+REPO VM-S> 28800 VM-kind: 111 Path: atom00-atom01 VMs_To_Move: 4550 VMs_Moved: 4550
+REPO VM-S> 28800 VM-kind: 111 Path: atom03-atom00 VMs_To_Move: 0 VMs_Moved: 0
+REPO VM-S> 28800 VM-kind: 111 Path: atom02-atom03 VMs_To_Move: 0 VMs_Moved: 0
+REPO VM-S> 28800 VM-kind: 111 Path: atom01-atom02 VMs_To_Move: 0 VMs_Moved: 0
+REPO VM-C> 28800 VM-kind: --- Path: atom01-atom00 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 28800 VM-kind: --- Path: atom00-atom02 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 28800 VM-kind: --- Path: atom01-atom02 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 28800 VM-kind: --- Path: atom00-atom01 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 28800 VM-kind: --- Path: atom01-atom03 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 28800 VM-kind: --- Path: atom03-atom02 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 28800 VM-kind: --- Path: atom03-atom01 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 28800 VM-kind: --- Path: atom03-atom00 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 28800 VM-kind: --- Path: atom02-atom03 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 28800 VM-kind: --- Path: atom02-atom01 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 28800 VM-kind: --- Path: atom00-atom03 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 28800 VM-kind: --- Path: atom02-atom00 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+Info Schd> Iteration: 8 Finished: 28800 Negotiations: 1
+Info Ener> 1391.0656 kWh  atom00: 1363.1227999999999 atom01: 27.9428 atom02: 0.0 atom03: 0.0 (all in kWh)
+Execute Iteration: 9 at 28800 (32400)
+Prepare Next Iter: for VM 111 place atom00 [664] 53015597 bytes per VM 
+Prepare Next Iter: for VM 111 place atom01 [849] 67786508 bytes per VM 
+Prepare Next Iter: for VM 111 place atom02 [500] 39921383 bytes per VM 
+Prepare Next Iter: for VM 111 place atom03 [93] 7425377 bytes per VM 
+Info Iter>  VM-kind: 111 DC: atom00 Load: 10434 VMs: 29750.0 VM-kind: 111 DC: atom01 Load: 13341 VMs: 5250.0 VM-kind: 111 DC: atom02 Load: 7857 VMs: 0.0 VM-kind: 111 DC: atom03 Load: 1461 VMs: 0.0
+Iteration: 9
+Migrate VMs VM from atom00 to atom01
+* Num VMs: 7700 ( 40000000000 bits per VM ) 
+CTRL VM-S> Transmission start at 28800 28800 for atom00 -> atom01 BWD: 500.0 ID: 11
+Info VM-S> Transmission Info at 28800 for atom00 -> atom01 Moved_VMs: 750.0 [750.0 / 7700.0] BWD: 500.0 ID: 11
+Info VM-S> Transmission Info at 28860 for atom00 -> atom01 Moved_VMs: 750.0 [1500.0 / 7700.0] BWD: 500.0 ID: 11
+Info VM-S> Transmission Info at 28920 for atom00 -> atom01 Moved_VMs: 750.0 [2250.0 / 7700.0] BWD: 500.0 ID: 11
+Info VM-S> Transmission Info at 28980 for atom00 -> atom01 Moved_VMs: 750.0 [3000.0 / 7700.0] BWD: 500.0 ID: 11
+Info VM-S> Transmission Info at 29040 for atom00 -> atom01 Moved_VMs: 750.0 [3750.0 / 7700.0] BWD: 500.0 ID: 11
+Info VM-S> Transmission Info at 29100 for atom00 -> atom01 Moved_VMs: 750.0 [4500.0 / 7700.0] BWD: 500.0 ID: 11
+Info VM-S> Transmission Info at 29160 for atom00 -> atom01 Moved_VMs: 750.0 [5250.0 / 7700.0] BWD: 500.0 ID: 11
+Info VM-S> Transmission Info at 29220 for atom00 -> atom01 Moved_VMs: 750.0 [6000.0 / 7700.0] BWD: 500.0 ID: 11
+Info VM-S> Transmission Info at 29280 for atom00 -> atom01 Moved_VMs: 750.0 [6750.0 / 7700.0] BWD: 500.0 ID: 11
+Info VM-S> Transmission Info at 29340 for atom00 -> atom01 Moved_VMs: 750.0 [7500.0 / 7700.0] BWD: 500.0 ID: 11
+Info VM-S> Transmission Info at 29400 for atom00 -> atom01 Moved_VMs: 0.0 [7700.0 / 7700.0] BWD: 500.0 ID: 11
+CTRL VM-S> Transmission Finished at 29400 28800 for atom00 -> atom01 ID: 11
+REPO VM-S> 32400 VM-kind: 111 Path: atom00-atom01 VMs_To_Move: 7700 VMs_Moved: 7700
+REPO VM-S> 32400 VM-kind: 111 Path: atom03-atom00 VMs_To_Move: 0 VMs_Moved: 0
+REPO VM-S> 32400 VM-kind: 111 Path: atom02-atom03 VMs_To_Move: 0 VMs_Moved: 0
+REPO VM-S> 32400 VM-kind: 111 Path: atom01-atom02 VMs_To_Move: 0 VMs_Moved: 0
+REPO VM-C> 32400 VM-kind: --- Path: atom01-atom00 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 32400 VM-kind: --- Path: atom00-atom02 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 32400 VM-kind: --- Path: atom01-atom02 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 32400 VM-kind: --- Path: atom00-atom01 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 32400 VM-kind: --- Path: atom01-atom03 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 32400 VM-kind: --- Path: atom03-atom02 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 32400 VM-kind: --- Path: atom03-atom01 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 32400 VM-kind: --- Path: atom03-atom00 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 32400 VM-kind: --- Path: atom02-atom03 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 32400 VM-kind: --- Path: atom02-atom01 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 32400 VM-kind: --- Path: atom00-atom03 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 32400 VM-kind: --- Path: atom02-atom00 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+Info Schd> Iteration: 9 Finished: 32400 Negotiations: 1
+Info Ener> 1391.0648999999999 kWh  atom00: 1182.2547 atom01: 208.81019999999998 atom02: 0.0 atom03: 0.0 (all in kWh)
+Execute Iteration: 10 at 32400 (36000)
+Prepare Next Iter: for VM 111 place atom00 [450] 46230933 bytes per VM 
+Prepare Next Iter: for VM 111 place atom01 [889] 91331778 bytes per VM 
+Prepare Next Iter: for VM 111 place atom02 [629] 64620571 bytes per VM 
+Prepare Next Iter: for VM 111 place atom03 [161] 16540400 bytes per VM 
+Info Iter>  VM-kind: 111 DC: atom00 Load: 7071 VMs: 22050.0 VM-kind: 111 DC: atom01 Load: 13970 VMs: 12950.0 VM-kind: 111 DC: atom02 Load: 9884 VMs: 0.0 VM-kind: 111 DC: atom03 Load: 2530 VMs: 0.0
+Iteration: 10
+Migrate VMs VM from atom00 to atom01
+* Num VMs: 8750 ( 40000000000 bits per VM ) 
+CTRL VM-S> Transmission start at 32400 32400 for atom00 -> atom01 BWD: 500.0 ID: 12
+Info VM-S> Transmission Info at 32400 for atom00 -> atom01 Moved_VMs: 750.0 [750.0 / 8750.0] BWD: 500.0 ID: 12
+Info VM-S> Transmission Info at 32460 for atom00 -> atom01 Moved_VMs: 750.0 [1500.0 / 8750.0] BWD: 500.0 ID: 12
+Info VM-S> Transmission Info at 32520 for atom00 -> atom01 Moved_VMs: 750.0 [2250.0 / 8750.0] BWD: 500.0 ID: 12
+Info VM-S> Transmission Info at 32580 for atom00 -> atom01 Moved_VMs: 750.0 [3000.0 / 8750.0] BWD: 500.0 ID: 12
+Info VM-S> Transmission Info at 32640 for atom00 -> atom01 Moved_VMs: 750.0 [3750.0 / 8750.0] BWD: 500.0 ID: 12
+Info VM-S> Transmission Info at 32700 for atom00 -> atom01 Moved_VMs: 750.0 [4500.0 / 8750.0] BWD: 500.0 ID: 12
+Info VM-S> Transmission Info at 32760 for atom00 -> atom01 Moved_VMs: 750.0 [5250.0 / 8750.0] BWD: 500.0 ID: 12
+Info VM-S> Transmission Info at 32820 for atom00 -> atom01 Moved_VMs: 750.0 [6000.0 / 8750.0] BWD: 500.0 ID: 12
+Info VM-S> Transmission Info at 32880 for atom00 -> atom01 Moved_VMs: 750.0 [6750.0 / 8750.0] BWD: 500.0 ID: 12
+Info VM-S> Transmission Info at 32940 for atom00 -> atom01 Moved_VMs: 750.0 [7500.0 / 8750.0] BWD: 500.0 ID: 12
+Info VM-S> Transmission Info at 33000 for atom00 -> atom01 Moved_VMs: 750.0 [8250.0 / 8750.0] BWD: 500.0 ID: 12
+Info VM-S> Transmission Info at 33060 for atom00 -> atom01 Moved_VMs: 0.0 [8750.0 / 8750.0] BWD: 500.0 ID: 12
+CTRL VM-S> Transmission Finished at 33060 32400 for atom00 -> atom01 ID: 12
+REPO VM-S> 36000 VM-kind: 111 Path: atom00-atom01 VMs_To_Move: 8750 VMs_Moved: 8750
+REPO VM-S> 36000 VM-kind: 111 Path: atom03-atom00 VMs_To_Move: 0 VMs_Moved: 0
+REPO VM-S> 36000 VM-kind: 111 Path: atom02-atom03 VMs_To_Move: 0 VMs_Moved: 0
+REPO VM-S> 36000 VM-kind: 111 Path: atom01-atom02 VMs_To_Move: 0 VMs_Moved: 0
+REPO VM-C> 36000 VM-kind: --- Path: atom01-atom00 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 36000 VM-kind: --- Path: atom00-atom02 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 36000 VM-kind: --- Path: atom01-atom02 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 36000 VM-kind: --- Path: atom00-atom01 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 36000 VM-kind: --- Path: atom01-atom03 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 36000 VM-kind: --- Path: atom03-atom02 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 36000 VM-kind: --- Path: atom03-atom01 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 36000 VM-kind: --- Path: atom03-atom00 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 36000 VM-kind: --- Path: atom02-atom03 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 36000 VM-kind: --- Path: atom02-atom01 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 36000 VM-kind: --- Path: atom00-atom03 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 36000 VM-kind: --- Path: atom02-atom00 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+Info Schd> Iteration: 10 Finished: 36000 Negotiations: 1
+Info Ener> 1391.0648999999999 kWh  atom00: 876.4001999999999 atom01: 514.6646999999999 atom02: 0.0 atom03: 0.0 (all in kWh)
+Execute Iteration: 11 at 36000 (39600)
+Prepare Next Iter: for VM 111 place atom00 [417] 32393689 bytes per VM 
+Prepare Next Iter: for VM 111 place atom01 [981] 76206736 bytes per VM 
+Prepare Next Iter: for VM 111 place atom02 [640] 49716933 bytes per VM 
+Prepare Next Iter: for VM 111 place atom03 [180] 13982887 bytes per VM 
+Info Iter>  VM-kind: 111 DC: atom00 Load: 6552 VMs: 13300.0 VM-kind: 111 DC: atom01 Load: 15415 VMs: 21700.0 VM-kind: 111 DC: atom02 Load: 10057 VMs: 0.0 VM-kind: 111 DC: atom03 Load: 2828 VMs: 0.0
+Iteration: 11
+Migrate VMs VM from atom00 to atom01
+* Num VMs: 7000 ( 40000000000 bits per VM ) 
+CTRL VM-S> Transmission start at 36000 36000 for atom00 -> atom01 BWD: 500.0 ID: 13
+Info VM-S> Transmission Info at 36000 for atom00 -> atom01 Moved_VMs: 750.0 [750.0 / 7000.0] BWD: 500.0 ID: 13
+Info VM-S> Transmission Info at 36060 for atom00 -> atom01 Moved_VMs: 750.0 [1500.0 / 7000.0] BWD: 500.0 ID: 13
+Info VM-S> Transmission Info at 36120 for atom00 -> atom01 Moved_VMs: 750.0 [2250.0 / 7000.0] BWD: 500.0 ID: 13
+Info VM-S> Transmission Info at 36180 for atom00 -> atom01 Moved_VMs: 750.0 [3000.0 / 7000.0] BWD: 500.0 ID: 13
+Info VM-S> Transmission Info at 36240 for atom00 -> atom01 Moved_VMs: 750.0 [3750.0 / 7000.0] BWD: 500.0 ID: 13
+Info VM-S> Transmission Info at 36300 for atom00 -> atom01 Moved_VMs: 750.0 [4500.0 / 7000.0] BWD: 500.0 ID: 13
+Info VM-S> Transmission Info at 36360 for atom00 -> atom01 Moved_VMs: 750.0 [5250.0 / 7000.0] BWD: 500.0 ID: 13
+Info VM-S> Transmission Info at 36420 for atom00 -> atom01 Moved_VMs: 750.0 [6000.0 / 7000.0] BWD: 500.0 ID: 13
+Info VM-S> Transmission Info at 36480 for atom00 -> atom01 Moved_VMs: 750.0 [6750.0 / 7000.0] BWD: 500.0 ID: 13
+Info VM-S> Transmission Info at 36540 for atom00 -> atom01 Moved_VMs: 0.0 [7000.0 / 7000.0] BWD: 500.0 ID: 13
+CTRL VM-S> Transmission Finished at 36540 36000 for atom00 -> atom01 ID: 13
+REPO VM-S> 39600 VM-kind: 111 Path: atom00-atom01 VMs_To_Move: 7000 VMs_Moved: 7000
+REPO VM-S> 39600 VM-kind: 111 Path: atom03-atom00 VMs_To_Move: 0 VMs_Moved: 0
+REPO VM-S> 39600 VM-kind: 111 Path: atom02-atom03 VMs_To_Move: 0 VMs_Moved: 0
+REPO VM-S> 39600 VM-kind: 111 Path: atom01-atom02 VMs_To_Move: 0 VMs_Moved: 0
+REPO VM-C> 39600 VM-kind: --- Path: atom01-atom00 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 39600 VM-kind: --- Path: atom00-atom02 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 39600 VM-kind: --- Path: atom01-atom02 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 39600 VM-kind: --- Path: atom00-atom01 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 39600 VM-kind: --- Path: atom01-atom03 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 39600 VM-kind: --- Path: atom03-atom02 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 39600 VM-kind: --- Path: atom03-atom01 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 39600 VM-kind: --- Path: atom03-atom00 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 39600 VM-kind: --- Path: atom02-atom03 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 39600 VM-kind: --- Path: atom02-atom01 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 39600 VM-kind: --- Path: atom00-atom03 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 39600 VM-kind: --- Path: atom02-atom00 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+Info Schd> Iteration: 11 Finished: 39600 Negotiations: 1
+Info Ener> 1391.0656 kWh  atom00: 528.6352999999999 atom01: 862.4302999999999 atom02: 0.0 atom03: 0.0 (all in kWh)
+Execute Iteration: 12 at 39600 (43200)
+Prepare Next Iter: for VM 111 place atom00 [350] 26490849 bytes per VM 
+Prepare Next Iter: for VM 111 place atom01 [1000] 75688141 bytes per VM 
+Prepare Next Iter: for VM 111 place atom02 [700] 52981699 bytes per VM 
+Prepare Next Iter: for VM 111 place atom03 [138] 10444963 bytes per VM 
+Info Iter>  VM-kind: 111 DC: atom00 Load: 5500 VMs: 6300.0 VM-kind: 111 DC: atom01 Load: 15714 VMs: 28700.0 VM-kind: 111 DC: atom02 Load: 11000 VMs: 0.0 VM-kind: 111 DC: atom03 Load: 2168 VMs: 0.0
+Iteration: 12
+Migrate VMs VM from atom00 to atom01
+* Num VMs: 4550 ( 40000000000 bits per VM ) 
+CTRL VM-S> Transmission start at 39600 39600 for atom00 -> atom01 BWD: 500.0 ID: 14
+Info VM-S> Transmission Info at 39600 for atom00 -> atom01 Moved_VMs: 750.0 [750.0 / 4550.0] BWD: 500.0 ID: 14
+Info VM-S> Transmission Info at 39660 for atom00 -> atom01 Moved_VMs: 750.0 [1500.0 / 4550.0] BWD: 500.0 ID: 14
+Info VM-S> Transmission Info at 39720 for atom00 -> atom01 Moved_VMs: 750.0 [2250.0 / 4550.0] BWD: 500.0 ID: 14
+Info VM-S> Transmission Info at 39780 for atom00 -> atom01 Moved_VMs: 750.0 [3000.0 / 4550.0] BWD: 500.0 ID: 14
+Info VM-S> Transmission Info at 39840 for atom00 -> atom01 Moved_VMs: 750.0 [3750.0 / 4550.0] BWD: 500.0 ID: 14
+Info VM-S> Transmission Info at 39900 for atom00 -> atom01 Moved_VMs: 750.0 [4500.0 / 4550.0] BWD: 500.0 ID: 14
+Info VM-S> Transmission Info at 39960 for atom00 -> atom01 Moved_VMs: 0.0 [4550.0 / 4550.0] BWD: 500.0 ID: 14
+CTRL VM-S> Transmission Finished at 39960 39600 for atom00 -> atom01 ID: 14
+REPO VM-S> 43200 VM-kind: 111 Path: atom00-atom01 VMs_To_Move: 4550 VMs_Moved: 4550
+REPO VM-S> 43200 VM-kind: 111 Path: atom03-atom00 VMs_To_Move: 0 VMs_Moved: 0
+REPO VM-S> 43200 VM-kind: 111 Path: atom02-atom03 VMs_To_Move: 0 VMs_Moved: 0
+REPO VM-S> 43200 VM-kind: 111 Path: atom01-atom02 VMs_To_Move: 0 VMs_Moved: 0
+REPO VM-C> 43200 VM-kind: --- Path: atom01-atom00 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 43200 VM-kind: --- Path: atom00-atom02 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 43200 VM-kind: --- Path: atom01-atom02 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 43200 VM-kind: --- Path: atom00-atom01 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 43200 VM-kind: --- Path: atom01-atom03 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 43200 VM-kind: --- Path: atom03-atom02 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 43200 VM-kind: --- Path: atom03-atom01 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 43200 VM-kind: --- Path: atom03-atom00 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 43200 VM-kind: --- Path: atom02-atom03 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 43200 VM-kind: --- Path: atom02-atom01 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 43200 VM-kind: --- Path: atom00-atom03 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 43200 VM-kind: --- Path: atom02-atom00 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+Info Schd> Iteration: 12 Finished: 43200 Negotiations: 1
+Info Ener> 1391.0656 kWh  atom00: 250.47279999999998 atom01: 1140.5928 atom02: 0.0 atom03: 0.0 (all in kWh)
+Execute Iteration: 13 at 43200 (46800)
+Prepare Next Iter: for VM 111 place atom00 [222] 18792288 bytes per VM 
+Prepare Next Iter: for VM 111 place atom01 [1000] 84649950 bytes per VM 
+Prepare Next Iter: for VM 111 place atom02 [760] 64333962 bytes per VM 
+Prepare Next Iter: for VM 111 place atom03 [150] 12697492 bytes per VM 
+Info Iter>  VM-kind: 111 DC: atom00 Load: 3488 VMs: 1750.0 VM-kind: 111 DC: atom01 Load: 15714 VMs: 33250.0 VM-kind: 111 DC: atom02 Load: 11942 VMs: 0.0 VM-kind: 111 DC: atom03 Load: 2357 VMs: 0.0
+Iteration: 13
+Migrate VMs VM from atom01 to atom02
+* Num VMs: 700 ( 40000000000 bits per VM ) 
+Migrate VMs VM from atom00 to atom01
+* Num VMs: 1750 ( 40000000000 bits per VM ) 
+CTRL VM-S> Transmission start at 43200 43200 for atom01 -> atom02 BWD: 500.0 ID: 15
+CTRL VM-S> Transmission start at 43200 43200 for atom00 -> atom01 BWD: 500.0 ID: 16
+Info VM-S> Transmission Info at 43200 for atom01 -> atom02 Moved_VMs: 0.0 [700.0 / 700.0] BWD: 500.0 ID: 15
+CTRL VM-S> Transmission Finished at 43200 43200 for atom01 -> atom02 ID: 15
+Info VM-S> Transmission Info at 43200 for atom00 -> atom01 Moved_VMs: 750.0 [750.0 / 1750.0] BWD: 500.0 ID: 16
+Info VM-S> Transmission Info at 43260 for atom00 -> atom01 Moved_VMs: 750.0 [1500.0 / 1750.0] BWD: 500.0 ID: 16
+Info VM-S> Transmission Info at 43320 for atom00 -> atom01 Moved_VMs: 0.0 [1750.0 / 1750.0] BWD: 500.0 ID: 16
+CTRL VM-S> Transmission Finished at 43320 43200 for atom00 -> atom01 ID: 16
+REPO VM-S> 46800 VM-kind: 111 Path: atom00-atom01 VMs_To_Move: 1750 VMs_Moved: 1750
+REPO VM-S> 46800 VM-kind: 111 Path: atom03-atom00 VMs_To_Move: 0 VMs_Moved: 0
+REPO VM-S> 46800 VM-kind: 111 Path: atom02-atom03 VMs_To_Move: 0 VMs_Moved: 0
+REPO VM-S> 46800 VM-kind: 111 Path: atom01-atom02 VMs_To_Move: 700 VMs_Moved: 700
+REPO VM-C> 46800 VM-kind: --- Path: atom01-atom00 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 46800 VM-kind: --- Path: atom00-atom02 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 46800 VM-kind: --- Path: atom01-atom02 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 46800 VM-kind: --- Path: atom00-atom01 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 46800 VM-kind: --- Path: atom01-atom03 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 46800 VM-kind: --- Path: atom03-atom02 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 46800 VM-kind: --- Path: atom03-atom01 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 46800 VM-kind: --- Path: atom03-atom00 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 46800 VM-kind: --- Path: atom02-atom03 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 46800 VM-kind: --- Path: atom02-atom01 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 46800 VM-kind: --- Path: atom00-atom03 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 46800 VM-kind: --- Path: atom02-atom00 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+Info Schd> Iteration: 13 Finished: 46800 Negotiations: 2
+Info Ener> 1391.0649 kWh  atom00: 69.6047 atom01: 1321.4602 atom02: 0.0 atom03: 0.0 (all in kWh)
+Execute Iteration: 14 at 46800 (50400)
+Prepare Next Iter: for VM 111 place atom00 [210] 16027569 bytes per VM 
+Prepare Next Iter: for VM 111 place atom01 [999] 76245436 bytes per VM 
+Prepare Next Iter: for VM 111 place atom02 [816] 62278554 bytes per VM 
+Prepare Next Iter: for VM 111 place atom03 [207] 15798603 bytes per VM 
+Info Iter>  VM-kind: 111 DC: atom00 Load: 3300 VMs: 0.0 VM-kind: 111 DC: atom01 Load: 15698 VMs: 34300.0 VM-kind: 111 DC: atom02 Load: 12822 VMs: 700.0 VM-kind: 111 DC: atom03 Load: 3252 VMs: 0.0
+Iteration: 14
+Migrate VMs VM from atom01 to atom02
+* Num VMs: 4550 ( 40000000000 bits per VM ) 
+CTRL VM-S> Transmission start at 46800 46800 for atom01 -> atom02 BWD: 500.0 ID: 17
+Info VM-S> Transmission Info at 46800 for atom01 -> atom02 Moved_VMs: 750.0 [750.0 / 4550.0] BWD: 500.0 ID: 17
+Info VM-S> Transmission Info at 46860 for atom01 -> atom02 Moved_VMs: 750.0 [1500.0 / 4550.0] BWD: 500.0 ID: 17
+Info VM-S> Transmission Info at 46920 for atom01 -> atom02 Moved_VMs: 750.0 [2250.0 / 4550.0] BWD: 500.0 ID: 17
+Info VM-S> Transmission Info at 46980 for atom01 -> atom02 Moved_VMs: 750.0 [3000.0 / 4550.0] BWD: 500.0 ID: 17
+Info VM-S> Transmission Info at 47040 for atom01 -> atom02 Moved_VMs: 750.0 [3750.0 / 4550.0] BWD: 500.0 ID: 17
+Info VM-S> Transmission Info at 47100 for atom01 -> atom02 Moved_VMs: 750.0 [4500.0 / 4550.0] BWD: 500.0 ID: 17
+Info VM-S> Transmission Info at 47160 for atom01 -> atom02 Moved_VMs: 0.0 [4550.0 / 4550.0] BWD: 500.0 ID: 17
+CTRL VM-S> Transmission Finished at 47160 46800 for atom01 -> atom02 ID: 17
+REPO VM-S> 50400 VM-kind: 111 Path: atom00-atom01 VMs_To_Move: 0 VMs_Moved: 0
+REPO VM-S> 50400 VM-kind: 111 Path: atom03-atom00 VMs_To_Move: 0 VMs_Moved: 0
+REPO VM-S> 50400 VM-kind: 111 Path: atom02-atom03 VMs_To_Move: 0 VMs_Moved: 0
+REPO VM-S> 50400 VM-kind: 111 Path: atom01-atom02 VMs_To_Move: 4550 VMs_Moved: 4550
+REPO VM-C> 50400 VM-kind: --- Path: atom01-atom00 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 50400 VM-kind: --- Path: atom00-atom02 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 50400 VM-kind: --- Path: atom01-atom02 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 50400 VM-kind: --- Path: atom00-atom01 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 50400 VM-kind: --- Path: atom01-atom03 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 50400 VM-kind: --- Path: atom03-atom02 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 50400 VM-kind: --- Path: atom03-atom01 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 50400 VM-kind: --- Path: atom03-atom00 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 50400 VM-kind: --- Path: atom02-atom03 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 50400 VM-kind: --- Path: atom02-atom01 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 50400 VM-kind: --- Path: atom00-atom03 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 50400 VM-kind: --- Path: atom02-atom00 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+Info Schd> Iteration: 14 Finished: 50400 Negotiations: 1
+Info Ener> 1391.0656 kWh  atom00: 0.0 atom01: 1363.1227999999999 atom02: 27.9428 atom03: 0.0 (all in kWh)
+Execute Iteration: 15 at 50400 (54000)
+Prepare Next Iter: for VM 111 place atom00 [93] 7919783 bytes per VM 
+Prepare Next Iter: for VM 111 place atom01 [664] 56545548 bytes per VM 
+Prepare Next Iter: for VM 111 place atom02 [849] 72299955 bytes per VM 
+Prepare Next Iter: for VM 111 place atom03 [500] 42579479 bytes per VM 
+Info Iter>  VM-kind: 111 DC: atom00 Load: 1461 VMs: 0.0 VM-kind: 111 DC: atom01 Load: 10434 VMs: 29750.0 VM-kind: 111 DC: atom02 Load: 13341 VMs: 5250.0 VM-kind: 111 DC: atom03 Load: 7857 VMs: 0.0
+Iteration: 15
+Migrate VMs VM from atom01 to atom02
+* Num VMs: 7700 ( 40000000000 bits per VM ) 
+CTRL VM-S> Transmission start at 50400 50400 for atom01 -> atom02 BWD: 500.0 ID: 18
+Info VM-S> Transmission Info at 50400 for atom01 -> atom02 Moved_VMs: 750.0 [750.0 / 7700.0] BWD: 500.0 ID: 18
+Info VM-S> Transmission Info at 50460 for atom01 -> atom02 Moved_VMs: 750.0 [1500.0 / 7700.0] BWD: 500.0 ID: 18
+Info VM-S> Transmission Info at 50520 for atom01 -> atom02 Moved_VMs: 750.0 [2250.0 / 7700.0] BWD: 500.0 ID: 18
+Info VM-S> Transmission Info at 50580 for atom01 -> atom02 Moved_VMs: 750.0 [3000.0 / 7700.0] BWD: 500.0 ID: 18
+Info VM-S> Transmission Info at 50640 for atom01 -> atom02 Moved_VMs: 750.0 [3750.0 / 7700.0] BWD: 500.0 ID: 18
+Info VM-S> Transmission Info at 50700 for atom01 -> atom02 Moved_VMs: 750.0 [4500.0 / 7700.0] BWD: 500.0 ID: 18
+Info VM-S> Transmission Info at 50760 for atom01 -> atom02 Moved_VMs: 750.0 [5250.0 / 7700.0] BWD: 500.0 ID: 18
+Info VM-S> Transmission Info at 50820 for atom01 -> atom02 Moved_VMs: 750.0 [6000.0 / 7700.0] BWD: 500.0 ID: 18
+Info VM-S> Transmission Info at 50880 for atom01 -> atom02 Moved_VMs: 750.0 [6750.0 / 7700.0] BWD: 500.0 ID: 18
+Info VM-S> Transmission Info at 50940 for atom01 -> atom02 Moved_VMs: 750.0 [7500.0 / 7700.0] BWD: 500.0 ID: 18
+Info VM-S> Transmission Info at 51000 for atom01 -> atom02 Moved_VMs: 0.0 [7700.0 / 7700.0] BWD: 500.0 ID: 18
+CTRL VM-S> Transmission Finished at 51000 50400 for atom01 -> atom02 ID: 18
+REPO VM-S> 54000 VM-kind: 111 Path: atom00-atom01 VMs_To_Move: 0 VMs_Moved: 0
+REPO VM-S> 54000 VM-kind: 111 Path: atom03-atom00 VMs_To_Move: 0 VMs_Moved: 0
+REPO VM-S> 54000 VM-kind: 111 Path: atom02-atom03 VMs_To_Move: 0 VMs_Moved: 0
+REPO VM-S> 54000 VM-kind: 111 Path: atom01-atom02 VMs_To_Move: 7700 VMs_Moved: 7700
+REPO VM-C> 54000 VM-kind: --- Path: atom01-atom00 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 54000 VM-kind: --- Path: atom00-atom02 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 54000 VM-kind: --- Path: atom01-atom02 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 54000 VM-kind: --- Path: atom00-atom01 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 54000 VM-kind: --- Path: atom01-atom03 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 54000 VM-kind: --- Path: atom03-atom02 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 54000 VM-kind: --- Path: atom03-atom01 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 54000 VM-kind: --- Path: atom03-atom00 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 54000 VM-kind: --- Path: atom02-atom03 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 54000 VM-kind: --- Path: atom02-atom01 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 54000 VM-kind: --- Path: atom00-atom03 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 54000 VM-kind: --- Path: atom02-atom00 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+Info Schd> Iteration: 15 Finished: 54000 Negotiations: 1
+Info Ener> 1391.0648999999999 kWh  atom00: 0.0 atom01: 1182.2547 atom02: 208.81019999999998 atom03: 0.0 (all in kWh)
+Execute Iteration: 16 at 54000 (57600)
+Prepare Next Iter: for VM 111 place atom00 [161] 13437726 bytes per VM 
+Prepare Next Iter: for VM 111 place atom01 [450] 37558863 bytes per VM 
+Prepare Next Iter: for VM 111 place atom02 [889] 74199621 bytes per VM 
+Prepare Next Iter: for VM 111 place atom03 [629] 52498945 bytes per VM 
+Info Iter>  VM-kind: 111 DC: atom00 Load: 2530 VMs: 0.0 VM-kind: 111 DC: atom01 Load: 7071 VMs: 22050.0 VM-kind: 111 DC: atom02 Load: 13970 VMs: 12950.0 VM-kind: 111 DC: atom03 Load: 9884 VMs: 0.0
+Iteration: 16
+Migrate VMs VM from atom01 to atom02
+* Num VMs: 8750 ( 40000000000 bits per VM ) 
+CTRL VM-S> Transmission start at 54000 54000 for atom01 -> atom02 BWD: 500.0 ID: 19
+Info VM-S> Transmission Info at 54000 for atom01 -> atom02 Moved_VMs: 750.0 [750.0 / 8750.0] BWD: 500.0 ID: 19
+Info VM-S> Transmission Info at 54060 for atom01 -> atom02 Moved_VMs: 750.0 [1500.0 / 8750.0] BWD: 500.0 ID: 19
+Info VM-S> Transmission Info at 54120 for atom01 -> atom02 Moved_VMs: 750.0 [2250.0 / 8750.0] BWD: 500.0 ID: 19
+Info VM-S> Transmission Info at 54180 for atom01 -> atom02 Moved_VMs: 750.0 [3000.0 / 8750.0] BWD: 500.0 ID: 19
+Info VM-S> Transmission Info at 54240 for atom01 -> atom02 Moved_VMs: 750.0 [3750.0 / 8750.0] BWD: 500.0 ID: 19
+Info VM-S> Transmission Info at 54300 for atom01 -> atom02 Moved_VMs: 750.0 [4500.0 / 8750.0] BWD: 500.0 ID: 19
+Info VM-S> Transmission Info at 54360 for atom01 -> atom02 Moved_VMs: 750.0 [5250.0 / 8750.0] BWD: 500.0 ID: 19
+Info VM-S> Transmission Info at 54420 for atom01 -> atom02 Moved_VMs: 750.0 [6000.0 / 8750.0] BWD: 500.0 ID: 19
+Info VM-S> Transmission Info at 54480 for atom01 -> atom02 Moved_VMs: 750.0 [6750.0 / 8750.0] BWD: 500.0 ID: 19
+Info VM-S> Transmission Info at 54540 for atom01 -> atom02 Moved_VMs: 750.0 [7500.0 / 8750.0] BWD: 500.0 ID: 19
+Info VM-S> Transmission Info at 54600 for atom01 -> atom02 Moved_VMs: 750.0 [8250.0 / 8750.0] BWD: 500.0 ID: 19
+Info VM-S> Transmission Info at 54660 for atom01 -> atom02 Moved_VMs: 0.0 [8750.0 / 8750.0] BWD: 500.0 ID: 19
+CTRL VM-S> Transmission Finished at 54660 54000 for atom01 -> atom02 ID: 19
+REPO VM-S> 57600 VM-kind: 111 Path: atom00-atom01 VMs_To_Move: 0 VMs_Moved: 0
+REPO VM-S> 57600 VM-kind: 111 Path: atom03-atom00 VMs_To_Move: 0 VMs_Moved: 0
+REPO VM-S> 57600 VM-kind: 111 Path: atom02-atom03 VMs_To_Move: 0 VMs_Moved: 0
+REPO VM-S> 57600 VM-kind: 111 Path: atom01-atom02 VMs_To_Move: 8750 VMs_Moved: 8750
+REPO VM-C> 57600 VM-kind: --- Path: atom01-atom00 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 57600 VM-kind: --- Path: atom00-atom02 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 57600 VM-kind: --- Path: atom01-atom02 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 57600 VM-kind: --- Path: atom00-atom01 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 57600 VM-kind: --- Path: atom01-atom03 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 57600 VM-kind: --- Path: atom03-atom02 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 57600 VM-kind: --- Path: atom03-atom01 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 57600 VM-kind: --- Path: atom03-atom00 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 57600 VM-kind: --- Path: atom02-atom03 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 57600 VM-kind: --- Path: atom02-atom01 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 57600 VM-kind: --- Path: atom00-atom03 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 57600 VM-kind: --- Path: atom02-atom00 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+Info Schd> Iteration: 16 Finished: 57600 Negotiations: 1
+Info Ener> 1391.0648999999999 kWh  atom00: 0.0 atom01: 876.4001999999999 atom02: 514.6646999999999 atom03: 0.0 (all in kWh)
+Execute Iteration: 17 at 57600 (61200)
+Prepare Next Iter: for VM 111 place atom00 [180] 14024313 bytes per VM 
+Prepare Next Iter: for VM 111 place atom01 [417] 32489658 bytes per VM 
+Prepare Next Iter: for VM 111 place atom02 [981] 76432505 bytes per VM 
+Prepare Next Iter: for VM 111 place atom03 [640] 49864224 bytes per VM 
+Info Iter>  VM-kind: 111 DC: atom00 Load: 2828 VMs: 0.0 VM-kind: 111 DC: atom01 Load: 6552 VMs: 13300.0 VM-kind: 111 DC: atom02 Load: 15415 VMs: 21700.0 VM-kind: 111 DC: atom03 Load: 10057 VMs: 0.0
+Iteration: 17
+Migrate VMs VM from atom01 to atom02
+* Num VMs: 7000 ( 40000000000 bits per VM ) 
+CTRL VM-S> Transmission start at 57600 57600 for atom01 -> atom02 BWD: 500.0 ID: 20
+Info VM-S> Transmission Info at 57600 for atom01 -> atom02 Moved_VMs: 750.0 [750.0 / 7000.0] BWD: 500.0 ID: 20
+Info VM-S> Transmission Info at 57660 for atom01 -> atom02 Moved_VMs: 750.0 [1500.0 / 7000.0] BWD: 500.0 ID: 20
+Info VM-S> Transmission Info at 57720 for atom01 -> atom02 Moved_VMs: 750.0 [2250.0 / 7000.0] BWD: 500.0 ID: 20
+Info VM-S> Transmission Info at 57780 for atom01 -> atom02 Moved_VMs: 750.0 [3000.0 / 7000.0] BWD: 500.0 ID: 20
+Info VM-S> Transmission Info at 57840 for atom01 -> atom02 Moved_VMs: 750.0 [3750.0 / 7000.0] BWD: 500.0 ID: 20
+Info VM-S> Transmission Info at 57900 for atom01 -> atom02 Moved_VMs: 750.0 [4500.0 / 7000.0] BWD: 500.0 ID: 20
+Info VM-S> Transmission Info at 57960 for atom01 -> atom02 Moved_VMs: 750.0 [5250.0 / 7000.0] BWD: 500.0 ID: 20
+Info VM-S> Transmission Info at 58020 for atom01 -> atom02 Moved_VMs: 750.0 [6000.0 / 7000.0] BWD: 500.0 ID: 20
+Info VM-S> Transmission Info at 58080 for atom01 -> atom02 Moved_VMs: 750.0 [6750.0 / 7000.0] BWD: 500.0 ID: 20
+Info VM-S> Transmission Info at 58140 for atom01 -> atom02 Moved_VMs: 0.0 [7000.0 / 7000.0] BWD: 500.0 ID: 20
+CTRL VM-S> Transmission Finished at 58140 57600 for atom01 -> atom02 ID: 20
+REPO VM-S> 61200 VM-kind: 111 Path: atom00-atom01 VMs_To_Move: 0 VMs_Moved: 0
+REPO VM-S> 61200 VM-kind: 111 Path: atom03-atom00 VMs_To_Move: 0 VMs_Moved: 0
+REPO VM-S> 61200 VM-kind: 111 Path: atom02-atom03 VMs_To_Move: 0 VMs_Moved: 0
+REPO VM-S> 61200 VM-kind: 111 Path: atom01-atom02 VMs_To_Move: 7000 VMs_Moved: 7000
+REPO VM-C> 61200 VM-kind: --- Path: atom01-atom00 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 61200 VM-kind: --- Path: atom00-atom02 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 61200 VM-kind: --- Path: atom01-atom02 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 61200 VM-kind: --- Path: atom00-atom01 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 61200 VM-kind: --- Path: atom01-atom03 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 61200 VM-kind: --- Path: atom03-atom02 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 61200 VM-kind: --- Path: atom03-atom01 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 61200 VM-kind: --- Path: atom03-atom00 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 61200 VM-kind: --- Path: atom02-atom03 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 61200 VM-kind: --- Path: atom02-atom01 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 61200 VM-kind: --- Path: atom00-atom03 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 61200 VM-kind: --- Path: atom02-atom00 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+Info Schd> Iteration: 17 Finished: 61200 Negotiations: 1
+Info Ener> 1391.0656 kWh  atom00: 0.0 atom01: 528.6352999999999 atom02: 862.4302999999999 atom03: 0.0 (all in kWh)
+Execute Iteration: 18 at 61200 (64800)
+Prepare Next Iter: for VM 111 place atom00 [138] 10657883 bytes per VM 
+Prepare Next Iter: for VM 111 place atom01 [350] 27030864 bytes per VM 
+Prepare Next Iter: for VM 111 place atom02 [1000] 77231041 bytes per VM 
+Prepare Next Iter: for VM 111 place atom03 [700] 54061729 bytes per VM 
+Info Iter>  VM-kind: 111 DC: atom00 Load: 2168 VMs: 0.0 VM-kind: 111 DC: atom01 Load: 5500 VMs: 6300.0 VM-kind: 111 DC: atom02 Load: 15714 VMs: 28700.0 VM-kind: 111 DC: atom03 Load: 11000 VMs: 0.0
+Iteration: 18
+Migrate VMs VM from atom01 to atom02
+* Num VMs: 4550 ( 40000000000 bits per VM ) 
+CTRL VM-S> Transmission start at 61200 61200 for atom01 -> atom02 BWD: 500.0 ID: 21
+Info VM-S> Transmission Info at 61200 for atom01 -> atom02 Moved_VMs: 750.0 [750.0 / 4550.0] BWD: 500.0 ID: 21
+Info VM-S> Transmission Info at 61260 for atom01 -> atom02 Moved_VMs: 750.0 [1500.0 / 4550.0] BWD: 500.0 ID: 21
+Info VM-S> Transmission Info at 61320 for atom01 -> atom02 Moved_VMs: 750.0 [2250.0 / 4550.0] BWD: 500.0 ID: 21
+Info VM-S> Transmission Info at 61380 for atom01 -> atom02 Moved_VMs: 750.0 [3000.0 / 4550.0] BWD: 500.0 ID: 21
+Info VM-S> Transmission Info at 61440 for atom01 -> atom02 Moved_VMs: 750.0 [3750.0 / 4550.0] BWD: 500.0 ID: 21
+Info VM-S> Transmission Info at 61500 for atom01 -> atom02 Moved_VMs: 750.0 [4500.0 / 4550.0] BWD: 500.0 ID: 21
+Info VM-S> Transmission Info at 61560 for atom01 -> atom02 Moved_VMs: 0.0 [4550.0 / 4550.0] BWD: 500.0 ID: 21
+CTRL VM-S> Transmission Finished at 61560 61200 for atom01 -> atom02 ID: 21
+REPO VM-S> 64800 VM-kind: 111 Path: atom00-atom01 VMs_To_Move: 0 VMs_Moved: 0
+REPO VM-S> 64800 VM-kind: 111 Path: atom03-atom00 VMs_To_Move: 0 VMs_Moved: 0
+REPO VM-S> 64800 VM-kind: 111 Path: atom02-atom03 VMs_To_Move: 0 VMs_Moved: 0
+REPO VM-S> 64800 VM-kind: 111 Path: atom01-atom02 VMs_To_Move: 4550 VMs_Moved: 4550
+REPO VM-C> 64800 VM-kind: --- Path: atom01-atom00 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 64800 VM-kind: --- Path: atom00-atom02 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 64800 VM-kind: --- Path: atom01-atom02 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 64800 VM-kind: --- Path: atom00-atom01 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 64800 VM-kind: --- Path: atom01-atom03 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 64800 VM-kind: --- Path: atom03-atom02 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 64800 VM-kind: --- Path: atom03-atom01 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 64800 VM-kind: --- Path: atom03-atom00 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 64800 VM-kind: --- Path: atom02-atom03 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 64800 VM-kind: --- Path: atom02-atom01 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 64800 VM-kind: --- Path: atom00-atom03 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 64800 VM-kind: --- Path: atom02-atom00 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+Info Schd> Iteration: 18 Finished: 64800 Negotiations: 1
+Info Ener> 1391.0656 kWh  atom00: 0.0 atom01: 250.47279999999998 atom02: 1140.5928 atom03: 0.0 (all in kWh)
+Execute Iteration: 19 at 64800 (68400)
+Prepare Next Iter: for VM 111 place atom00 [150] 15117101 bytes per VM 
+Prepare Next Iter: for VM 111 place atom01 [222] 22373309 bytes per VM 
+Prepare Next Iter: for VM 111 place atom02 [1000] 100780675 bytes per VM 
+Prepare Next Iter: for VM 111 place atom03 [760] 76593313 bytes per VM 
+Info Iter>  VM-kind: 111 DC: atom00 Load: 2357 VMs: 0.0 VM-kind: 111 DC: atom01 Load: 3488 VMs: 1750.0 VM-kind: 111 DC: atom02 Load: 15714 VMs: 33250.0 VM-kind: 111 DC: atom03 Load: 11942 VMs: 0.0
+Iteration: 19
+Migrate VMs VM from atom01 to atom02
+* Num VMs: 1750 ( 40000000000 bits per VM ) 
+Migrate VMs VM from atom02 to atom03
+* Num VMs: 700 ( 40000000000 bits per VM ) 
+CTRL VM-S> Transmission start at 64800 64800 for atom01 -> atom02 BWD: 500.0 ID: 22
+CTRL VM-S> Transmission start at 64800 64800 for atom02 -> atom03 BWD: 500.0 ID: 23
+Info VM-S> Transmission Info at 64800 for atom01 -> atom02 Moved_VMs: 750.0 [750.0 / 1750.0] BWD: 500.0 ID: 22
+Info VM-S> Transmission Info at 64800 for atom02 -> atom03 Moved_VMs: 0.0 [700.0 / 700.0] BWD: 500.0 ID: 23
+CTRL VM-S> Transmission Finished at 64800 64800 for atom02 -> atom03 ID: 23
+Info VM-S> Transmission Info at 64860 for atom01 -> atom02 Moved_VMs: 750.0 [1500.0 / 1750.0] BWD: 500.0 ID: 22
+Info VM-S> Transmission Info at 64920 for atom01 -> atom02 Moved_VMs: 0.0 [1750.0 / 1750.0] BWD: 500.0 ID: 22
+CTRL VM-S> Transmission Finished at 64920 64800 for atom01 -> atom02 ID: 22
+REPO VM-S> 68400 VM-kind: 111 Path: atom00-atom01 VMs_To_Move: 0 VMs_Moved: 0
+REPO VM-S> 68400 VM-kind: 111 Path: atom03-atom00 VMs_To_Move: 0 VMs_Moved: 0
+REPO VM-S> 68400 VM-kind: 111 Path: atom02-atom03 VMs_To_Move: 700 VMs_Moved: 700
+REPO VM-S> 68400 VM-kind: 111 Path: atom01-atom02 VMs_To_Move: 1750 VMs_Moved: 1750
+REPO VM-C> 68400 VM-kind: --- Path: atom01-atom00 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 68400 VM-kind: --- Path: atom00-atom02 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 68400 VM-kind: --- Path: atom01-atom02 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 68400 VM-kind: --- Path: atom00-atom01 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 68400 VM-kind: --- Path: atom01-atom03 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 68400 VM-kind: --- Path: atom03-atom02 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 68400 VM-kind: --- Path: atom03-atom01 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 68400 VM-kind: --- Path: atom03-atom00 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 68400 VM-kind: --- Path: atom02-atom03 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 68400 VM-kind: --- Path: atom02-atom01 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 68400 VM-kind: --- Path: atom00-atom03 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 68400 VM-kind: --- Path: atom02-atom00 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+Info Schd> Iteration: 19 Finished: 68400 Negotiations: 2
+Info Ener> 1391.0649 kWh  atom00: 0.0 atom01: 69.6047 atom02: 1321.4602 atom03: 0.0 (all in kWh)
+Execute Iteration: 20 at 68400 (72000)
+Prepare Next Iter: for VM 111 place atom00 [207] 17117944 bytes per VM 
+Prepare Next Iter: for VM 111 place atom01 [210] 17366030 bytes per VM 
+Prepare Next Iter: for VM 111 place atom02 [999] 82612687 bytes per VM 
+Prepare Next Iter: for VM 111 place atom03 [816] 67479432 bytes per VM 
+Info Iter>  VM-kind: 111 DC: atom00 Load: 3252 VMs: 0.0 VM-kind: 111 DC: atom01 Load: 3300 VMs: 0.0 VM-kind: 111 DC: atom02 Load: 15698 VMs: 34300.0 VM-kind: 111 DC: atom03 Load: 12822 VMs: 700.0
+Iteration: 20
+Migrate VMs VM from atom02 to atom03
+* Num VMs: 4550 ( 40000000000 bits per VM ) 
+CTRL VM-S> Transmission start at 68400 68400 for atom02 -> atom03 BWD: 500.0 ID: 24
+Info VM-S> Transmission Info at 68400 for atom02 -> atom03 Moved_VMs: 750.0 [750.0 / 4550.0] BWD: 500.0 ID: 24
+Info VM-S> Transmission Info at 68460 for atom02 -> atom03 Moved_VMs: 750.0 [1500.0 / 4550.0] BWD: 500.0 ID: 24
+Info VM-S> Transmission Info at 68520 for atom02 -> atom03 Moved_VMs: 750.0 [2250.0 / 4550.0] BWD: 500.0 ID: 24
+Info VM-S> Transmission Info at 68580 for atom02 -> atom03 Moved_VMs: 750.0 [3000.0 / 4550.0] BWD: 500.0 ID: 24
+Info VM-S> Transmission Info at 68640 for atom02 -> atom03 Moved_VMs: 750.0 [3750.0 / 4550.0] BWD: 500.0 ID: 24
+Info VM-S> Transmission Info at 68700 for atom02 -> atom03 Moved_VMs: 750.0 [4500.0 / 4550.0] BWD: 500.0 ID: 24
+Info VM-S> Transmission Info at 68760 for atom02 -> atom03 Moved_VMs: 0.0 [4550.0 / 4550.0] BWD: 500.0 ID: 24
+CTRL VM-S> Transmission Finished at 68760 68400 for atom02 -> atom03 ID: 24
+REPO VM-S> 72000 VM-kind: 111 Path: atom00-atom01 VMs_To_Move: 0 VMs_Moved: 0
+REPO VM-S> 72000 VM-kind: 111 Path: atom03-atom00 VMs_To_Move: 0 VMs_Moved: 0
+REPO VM-S> 72000 VM-kind: 111 Path: atom02-atom03 VMs_To_Move: 4550 VMs_Moved: 4550
+REPO VM-S> 72000 VM-kind: 111 Path: atom01-atom02 VMs_To_Move: 0 VMs_Moved: 0
+REPO VM-C> 72000 VM-kind: --- Path: atom01-atom00 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 72000 VM-kind: --- Path: atom00-atom02 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 72000 VM-kind: --- Path: atom01-atom02 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 72000 VM-kind: --- Path: atom00-atom01 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 72000 VM-kind: --- Path: atom01-atom03 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 72000 VM-kind: --- Path: atom03-atom02 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 72000 VM-kind: --- Path: atom03-atom01 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 72000 VM-kind: --- Path: atom03-atom00 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 72000 VM-kind: --- Path: atom02-atom03 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 72000 VM-kind: --- Path: atom02-atom01 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 72000 VM-kind: --- Path: atom00-atom03 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 72000 VM-kind: --- Path: atom02-atom00 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+Info Schd> Iteration: 20 Finished: 72000 Negotiations: 1
+Info Ener> 1391.0656 kWh  atom00: 0.0 atom01: 0.0 atom02: 1363.1227999999999 atom03: 27.9428 (all in kWh)
+Execute Iteration: 21 at 72000 (75600)
+Prepare Next Iter: for VM 111 place atom00 [500] 37794995 bytes per VM 
+Prepare Next Iter: for VM 111 place atom01 [93] 7029869 bytes per VM 
+Prepare Next Iter: for VM 111 place atom02 [664] 50191754 bytes per VM 
+Prepare Next Iter: for VM 111 place atom03 [849] 64175902 bytes per VM 
+Info Iter>  VM-kind: 111 DC: atom00 Load: 7857 VMs: 0.0 VM-kind: 111 DC: atom01 Load: 1461 VMs: 0.0 VM-kind: 111 DC: atom02 Load: 10434 VMs: 29750.0 VM-kind: 111 DC: atom03 Load: 13341 VMs: 5250.0
+Iteration: 21
+Migrate VMs VM from atom02 to atom03
+* Num VMs: 7700 ( 40000000000 bits per VM ) 
+CTRL VM-S> Transmission start at 72000 72000 for atom02 -> atom03 BWD: 500.0 ID: 25
+Info VM-S> Transmission Info at 72000 for atom02 -> atom03 Moved_VMs: 750.0 [750.0 / 7700.0] BWD: 500.0 ID: 25
+Info VM-S> Transmission Info at 72060 for atom02 -> atom03 Moved_VMs: 750.0 [1500.0 / 7700.0] BWD: 500.0 ID: 25
+Info VM-S> Transmission Info at 72120 for atom02 -> atom03 Moved_VMs: 750.0 [2250.0 / 7700.0] BWD: 500.0 ID: 25
+Info VM-S> Transmission Info at 72180 for atom02 -> atom03 Moved_VMs: 750.0 [3000.0 / 7700.0] BWD: 500.0 ID: 25
+Info VM-S> Transmission Info at 72240 for atom02 -> atom03 Moved_VMs: 750.0 [3750.0 / 7700.0] BWD: 500.0 ID: 25
+Info VM-S> Transmission Info at 72300 for atom02 -> atom03 Moved_VMs: 750.0 [4500.0 / 7700.0] BWD: 500.0 ID: 25
+Info VM-S> Transmission Info at 72360 for atom02 -> atom03 Moved_VMs: 750.0 [5250.0 / 7700.0] BWD: 500.0 ID: 25
+Info VM-S> Transmission Info at 72420 for atom02 -> atom03 Moved_VMs: 750.0 [6000.0 / 7700.0] BWD: 500.0 ID: 25
+Info VM-S> Transmission Info at 72480 for atom02 -> atom03 Moved_VMs: 750.0 [6750.0 / 7700.0] BWD: 500.0 ID: 25
+Info VM-S> Transmission Info at 72540 for atom02 -> atom03 Moved_VMs: 750.0 [7500.0 / 7700.0] BWD: 500.0 ID: 25
+Info VM-S> Transmission Info at 72600 for atom02 -> atom03 Moved_VMs: 0.0 [7700.0 / 7700.0] BWD: 500.0 ID: 25
+CTRL VM-S> Transmission Finished at 72600 72000 for atom02 -> atom03 ID: 25
+REPO VM-S> 75600 VM-kind: 111 Path: atom00-atom01 VMs_To_Move: 0 VMs_Moved: 0
+REPO VM-S> 75600 VM-kind: 111 Path: atom03-atom00 VMs_To_Move: 0 VMs_Moved: 0
+REPO VM-S> 75600 VM-kind: 111 Path: atom02-atom03 VMs_To_Move: 7700 VMs_Moved: 7700
+REPO VM-S> 75600 VM-kind: 111 Path: atom01-atom02 VMs_To_Move: 0 VMs_Moved: 0
+REPO VM-C> 75600 VM-kind: --- Path: atom01-atom00 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 75600 VM-kind: --- Path: atom00-atom02 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 75600 VM-kind: --- Path: atom01-atom02 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 75600 VM-kind: --- Path: atom00-atom01 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 75600 VM-kind: --- Path: atom01-atom03 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 75600 VM-kind: --- Path: atom03-atom02 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 75600 VM-kind: --- Path: atom03-atom01 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 75600 VM-kind: --- Path: atom03-atom00 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 75600 VM-kind: --- Path: atom02-atom03 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 75600 VM-kind: --- Path: atom02-atom01 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 75600 VM-kind: --- Path: atom00-atom03 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 75600 VM-kind: --- Path: atom02-atom00 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+Info Schd> Iteration: 21 Finished: 75600 Negotiations: 1
+Info Ener> 1391.0648999999999 kWh  atom00: 0.0 atom01: 0.0 atom02: 1182.2547 atom03: 208.81019999999998 (all in kWh)
+Execute Iteration: 22 at 75600 (79200)
+Prepare Next Iter: for VM 111 place atom00 [629] 48548882 bytes per VM 
+Prepare Next Iter: for VM 111 place atom01 [161] 12426661 bytes per VM 
+Prepare Next Iter: for VM 111 place atom02 [450] 34732905 bytes per VM 
+Prepare Next Iter: for VM 111 place atom03 [889] 68616783 bytes per VM 
+Info Iter>  VM-kind: 111 DC: atom00 Load: 9884 VMs: 0.0 VM-kind: 111 DC: atom01 Load: 2530 VMs: 0.0 VM-kind: 111 DC: atom02 Load: 7071 VMs: 22050.0 VM-kind: 111 DC: atom03 Load: 13970 VMs: 12950.0
+Iteration: 22
+Migrate VMs VM from atom02 to atom03
+* Num VMs: 8750 ( 40000000000 bits per VM ) 
+CTRL VM-S> Transmission start at 75600 75600 for atom02 -> atom03 BWD: 500.0 ID: 26
+Info VM-S> Transmission Info at 75600 for atom02 -> atom03 Moved_VMs: 750.0 [750.0 / 8750.0] BWD: 500.0 ID: 26
+Info VM-S> Transmission Info at 75660 for atom02 -> atom03 Moved_VMs: 750.0 [1500.0 / 8750.0] BWD: 500.0 ID: 26
+Info VM-S> Transmission Info at 75720 for atom02 -> atom03 Moved_VMs: 750.0 [2250.0 / 8750.0] BWD: 500.0 ID: 26
+Info VM-S> Transmission Info at 75780 for atom02 -> atom03 Moved_VMs: 750.0 [3000.0 / 8750.0] BWD: 500.0 ID: 26
+Info VM-S> Transmission Info at 75840 for atom02 -> atom03 Moved_VMs: 750.0 [3750.0 / 8750.0] BWD: 500.0 ID: 26
+Info VM-S> Transmission Info at 75900 for atom02 -> atom03 Moved_VMs: 750.0 [4500.0 / 8750.0] BWD: 500.0 ID: 26
+Info VM-S> Transmission Info at 75960 for atom02 -> atom03 Moved_VMs: 750.0 [5250.0 / 8750.0] BWD: 500.0 ID: 26
+Info VM-S> Transmission Info at 76020 for atom02 -> atom03 Moved_VMs: 750.0 [6000.0 / 8750.0] BWD: 500.0 ID: 26
+Info VM-S> Transmission Info at 76080 for atom02 -> atom03 Moved_VMs: 750.0 [6750.0 / 8750.0] BWD: 500.0 ID: 26
+Info VM-S> Transmission Info at 76140 for atom02 -> atom03 Moved_VMs: 750.0 [7500.0 / 8750.0] BWD: 500.0 ID: 26
+Info VM-S> Transmission Info at 76200 for atom02 -> atom03 Moved_VMs: 750.0 [8250.0 / 8750.0] BWD: 500.0 ID: 26
+Info VM-S> Transmission Info at 76260 for atom02 -> atom03 Moved_VMs: 0.0 [8750.0 / 8750.0] BWD: 500.0 ID: 26
+CTRL VM-S> Transmission Finished at 76260 75600 for atom02 -> atom03 ID: 26
+REPO VM-S> 79200 VM-kind: 111 Path: atom00-atom01 VMs_To_Move: 0 VMs_Moved: 0
+REPO VM-S> 79200 VM-kind: 111 Path: atom03-atom00 VMs_To_Move: 0 VMs_Moved: 0
+REPO VM-S> 79200 VM-kind: 111 Path: atom02-atom03 VMs_To_Move: 8750 VMs_Moved: 8750
+REPO VM-S> 79200 VM-kind: 111 Path: atom01-atom02 VMs_To_Move: 0 VMs_Moved: 0
+REPO VM-C> 79200 VM-kind: --- Path: atom01-atom00 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 79200 VM-kind: --- Path: atom00-atom02 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 79200 VM-kind: --- Path: atom01-atom02 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 79200 VM-kind: --- Path: atom00-atom01 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 79200 VM-kind: --- Path: atom01-atom03 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 79200 VM-kind: --- Path: atom03-atom02 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 79200 VM-kind: --- Path: atom03-atom01 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 79200 VM-kind: --- Path: atom03-atom00 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 79200 VM-kind: --- Path: atom02-atom03 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 79200 VM-kind: --- Path: atom02-atom01 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 79200 VM-kind: --- Path: atom00-atom03 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 79200 VM-kind: --- Path: atom02-atom00 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+Info Schd> Iteration: 22 Finished: 79200 Negotiations: 1
+Info Ener> 1391.0648999999999 kWh  atom00: 0.0 atom01: 0.0 atom02: 876.4001999999999 atom03: 514.6646999999999 (all in kWh)
+Execute Iteration: 23 at 79200 (82800)
+Prepare Next Iter: for VM 111 place atom00 [640] 54599509 bytes per VM 
+Prepare Next Iter: for VM 111 place atom01 [180] 15356112 bytes per VM 
+Prepare Next Iter: for VM 111 place atom02 [417] 35574992 bytes per VM 
+Prepare Next Iter: for VM 111 place atom03 [981] 83690810 bytes per VM 
+Info Iter>  VM-kind: 111 DC: atom00 Load: 10057 VMs: 0.0 VM-kind: 111 DC: atom01 Load: 2828 VMs: 0.0 VM-kind: 111 DC: atom02 Load: 6552 VMs: 13300.0 VM-kind: 111 DC: atom03 Load: 15415 VMs: 21700.0
+Iteration: 23
+Migrate VMs VM from atom02 to atom03
+* Num VMs: 7000 ( 40000000000 bits per VM ) 
+CTRL VM-S> Transmission start at 79200 79200 for atom02 -> atom03 BWD: 500.0 ID: 27
+Info VM-S> Transmission Info at 79200 for atom02 -> atom03 Moved_VMs: 750.0 [750.0 / 7000.0] BWD: 500.0 ID: 27
+Info VM-S> Transmission Info at 79260 for atom02 -> atom03 Moved_VMs: 750.0 [1500.0 / 7000.0] BWD: 500.0 ID: 27
+Info VM-S> Transmission Info at 79320 for atom02 -> atom03 Moved_VMs: 750.0 [2250.0 / 7000.0] BWD: 500.0 ID: 27
+Info VM-S> Transmission Info at 79380 for atom02 -> atom03 Moved_VMs: 750.0 [3000.0 / 7000.0] BWD: 500.0 ID: 27
+Info VM-S> Transmission Info at 79440 for atom02 -> atom03 Moved_VMs: 750.0 [3750.0 / 7000.0] BWD: 500.0 ID: 27
+Info VM-S> Transmission Info at 79500 for atom02 -> atom03 Moved_VMs: 750.0 [4500.0 / 7000.0] BWD: 500.0 ID: 27
+Info VM-S> Transmission Info at 79560 for atom02 -> atom03 Moved_VMs: 750.0 [5250.0 / 7000.0] BWD: 500.0 ID: 27
+Info VM-S> Transmission Info at 79620 for atom02 -> atom03 Moved_VMs: 750.0 [6000.0 / 7000.0] BWD: 500.0 ID: 27
+Info VM-S> Transmission Info at 79680 for atom02 -> atom03 Moved_VMs: 750.0 [6750.0 / 7000.0] BWD: 500.0 ID: 27
+Info VM-S> Transmission Info at 79740 for atom02 -> atom03 Moved_VMs: 0.0 [7000.0 / 7000.0] BWD: 500.0 ID: 27
+CTRL VM-S> Transmission Finished at 79740 79200 for atom02 -> atom03 ID: 27
+REPO VM-S> 82800 VM-kind: 111 Path: atom00-atom01 VMs_To_Move: 0 VMs_Moved: 0
+REPO VM-S> 82800 VM-kind: 111 Path: atom03-atom00 VMs_To_Move: 0 VMs_Moved: 0
+REPO VM-S> 82800 VM-kind: 111 Path: atom02-atom03 VMs_To_Move: 7000 VMs_Moved: 7000
+REPO VM-S> 82800 VM-kind: 111 Path: atom01-atom02 VMs_To_Move: 0 VMs_Moved: 0
+REPO VM-C> 82800 VM-kind: --- Path: atom01-atom00 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 82800 VM-kind: --- Path: atom00-atom02 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 82800 VM-kind: --- Path: atom01-atom02 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 82800 VM-kind: --- Path: atom00-atom01 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 82800 VM-kind: --- Path: atom01-atom03 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 82800 VM-kind: --- Path: atom03-atom02 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 82800 VM-kind: --- Path: atom03-atom01 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 82800 VM-kind: --- Path: atom03-atom00 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 82800 VM-kind: --- Path: atom02-atom03 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 82800 VM-kind: --- Path: atom02-atom01 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 82800 VM-kind: --- Path: atom00-atom03 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 82800 VM-kind: --- Path: atom02-atom00 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+Info Schd> Iteration: 23 Finished: 82800 Negotiations: 1
+Info Ener> 1391.0656 kWh  atom00: 0.0 atom01: 0.0 atom02: 528.6352999999999 atom03: 862.4302999999999 (all in kWh)
+Execute Iteration: 24 at 82800 (86400)
+Prepare Next Iter: for VM 111 place atom00 [700] 54639526 bytes per VM 
+Prepare Next Iter: for VM 111 place atom01 [138] 10771792 bytes per VM 
+Prepare Next Iter: for VM 111 place atom02 [350] 27319763 bytes per VM 
+Prepare Next Iter: for VM 111 place atom03 [1000] 78056466 bytes per VM 
+Info Iter>  VM-kind: 111 DC: atom00 Load: 11000 VMs: 0.0 VM-kind: 111 DC: atom01 Load: 2168 VMs: 0.0 VM-kind: 111 DC: atom02 Load: 5500 VMs: 6300.0 VM-kind: 111 DC: atom03 Load: 15714 VMs: 28700.0
+Iteration: 24
+Migrate VMs VM from atom02 to atom03
+* Num VMs: 4550 ( 40000000000 bits per VM ) 
+CTRL VM-S> Transmission start at 82800 82800 for atom02 -> atom03 BWD: 500.0 ID: 28
+Info VM-S> Transmission Info at 82800 for atom02 -> atom03 Moved_VMs: 750.0 [750.0 / 4550.0] BWD: 500.0 ID: 28
+Info VM-S> Transmission Info at 82860 for atom02 -> atom03 Moved_VMs: 750.0 [1500.0 / 4550.0] BWD: 500.0 ID: 28
+Info VM-S> Transmission Info at 82920 for atom02 -> atom03 Moved_VMs: 750.0 [2250.0 / 4550.0] BWD: 500.0 ID: 28
+Info VM-S> Transmission Info at 82980 for atom02 -> atom03 Moved_VMs: 750.0 [3000.0 / 4550.0] BWD: 500.0 ID: 28
+Info VM-S> Transmission Info at 83040 for atom02 -> atom03 Moved_VMs: 750.0 [3750.0 / 4550.0] BWD: 500.0 ID: 28
+Info VM-S> Transmission Info at 83100 for atom02 -> atom03 Moved_VMs: 750.0 [4500.0 / 4550.0] BWD: 500.0 ID: 28
+Info VM-S> Transmission Info at 83160 for atom02 -> atom03 Moved_VMs: 0.0 [4550.0 / 4550.0] BWD: 500.0 ID: 28
+CTRL VM-S> Transmission Finished at 83160 82800 for atom02 -> atom03 ID: 28
+REPO VM-S> 86400 VM-kind: 111 Path: atom00-atom01 VMs_To_Move: 0 VMs_Moved: 0
+REPO VM-S> 86400 VM-kind: 111 Path: atom03-atom00 VMs_To_Move: 0 VMs_Moved: 0
+REPO VM-S> 86400 VM-kind: 111 Path: atom02-atom03 VMs_To_Move: 4550 VMs_Moved: 4550
+REPO VM-S> 86400 VM-kind: 111 Path: atom01-atom02 VMs_To_Move: 0 VMs_Moved: 0
+REPO VM-C> 86400 VM-kind: --- Path: atom01-atom00 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 86400 VM-kind: --- Path: atom00-atom02 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 86400 VM-kind: --- Path: atom01-atom02 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 86400 VM-kind: --- Path: atom00-atom01 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 86400 VM-kind: --- Path: atom01-atom03 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 86400 VM-kind: --- Path: atom03-atom02 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 86400 VM-kind: --- Path: atom03-atom01 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 86400 VM-kind: --- Path: atom03-atom00 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 86400 VM-kind: --- Path: atom02-atom03 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 86400 VM-kind: --- Path: atom02-atom01 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 86400 VM-kind: --- Path: atom00-atom03 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+REPO VM-C> 86400 VM-kind: --- Path: atom02-atom00 Images_To_Update: 0 Images_Updated: 0 Prev_Degraded: 0 Degraded_Updated 0 Remaining: 0
+Info Schd> Iteration: 24 Finished: 86400 Negotiations: 1
+Info Ener> 1391.0656 kWh  atom00: 0.0 atom01: 0.0 atom02: 250.47279999999998 atom03: 1140.5928 (all in kWh)

@@ -1,0 +1,117 @@
+SOCKET
+UDP. Puerto 5555.
+
+COMANDS:
+
+Conn SetUp=1
+Elastic BW management=2
+Conn TearDown=3
+Advance Reservation=4
+
+MESSAGES
+
+CONNECTION SET UP
+<Request command="1">
+	<sourceip>10.1.0.1</sourceip>
+	<destinationip>10.1.0.2</destinationip>
+	<requestedbw>10</requestedbw>
+	<timestamp>4368</timestamp>
+</Request>
+
+<Response command="1">
+	<sourceip>10.1.0.1</sourceip>
+	<destinationip>10.1.0.2</destinationip>
+	<status>KO</status>
+	<maxbw>8</maxbw>	
+</Response>
+
+<Response command="1">
+	<sourceip>10.1.0.1</sourceip>
+	<destinationip>10.1.0.2</destinationip>
+	<status>OK</status>
+	<id>10667788</id>
+	<assignedbw>10</assignedbw>
+	<latency>230</latency>
+</Response>
+
+
+ELASTIC BW MANAGEMENT
+<Request command="2">
+	<id>10667788</id>
+	<requestedbw>15</requestedbw>
+	<timestamp>5368</timestamp>
+</Request>
+
+<Response command="2">
+	<id>10667788</id>
+	<status>KO</status>
+	<maxbw>12</maxbw>
+</Response>
+
+<Response command="2">
+	<id>10667788</id>
+	<status>IDNF</status>
+</Response>
+
+<Response command="2">
+	<id>10667788</id>
+	<status>OK</status>
+	<assignedbw>15</assignedbw>
+</Response>
+
+CONNECTION TEARDOWN
+<Request command="3">
+	<id>10667788</id>
+	<timestamp>6368</timestamp>
+</Request>
+
+<Response command="3">
+	<id>10667788</id>
+	<status>IDNF</status>
+</Response>
+
+<Response command="3">
+	<id>10667788</id>
+	<status>OK</status>
+</Response>
+
+ADVANCE RESERVATION
+<Request command="4">
+	<sourceip>10.1.0.1</sourceip>
+	<destinationip>10.1.0.2</destinationip>
+	<requestedTransfer>1000</requestedTransfer>
+	<completion>10</completion>
+	<timestamp>7368</timestamp>
+</Request>
+
+<Response command="4">
+	<sourceip>10.1.0.1</sourceip>
+	<destinationip>10.1.0.2</destinationip>
+	<status>KO</status>
+	<maxbw>6</maxbw>
+	<maxtime>12</maxtime>
+</Response>
+
+<Response command="4">
+	<sourceip>10.1.0.1</sourceip>
+	<destinationip>10.1.0.2</destinationip>
+	<status>OK</status>
+	<id>10667788</id>
+	<assignedbw>8</assignedbw>
+	<latency>230</latency>
+</Response>
+
+
+NOTIFY
+
+<!-- End of tx -->
+<Notify type="1"> 
+	<id>10667788</id>
+	<assignedbw>10</assignedbw>
+</Notify>
+
+<!-- Updated bw -->
+<Notify type="2"> 
+	<id>10667788</id>
+	<assignedbw>10</assignedbw>
+</Notify>

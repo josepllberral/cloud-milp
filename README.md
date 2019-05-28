@@ -32,6 +32,9 @@ These files contain traces about the used machines, services and jobs, reproduci
 ### QuickScheduler
 The included files are the implementation of the schedulers in a real Cloud environment (OpenNebula), after MILP experiments were done. They include QuickScheduler and GreenNebula experiments.
 
+### QuickRepro
+The included files are the implementation of the reproductor of traces from the QuickSchedule, to compute additional effects over QS executions.
+
 ## MILP Usage
 ### GLPK
 Execute the Solver

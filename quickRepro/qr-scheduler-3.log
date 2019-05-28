@@ -1,0 +1,155 @@
+scheduler> Found ISP for atom00 with IP 10.1.0.1
+scheduler> Found ISP for atom01 with IP 10.1.0.2
+scheduler> Found ISP for atom02 with IP 10.1.0.3
+scheduler> Found ISP for atom03 with IP 10.1.0.9
+scheduler> Built proxy for 111 with IP 172.20.200.154:80 at atom01:8111 (Local ISP: 10.1.0.1 - atom00)
+scheduler-BestFit> Iteration: 1 2013/01/04 00:00:00
+scheduler-BestFit> A VM 111 in ACTIVE status found at atom00 -> (per 15s): [ RTPR: 0.15937234042553192 (Local: 0.02855809309100607 Remote:0.13081424733452585); Req: 11.643617021276595 (Local: 4.042553191489362 Remote: 7.601063829787234); Queue: 0.0851063829787234; Served: 11.643617021276595; BPR: 44558.80319148936]
+Attempting VM 111 in atom00 (ISP: 10.1.0.1; load from it: 760 vs ext load: 0)
+Attempting VM 111 in atom01 (ISP: 10.1.0.2; load from it: 180 vs ext load: 0)
+Attempting VM 111 in atom02 (ISP: 10.1.0.3; load from it: 664 vs ext load: 0)
+Attempting VM 111 in atom03 (ISP: 10.1.0.4; load from it: 760 vs ext load: 0)
+scheduler-BestFit> Iteration: 2 2013/01/04 01:00:00
+scheduler-BestFit> A VM 111 in ACTIVE status found at atom01 -> (per 15s): [ RTPR: 0.13586666666666666 (Local: 0.015342975111001703 Remote:0.12052369155566496); Req: 8.541666666666666 (Local: 3.4 Remote: 5.141666666666667); Queue: 28.558333333333334; Served: 8.416666666666666; BPR: 34835.0875]
+Attempting VM 111 in atom00 (ISP: 10.1.0.1; load from it: 816 vs ext load: 0)
+Attempting VM 111 in atom01 (ISP: 10.1.0.2; load from it: 138 vs ext load: 0)
+Attempting VM 111 in atom02 (ISP: 10.1.0.3; load from it: 450 vs ext load: 0)
+Attempting VM 111 in atom03 (ISP: 10.1.0.4; load from it: 816 vs ext load: 0)
+scheduler-BestFit> Iteration: 3 2013/01/04 02:00:00
+scheduler-BestFit> A VM 111 in ACTIVE status found at atom00 -> (per 15s): [ RTPR: 0.1384375 (Local: 0.01030270562293395 Remote:0.12813479437706604); Req: 7.695833333333334 (Local: 2.7708333333333335 Remote: 4.925); Queue: 41.416666666666664; Served: 7.645833333333333; BPR: 39095.395833333336]
+Attempting VM 111 in atom00 (ISP: 10.1.0.1; load from it: 849 vs ext load: 0)
+Attempting VM 111 in atom01 (ISP: 10.1.0.2; load from it: 150 vs ext load: 0)
+Attempting VM 111 in atom02 (ISP: 10.1.0.3; load from it: 417 vs ext load: 0)
+Attempting VM 111 in atom03 (ISP: 10.1.0.4; load from it: 849 vs ext load: 0)
+scheduler-BestFit> Iteration: 4 2013/01/04 03:00:00
+scheduler-BestFit> A VM 111 in ACTIVE status found at atom01 -> (per 15s): [ RTPR: 0.39794999999999997 (Local: 0.24674089932521467 Remote:0.1512091006747853); Req: 15.066666666666666 (Local: 3.7041666666666666 Remote: 11.3625); Queue: 70.8625; Served: 14.941666666666666; BPR: 44822.479166666664]
+Attempting VM 111 in atom00 (ISP: 10.1.0.1; load from it: 889 vs ext load: 0)
+Attempting VM 111 in atom01 (ISP: 10.1.0.2; load from it: 207 vs ext load: 0)
+Attempting VM 111 in atom02 (ISP: 10.1.0.3; load from it: 350 vs ext load: 0)
+Attempting VM 111 in atom03 (ISP: 10.1.0.4; load from it: 889 vs ext load: 0)
+scheduler-BestFit> Iteration: 5 2013/01/04 04:00:00
+scheduler-BestFit> A VM 111 in ACTIVE status found at atom02 -> (per 15s): [ RTPR: 0.17964166666666667 (Local: 0.001752347657218517 Remote:0.17788931900944815); Req: 7.841666666666667 (Local: 0.875 Remote: 6.966666666666667); Queue: 83.95416666666667; Served: 7.791666666666667; BPR: 39688.0]
+Attempting VM 111 in atom00 (ISP: 10.1.0.1; load from it: 981 vs ext load: 0)
+Attempting VM 111 in atom01 (ISP: 10.1.0.2; load from it: 500 vs ext load: 0)
+Attempting VM 111 in atom02 (ISP: 10.1.0.3; load from it: 222 vs ext load: 0)
+Attempting VM 111 in atom03 (ISP: 10.1.0.4; load from it: 981 vs ext load: 0)
+scheduler-BestFit> Iteration: 6 2013/01/04 05:00:00
+scheduler-BestFit> A VM 111 in ACTIVE status found at atom00 -> (per 15s): [ RTPR: 0.15800416666666667 (Local: 0.02025060335344417 Remote:0.1377535633132225); Req: 10.25 (Local: 3.2 Remote: 7.05); Queue: 127.37083333333334; Served: 10.058333333333334; BPR: 36664.8]
+Attempting VM 111 in atom00 (ISP: 10.1.0.1; load from it: 1000 vs ext load: 0)
+Attempting VM 111 in atom01 (ISP: 10.1.0.2; load from it: 629 vs ext load: 0)
+Attempting VM 111 in atom02 (ISP: 10.1.0.3; load from it: 210 vs ext load: 0)
+Attempting VM 111 in atom03 (ISP: 10.1.0.4; load from it: 1000 vs ext load: 0)
+scheduler-BestFit> Iteration: 7 2013/01/04 06:00:00
+scheduler-BestFit> A VM 111 in ACTIVE status found at atom01 -> (per 15s): [ RTPR: 0.16240833333333332 (Local: 0.01592156790918947 Remote:0.14648676542414385); Req: 10.345833333333333 (Local: 2.779166666666667 Remote: 7.566666666666666); Queue: 154.78333333333333; Served: 10.2375; BPR: 37621.941666666666]
+Attempting VM 111 in atom00 (ISP: 10.1.0.1; load from it: 1000 vs ext load: 0)
+Attempting VM 111 in atom01 (ISP: 10.1.0.2; load from it: 640 vs ext load: 0)
+Attempting VM 111 in atom02 (ISP: 10.1.0.3; load from it: 93 vs ext load: 0)
+Attempting VM 111 in atom03 (ISP: 10.1.0.4; load from it: 1000 vs ext load: 0)
+scheduler-BestFit> Iteration: 8 2013/01/04 07:00:00
+scheduler-BestFit> A VM 111 in ACTIVE status found at atom01 -> (per 15s): [ RTPR: 0.15365833333333334 (Local: 0.01930154791429975 Remote:0.1343567854190336); Req: 10.1 (Local: 3.325 Remote: 6.775); Queue: 156.1875; Served: 10.1; BPR: 39298.47083333333]
+Attempting VM 111 in atom00 (ISP: 10.1.0.1; load from it: 999 vs ext load: 0)
+Attempting VM 111 in atom01 (ISP: 10.1.0.2; load from it: 700 vs ext load: 0)
+Attempting VM 111 in atom02 (ISP: 10.1.0.3; load from it: 161 vs ext load: 0)
+Attempting VM 111 in atom03 (ISP: 10.1.0.4; load from it: 999 vs ext load: 0)
+scheduler-BestFit> Iteration: 9 2013/01/04 08:00:00
+scheduler-BestFit> A VM 111 in ACTIVE status found at atom00 -> (per 15s): [ RTPR: 0.16459166666666666 (Local: 0.01750695128980903 Remote:0.14708471537685763); Req: 9.475 (Local: 2.5166666666666666 Remote: 6.958333333333333); Queue: 175.12916666666666; Served: 9.391666666666667; BPR: 39921.38333333333]
+Attempting VM 111 in atom00 (ISP: 10.1.0.1; load from it: 664 vs ext load: 0)
+Attempting VM 111 in atom01 (ISP: 10.1.0.2; load from it: 760 vs ext load: 0)
+Attempting VM 111 in atom02 (ISP: 10.1.0.3; load from it: 180 vs ext load: 0)
+Attempting VM 111 in atom03 (ISP: 10.1.0.4; load from it: 664 vs ext load: 0)
+scheduler-BestFit> Iteration: 10 2013/01/04 09:00:00
+scheduler-BestFit> A VM 111 in ACTIVE status found at atom02 -> (per 15s): [ RTPR: 0.1782416666666667 (Local: 0.010590110841344452 Remote:0.16765155582532223); Req: 11.4625 (Local: 1.875 Remote: 9.5875); Queue: 199.3125; Served: 11.3625; BPR: 51367.70416666667]
+Attempting VM 111 in atom00 (ISP: 10.1.0.1; load from it: 450 vs ext load: 0)
+Attempting VM 111 in atom01 (ISP: 10.1.0.2; load from it: 816 vs ext load: 0)
+Attempting VM 111 in atom02 (ISP: 10.1.0.3; load from it: 138 vs ext load: 0)
+Attempting VM 111 in atom03 (ISP: 10.1.0.4; load from it: 450 vs ext load: 0)
+scheduler-BestFit> Iteration: 11 2013/01/04 10:00:00
+scheduler-BestFit> A VM 111 in ACTIVE status found at atom01 -> (per 15s): [ RTPR: 0.20387916666666667 (Local: 0.031070447754881908 Remote:0.17280871891178476); Req: 12.633333333333333 (Local: 1.7375 Remote: 10.895833333333334); Queue: 224.94166666666666; Served: 12.525; BPR: 38841.354166666664]
+Attempting VM 111 in atom00 (ISP: 10.1.0.1; load from it: 417 vs ext load: 0)
+Attempting VM 111 in atom01 (ISP: 10.1.0.2; load from it: 849 vs ext load: 0)
+Attempting VM 111 in atom02 (ISP: 10.1.0.3; load from it: 150 vs ext load: 0)
+Attempting VM 111 in atom03 (ISP: 10.1.0.4; load from it: 417 vs ext load: 0)
+scheduler-BestFit> Iteration: 12 2013/01/04 11:00:00
+scheduler-BestFit> A VM 111 in ACTIVE status found at atom01 -> (per 15s): [ RTPR: 0.17317083333333333 (Local: 0.030608064638035587 Remote:0.14256276869529774); Req: 10.408333333333333 (Local: 3.0 Remote: 7.408333333333333); Queue: 226.15; Served: 10.408333333333333; BPR: 37844.07083333333]
+Attempting VM 111 in atom00 (ISP: 10.1.0.1; load from it: 350 vs ext load: 0)
+Attempting VM 111 in atom01 (ISP: 10.1.0.2; load from it: 889 vs ext load: 0)
+Attempting VM 111 in atom02 (ISP: 10.1.0.3; load from it: 207 vs ext load: 0)
+Attempting VM 111 in atom03 (ISP: 10.1.0.4; load from it: 350 vs ext load: 0)
+scheduler-BestFit> Iteration: 13 2013/01/04 12:00:00
+scheduler-BestFit> A VM 111 in ACTIVE status found at atom02 -> (per 15s): [ RTPR: 0.16855416666666667 (Local: 0.021310789039125616 Remote:0.14724337762754106); Req: 9.516666666666667 (Local: 2.5208333333333335 Remote: 6.995833333333334); Queue: 232.88333333333333; Served: 9.4875; BPR: 42324.975]
+Attempting VM 111 in atom00 (ISP: 10.1.0.1; load from it: 222 vs ext load: 0)
+Attempting VM 111 in atom01 (ISP: 10.1.0.2; load from it: 981 vs ext load: 0)
+Attempting VM 111 in atom02 (ISP: 10.1.0.3; load from it: 500 vs ext load: 0)
+Attempting VM 111 in atom03 (ISP: 10.1.0.4; load from it: 222 vs ext load: 0)
+scheduler-BestFit> Iteration: 14 2013/01/04 13:00:00
+scheduler-BestFit> A VM 111 in ACTIVE status found at atom01 -> (per 15s): [ RTPR: 0.15514583333333334 (Local: 0.03539283288032005 Remote:0.11975300045301329); Req: 11.095833333333333 (Local: 4.4625 Remote: 6.633333333333334); Queue: 254.84166666666667; Served: 11.004166666666666; BPR: 38160.879166666666]
+Attempting VM 111 in atom00 (ISP: 10.1.0.1; load from it: 210 vs ext load: 0)
+Attempting VM 111 in atom01 (ISP: 10.1.0.2; load from it: 1000 vs ext load: 0)
+Attempting VM 111 in atom02 (ISP: 10.1.0.3; load from it: 629 vs ext load: 0)
+Attempting VM 111 in atom03 (ISP: 10.1.0.4; load from it: 210 vs ext load: 0)
+scheduler-BestFit> Iteration: 15 2013/01/04 14:00:00
+scheduler-BestFit> A VM 111 in ACTIVE status found at atom02 -> (per 15s): [ RTPR: 0.16094583333333332 (Local: 0.03331300403022952 Remote:0.1276328293031038); Req: 9.704166666666667 (Local: 3.5208333333333335 Remote: 6.183333333333334); Queue: 268.825; Served: 9.65; BPR: 42579.479166666664]
+Attempting VM 111 in atom00 (ISP: 10.1.0.1; load from it: 93 vs ext load: 0)
+Attempting VM 111 in atom01 (ISP: 10.1.0.2; load from it: 1000 vs ext load: 0)
+Attempting VM 111 in atom02 (ISP: 10.1.0.3; load from it: 640 vs ext load: 0)
+Attempting VM 111 in atom03 (ISP: 10.1.0.4; load from it: 93 vs ext load: 0)
+scheduler-BestFit> Iteration: 16 2013/01/04 15:00:00
+scheduler-BestFit> A VM 111 in ACTIVE status found at atom01 -> (per 15s): [ RTPR: 0.16322916666666665 (Local: 0.03152328723534234 Remote:0.1317058794313243); Req: 10.279166666666667 (Local: 3.5208333333333335 Remote: 6.758333333333334); Queue: 299.3958333333333; Served: 10.145833333333334; BPR: 41732.07083333333]
+Attempting VM 111 in atom00 (ISP: 10.1.0.1; load from it: 161 vs ext load: 0)
+Attempting VM 111 in atom01 (ISP: 10.1.0.2; load from it: 999 vs ext load: 0)
+Attempting VM 111 in atom02 (ISP: 10.1.0.3; load from it: 700 vs ext load: 0)
+Attempting VM 111 in atom03 (ISP: 10.1.0.4; load from it: 161 vs ext load: 0)
+scheduler-BestFit> Iteration: 17 2013/01/04 16:00:00
+scheduler-BestFit> A VM 111 in ACTIVE status found at atom03 -> (per 15s): [ RTPR: 0.15611666666666668 (Local: 0.04512815179519997 Remote:0.11098851487146671); Req: 7.825 (Local: 3.4875 Remote: 4.3375); Queue: 303.95416666666665; Served: 7.8125; BPR: 38956.425]
+Attempting VM 111 in atom00 (ISP: 10.1.0.1; load from it: 180 vs ext load: 0)
+Attempting VM 111 in atom01 (ISP: 10.1.0.2; load from it: 664 vs ext load: 0)
+Attempting VM 111 in atom02 (ISP: 10.1.0.3; load from it: 760 vs ext load: 0)
+Attempting VM 111 in atom03 (ISP: 10.1.0.4; load from it: 180 vs ext load: 0)
+scheduler-BestFit> Iteration: 18 2013/01/04 17:00:00
+scheduler-BestFit> A VM 111 in ACTIVE status found at atom03 -> (per 15s): [ RTPR: 0.1727041666666667 (Local: 0.0298130803176265 Remote:0.1428910863490402); Req: 10.495833333333334 (Local: 3.0083333333333333 Remote: 7.4875); Queue: 304.2125; Served: 10.495833333333334; BPR: 38615.520833333336]
+Attempting VM 111 in atom00 (ISP: 10.1.0.1; load from it: 138 vs ext load: 0)
+Attempting VM 111 in atom01 (ISP: 10.1.0.2; load from it: 450 vs ext load: 0)
+Attempting VM 111 in atom02 (ISP: 10.1.0.3; load from it: 816 vs ext load: 0)
+Attempting VM 111 in atom03 (ISP: 10.1.0.4; load from it: 138 vs ext load: 0)
+scheduler-BestFit> Iteration: 19 2013/01/04 18:00:00
+scheduler-BestFit> A VM 111 in ACTIVE status found at atom02 -> (per 15s): [ RTPR: 0.16422083333333334 (Local: 0.00915709213389665 Remote:0.1550637411994367); Req: 12.1625 (Local: 2.754166666666667 Remote: 9.408333333333333); Queue: 323.22083333333336; Served: 12.079166666666667; BPR: 50390.3375]
+Attempting VM 111 in atom00 (ISP: 10.1.0.1; load from it: 150 vs ext load: 0)
+Attempting VM 111 in atom01 (ISP: 10.1.0.2; load from it: 417 vs ext load: 0)
+Attempting VM 111 in atom02 (ISP: 10.1.0.3; load from it: 849 vs ext load: 0)
+Attempting VM 111 in atom03 (ISP: 10.1.0.4; load from it: 150 vs ext load: 0)
+scheduler-BestFit> Iteration: 20 2013/01/04 19:00:00
+scheduler-BestFit> A VM 111 in ACTIVE status found at atom00 -> (per 15s): [ RTPR: 0.13833333333333334 (Local: 0.03599461819274151 Remote:0.10233871514059183); Req: 7.704166666666667 (Local: 3.7666666666666666 Remote: 3.9375); Queue: 366.225; Served: 7.516666666666667; BPR: 41347.691666666666]
+Attempting VM 111 in atom00 (ISP: 10.1.0.1; load from it: 207 vs ext load: 0)
+Attempting VM 111 in atom01 (ISP: 10.1.0.2; load from it: 350 vs ext load: 0)
+Attempting VM 111 in atom02 (ISP: 10.1.0.3; load from it: 889 vs ext load: 0)
+Attempting VM 111 in atom03 (ISP: 10.1.0.4; load from it: 207 vs ext load: 0)
+scheduler-BestFit> Iteration: 21 2013/01/04 20:00:00
+scheduler-BestFit> A VM 111 in ACTIVE status found at atom03 -> (per 15s): [ RTPR: 0.17722083333333333 (Local: 0.06390309378206331 Remote:0.11331773955127002); Req: 9.75 (Local: 4.233333333333333 Remote: 5.516666666666667); Queue: 406.0; Served: 9.5875; BPR: 37794.995833333334]
+Attempting VM 111 in atom00 (ISP: 10.1.0.1; load from it: 500 vs ext load: 0)
+Attempting VM 111 in atom01 (ISP: 10.1.0.2; load from it: 222 vs ext load: 0)
+Attempting VM 111 in atom02 (ISP: 10.1.0.3; load from it: 981 vs ext load: 0)
+Attempting VM 111 in atom03 (ISP: 10.1.0.4; load from it: 500 vs ext load: 0)
+scheduler-BestFit> Iteration: 22 2013/01/04 21:00:00
+scheduler-BestFit> A VM 111 in ACTIVE status found at atom03 -> (per 15s): [ RTPR: 0.16090833333333332 (Local: 0.029425000888515962 Remote:0.13148333244481736); Req: 8.433333333333334 (Local: 2.8958333333333335 Remote: 5.5375); Queue: 408.09166666666664; Served: 8.433333333333334; BPR: 38592.11666666667]
+Attempting VM 111 in atom00 (ISP: 10.1.0.1; load from it: 629 vs ext load: 0)
+Attempting VM 111 in atom01 (ISP: 10.1.0.2; load from it: 210 vs ext load: 0)
+Attempting VM 111 in atom02 (ISP: 10.1.0.3; load from it: 1000 vs ext load: 0)
+Attempting VM 111 in atom03 (ISP: 10.1.0.4; load from it: 629 vs ext load: 0)
+scheduler-BestFit> Iteration: 23 2013/01/04 22:00:00
+scheduler-BestFit> A VM 111 in ACTIVE status found at atom03 -> (per 15s): [ RTPR: 0.14312083333333334 (Local: 0.0424842849890715 Remote:0.10063654834426183); Req: 7.1875 (Local: 3.575 Remote: 3.6125); Queue: 408.0875; Served: 7.1875; BPR: 42655.86666666667]
+Attempting VM 111 in atom00 (ISP: 10.1.0.1; load from it: 640 vs ext load: 0)
+Attempting VM 111 in atom01 (ISP: 10.1.0.2; load from it: 93 vs ext load: 0)
+Attempting VM 111 in atom02 (ISP: 10.1.0.3; load from it: 1000 vs ext load: 0)
+Attempting VM 111 in atom03 (ISP: 10.1.0.4; load from it: 640 vs ext load: 0)
+scheduler-BestFit> Iteration: 24 2013/01/04 23:00:00
+scheduler-BestFit> A VM 111 in ACTIVE status found at atom03 -> (per 15s): [ RTPR: 0.16334583333333333 (Local: 0.03588806354959265 Remote:0.12745776978374068); Req: 7.933333333333334 (Local: 2.8833333333333333 Remote: 5.05); Queue: 408.1875; Served: 7.933333333333334; BPR: 39028.23333333333]
+Attempting VM 111 in atom00 (ISP: 10.1.0.1; load from it: 700 vs ext load: 0)
+Attempting VM 111 in atom01 (ISP: 10.1.0.2; load from it: 161 vs ext load: 0)
+Attempting VM 111 in atom02 (ISP: 10.1.0.3; load from it: 999 vs ext load: 0)
+Attempting VM 111 in atom03 (ISP: 10.1.0.4; load from it: 700 vs ext load: 0)
+scheduler-BestFit> Iteration: 25 2013/01/04 00:00:00
+scheduler-BestFit> A VM 111 in ACTIVE status found at atom00 -> (per 15s): [ RTPR: 0.15937234042553192 (Local: 0.02855809309100607 Remote:0.13081424733452585); Req: 11.643617021276595 (Local: 4.042553191489362 Remote: 7.601063829787234); Queue: 0.0851063829787234; Served: 11.643617021276595; BPR: 44558.80319148936]
+Attempting VM 111 in atom00 (ISP: 10.1.0.1; load from it: 760 vs ext load: 0)
+Attempting VM 111 in atom01 (ISP: 10.1.0.2; load from it: 180 vs ext load: 0)
+Attempting VM 111 in atom02 (ISP: 10.1.0.3; load from it: 664 vs ext load: 0)
+Attempting VM 111 in atom03 (ISP: 10.1.0.4; load from it: 760 vs ext load: 0)
